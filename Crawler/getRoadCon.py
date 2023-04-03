@@ -2,7 +2,7 @@
 Author: Ruijie Ni 1924975712@qq.com
 Date: 2023-02-20 15:49:44
 LastEditors: Ruijie Ni 1924975712@qq.com
-LastEditTime: 2023-03-16 16:34:50
+LastEditTime: 2023-03-25 12:42:20
 FilePath: \毕设\getRoadCon.py
 Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 '''
@@ -89,11 +89,11 @@ while True:
         #bounds = "39.905,116.371;39.909,116.377"
         # 定义5个bounds
         bounds1 = "39.914614,116.446179;39.924614,116.456179"
-        bounds2 = "39.987258,116.479573;39.997258,116.489573"
-        bounds3 = "39.875608,116.461821;39.885608,116.471821"
+        # bounds2 = "39.987258,116.479573;39.997258,116.489573"
+        # bounds3 = "39.875608,116.461821;39.885608,116.471821"
 
         # 将5个bounds放入一个列表中
-        bounds_list = [bounds1, bounds2, bounds3]
+        bounds_list = [bounds1]
         i=1
         for bounds in bounds_list:
             url = f"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}&coord_type_input=gcj02&coord_type_output=gcj02"

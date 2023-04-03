@@ -89,11 +89,11 @@ while True:
         #bounds = "39.905,116.371;39.909,116.377"
         # 定义5个bounds
         bounds1 = "20.030734,110.317357;20.040734,110.327357"
-        bounds2 = "20.034288,110.347809;20.044288,110.357809"
-        bounds3 = "20.038505,110.336464;20.048505,110.346464"
+        # bounds2 = "20.034288,110.347809;20.044288,110.357809"
+        # bounds3 = "20.038505,110.336464;20.048505,110.346464"
 
         # 将5个bounds放入一个列表中
-        bounds_list = [bounds1, bounds2, bounds3]
+        bounds_list = [bounds1]
         i=1
         for bounds in bounds_list:
             url = f"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}&coord_type_input=gcj02&coord_type_output=gcj02"
