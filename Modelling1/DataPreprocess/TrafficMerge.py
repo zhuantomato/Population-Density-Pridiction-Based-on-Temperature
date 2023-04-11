@@ -1,20 +1,13 @@
-'''
-Author: Ruijie Ni 1924975712@qq.com
-Date: 2023-03-24 20:41:49
-LastEditors: Ruijie Ni 1924975712@qq.com
-LastEditTime: 2023-04-11 14:42:46
-FilePath: \Population-Density-Pridiction-Based-on-Temperature\Modelling\DataPreprocess\TrafficMerge.py
-Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
-'''
 import pandas as pd
 import numpy as np
 
 
 # 定义经纬度范围
-beijing_bounds = [(39.919614, 116.451179), (39.992258, 116.484573), (39.880608, 116.466821)]
-guiyang_bounds = [(26.58533, 106.720074), (26.586553, 106.707252), (26.600023, 106.711234)]
-haerbin_bounds = [(45.77229, 126.624968), (45.767358, 126.655482), (45.75604, 126.65613)]
-haikou_bounds = [(20.035734, 110.322357), (20.039288, 110.352809), (20.043505, 110.341464)]
+beijing_bounds = ['39.914614,116.446179;39.924614,116.456179', '39.987258,116.479573;39.997258,116.489573', '39.875608,116.461821;39.885608,116.471821']
+guiyang_bounds = ['26.58033,106.715074;26.59033,106.725074', '26.581553,106.702252;26.591553,106.712252', '26.595023,106.706234;26.605023,106.716234']
+haerbin_bounds = ['45.76729,126.619968;45.77729,126.629968', '45.762358,126.650482;45.772358,126.660482', '45.75104,126.65113;45.76104,126.66113']
+haikou_bounds = ['20.030734,110.317357;20.040734,110.327357', '20.034288,110.347809;20.044288,110.357809', '20.038505,110.336464;20.048505,110.346464']
+
 # 定义城市列表和对应的经纬度范围
 cities = ['Beijing', 'Guiyang', 'HaErBin', 'Haikou']
 bounds = [beijing_bounds, guiyang_bounds, haerbin_bounds, haikou_bounds]
@@ -28,8 +21,7 @@ for i in range(len(cities)):
         filename = 'Modelling\DataPreprocess\MeanTraffic\\' + city + str(j) + 'Mean.csv'
         df = pd.read_csv(filename)
         df['location'] = city
-        df['latitude'] = bounds_str[0]
-        df['longitude'] = bounds_str[1]
+        df['area'] = bounds_str
         traffic_data.append(df)
 traffic_data = pd.concat(traffic_data)
 
@@ -58,9 +50,7 @@ data = data.drop(['time'], axis=1)
 data = data.drop(['weather'],axis=1)
 
 data = data.drop(['location'],axis=1)
-data = data.drop(['temperature'],axis=1)
-data = data.drop(['latitude'],axis=1)
-data = data.drop(['longitude'],axis=1)
+data = data.drop(['area'],axis=1)
 data = data.dropna()
 
 # 保存数据
