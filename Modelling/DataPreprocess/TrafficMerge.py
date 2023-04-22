@@ -2,7 +2,7 @@
 Author: Ruijie Ni 1924975712@qq.com
 Date: 2023-03-24 20:41:49
 LastEditors: Ruijie Ni 1924975712@qq.com
-LastEditTime: 2023-04-11 14:42:46
+LastEditTime: 2023-04-11 16:00:08
 FilePath: \Population-Density-Pridiction-Based-on-Temperature\Modelling\DataPreprocess\TrafficMerge.py
 Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 '''
@@ -58,9 +58,9 @@ data = data.drop(['time'], axis=1)
 data = data.drop(['weather'],axis=1)
 
 data = data.drop(['location'],axis=1)
-data = data.drop(['temperature'],axis=1)
-data = data.drop(['latitude'],axis=1)
-data = data.drop(['longitude'],axis=1)
+#data = data.drop(['temperature'],axis=1)
+#data = data.drop(['latitude'],axis=1)
+#data = data.drop(['longitude'],axis=1)
 data = data.dropna()
 
 # 保存数据

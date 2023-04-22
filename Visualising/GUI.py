@@ -10,7 +10,7 @@ ak = "pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG"
 
 # 定义主窗口
 root = tk.Tk()
-root.title("带有GUI的python程序")
+root.title("Population predict")
 root.geometry("500x400")
 
 # 定义变量用于保存用户点击的坐标
@@ -37,7 +37,7 @@ def clickButton():
     messagebox.showinfo("提示", "你点击的位置所在城市是：" + city)
 
 # 添加一个按钮
-btn = tk.Button(root, text="获取城市名", command=clickButton)
+btn = tk.Button(root, text="Get prediction", command=clickButton)
 btn.pack()
 
 # 定义画布
