@@ -64,6 +64,6 @@ data = data.drop(['location'],axis=1)
 data = data.dropna()
 
 # 保存数据
-data.to_csv('Modelling\DataPreprocess\Weather\data.csv', index=False)
+data.to_csv('Modelling\DataPreprocess\MergedData\data.csv', index=False)
 
     

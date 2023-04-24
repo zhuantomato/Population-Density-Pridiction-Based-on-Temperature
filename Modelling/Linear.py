@@ -6,10 +6,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 
 # 读取数据文件
-data = pd.read_csv('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/DataPreprocess/Weather/data.csv')
+data = pd.read_csv('Modelling\DataPreprocess\MergedData\data.csv')
 
 # 将数据分为输入和输出
-X = data[['temperature', 'is_weekend', 'hour']]
+X = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]
 y = data['status']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
@@ -29,4 +29,4 @@ plt.ylabel('Predictions')
 plt.xlim(1,2.5)
 plt.ylim(1,2.5)
 plt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)
-plt.savefig('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Results/LinearSimpleScatter.png')
+plt.savefig('Modelling\Results\LinearSimpleScatter.png')

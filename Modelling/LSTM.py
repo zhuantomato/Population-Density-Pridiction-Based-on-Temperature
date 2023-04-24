@@ -7,10 +7,10 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error
 
 # 读取数据文件
-data = pd.read_csv('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/DataPreprocess/Weather/data.csv')
+data = pd.read_csv('Modelling\DataPreprocess\MergedData\data.csv')
 
 # 将数据分为输入和输出
-X = data[['temperature', 'is_weekend', 'hour']]
+X = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]
 y = data['status']
 
 # 将数据分为训练集和测试集
@@ -27,7 +27,7 @@ X_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))
 
 # 定义LSTM模型架构
 model = tf.keras.Sequential([
-    tf.keras.layers.LSTM(64, input_shape=(1, 3)),
+    tf.keras.layers.LSTM(64, input_shape=(1, 5)),
     tf.keras.layers.Dense(1)
 ])
 
@@ -56,4 +56,4 @@ plt.ylabel('Predictions')
 plt.xlim(1,2.5)
 plt.ylim(1,2.5)
 plt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)
-plt.savefig('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Results/LSTMSimpleScatter.png')
+plt.savefig('Modelling\Results\LSTMSimpleScatter.png')

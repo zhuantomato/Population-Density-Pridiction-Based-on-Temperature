@@ -10,7 +10,7 @@ import csv
 import os
 
 # 读取csv文件
-with open('Crawler\Outputs\weather_new.csv', 'r',encoding='utf-8') as f:
+with open('Crawler\Outputs\weather.csv', 'r',encoding='utf-8') as f:
     reader = csv.reader(f)
     # 跳过第一行
     next(reader)
