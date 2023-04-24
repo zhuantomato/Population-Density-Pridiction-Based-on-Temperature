@@ -2,13 +2,25 @@ import pandas as pd
 import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
+import pickle
+import random
+import scipy.stats as stats
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error
-from sklearn.model_selection import learning_curve
-from sklearn.model_selection import ShuffleSplit
-from sklearn.neural_network import MLPClassifier
-from keras.wrappers.scikit_learn import KerasClassifier
+from keras.utils import plot_model
+
+# 定义一个随机种子的值
+SEED = 1
+
+# 设置numpy的随机种子
+np.random.seed(SEED)
+
+# 设置python的随机种子
+random.seed(SEED)
+
+# 设置tensorflow的随机种子
+tf.random.set_seed(SEED)
 
 # 读取数据文件
 data = pd.read_csv('Modelling\DataPreprocess\MergedData\data.csv')
@@ -16,6 +28,7 @@ data = pd.read_csv('Modelling\DataPreprocess\MergedData\data.csv')
 # 将数据分为输入和输出
 X = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]
 y = data['status']
+
 
 # 将数据分为训练集和测试集
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
@@ -27,27 +40,41 @@ X_test = scaler.transform(X_test)
 
 # 定义DNN模型架构
 model = tf.keras.Sequential([
-    tf.keras.layers.Dense(128, activation='relu', input_shape=(5,)),
-    tf.keras.layers.Dense(128, activation='relu'),
+    tf.keras.layers.Dense(10, activation='relu', input_shape=(5,)),
+    tf.keras.layers.Dense(25, activation='relu', input_shape=(5,)),
+    tf.keras.layers.Dense(125, activation='relu'),
     tf.keras.layers.Dense(1)
 ])
 
 # 编译模型
 model.compile(optimizer='adam', loss='mse')
 
-# 训练模型
-model.fit(X_train, y_train, epochs=100)
+# 训练模型并保存历史记录
+history = model.fit(X_train, y_train, epochs=100, validation_data=(X_test, y_test))
 
-# 评估模型性能
-mse = model.evaluate(X_test, y_test)
-print('MSE:', mse)
+
+# 绘制学习曲线
+plt.figure(figsize=(6, 6))
+plt.plot(history.history['loss'], label='train loss')
+plt.plot(history.history['val_loss'], label='test loss')
+plt.xlabel('iterations')
+plt.ylabel('loss')
+plt.legend()
+plt.title('loss curve')
+fig = plt.gcf()
+plt.show()
+fig.savefig('Modelling\Results\DNNLearningCurve.png')
+
+# 使用pickle模块的dump函数将history对象保存到一个文件中
+with open('Modelling\Model\DNN\History\history.pkl', 'wb') as f:
+    pickle.dump(history, f)
+
+tf.saved_model.save(model, 'Modelling\Model\DNN\Model')
 
 # 进行预测
 y_pred = model.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 
-# 将模型保存到磁盘上
-tf.saved_model.save(model, 'Modelling\Model\DNN')
 
 # 绘制图像
 plt.scatter(y_test, y_pred)
@@ -56,44 +83,36 @@ plt.ylabel('Predictions')
 plt.xlim(1,2.5)
 plt.ylim(1,2.5)
 plt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)
-plt.savefig('Modelling\Results\DNNSimpleScatter.png')
+fig2 = plt.gcf()
+plt.show()
+fig2.savefig('Modelling\Results\DNNSimpleScatter.png')
 
-# 画出学习曲线
-def plot_learning_curve(estimator, title, X, y, ylim=None, cv=None,
-                        n_jobs=None, train_sizes=np.linspace(.1, 1.0, 5)):
-    plt.figure()
-    plt.title(title)
-    if ylim is not None:
-        plt.ylim(*ylim)
-    plt.xlabel("Training examples")
-    plt.ylabel("Score")
-    train_sizes, train_scores, test_scores = learning_curve(
-        estimator, X, y, cv=cv, n_jobs=n_jobs, train_sizes=train_sizes)
-    train_scores_mean = np.mean(train_scores, axis=1)
-    train_scores_std = np.std(train_scores, axis=1)
-    test_scores_mean = np.mean(test_scores, axis=1)
-    test_scores_std = np.std(test_scores, axis=1)
-    plt.grid()
+# 计算准确率
+y_pred = y_pred.tolist()
+y_test = y_test.tolist()
+y_pred = [item for sublist in y_pred for item in sublist]
+accuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]
+kde = stats.gaussian_kde(accuracy)
+# 绘制图像
+#plt.plot([-0.5,0.5], kde([-0.5,0.5]), label='accuracy')
+plt.hist(accuracy, bins=200, density=True)
+# 计算频率密度和区间中点
+density, bins = np.histogram(accuracy, bins=200, density=True)
+x = (bins[1:] + bins[:-1]) / 2 # 区间中点
 
-    plt.fill_between(train_sizes, train_scores_mean - train_scores_std,
-                     train_scores_mean + train_scores_std, alpha=0.1,
-                     color="r")
-    plt.fill_between(train_sizes, test_scores_mean - test_scores_std,
-                     test_scores_mean + test_scores_std, alpha=0.1, color="g")
-    plt.plot(train_sizes, train_scores_mean, 'o-', color="r",
-             label="Training score")
-    plt.plot(train_sizes, test_scores_mean, 'o-', color="g",
-             label="Cross-validation score")
+# 绘制密度曲线
+plt.plot(x, density)
 
-    plt.legend(loc="best")
-    plt.show()
-    return plt
+# 添加横轴和纵轴标签
+plt.xlabel("Accuracy")
+plt.ylabel("Frequency Density")
+# plt.xlabel('accuracy')
+# plt.ylabel('number of test')
+# plt.legend()
+# plt.title('accuracy - number of test')
+fig3 = plt.gcf()
+plt.show()
+fig3.savefig('Modelling\Results\DNNAccuracyScatter.png')
 
-# 将Keras模型转换为sklearn的模型
-estimator = KerasClassifier(build_fn=model, epochs=100, verbose=0)
+#plot_model(model, to_file='model.png')
 
-# 绘制学习曲线
-title = "Learning Curves (DNN)"
-cv = ShuffleSplit(n_splits=10, test_size=0.2, random_state=0)
-plot_learning_curve(estimator, title, X_train, y_train, cv=cv, n_jobs=4)
-plt.savefig('Modelling\Results\DNNLearningCurve.png')
