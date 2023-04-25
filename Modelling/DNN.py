@@ -5,20 +5,17 @@ import matplotlib.pyplot as plt
 import pickle
 import random
 import scipy.stats as stats
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score, train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error
 from keras.utils import plot_model
 
 # 定义一个随机种子的值
 SEED = 1
-
 # 设置numpy的随机种子
 np.random.seed(SEED)
-
 # 设置python的随机种子
 random.seed(SEED)
-
 # 设置tensorflow的随机种子
 tf.random.set_seed(SEED)
 
@@ -52,6 +49,8 @@ model.compile(optimizer='adam', loss='mse')
 # 训练模型并保存历史记录
 history = model.fit(X_train, y_train, epochs=100, validation_data=(X_test, y_test))
 
+cv = cross_val_score(model, X, y, cv=5)
+print(cv)
 
 # 绘制学习曲线
 plt.figure(figsize=(6, 6))
@@ -92,7 +91,7 @@ y_pred = y_pred.tolist()
 y_test = y_test.tolist()
 y_pred = [item for sublist in y_pred for item in sublist]
 accuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]
-kde = stats.gaussian_kde(accuracy)
+#kde = stats.gaussian_kde(accuracy)
 # 绘制图像
 #plt.plot([-0.5,0.5], kde([-0.5,0.5]), label='accuracy')
 plt.hist(accuracy, bins=200, density=True)

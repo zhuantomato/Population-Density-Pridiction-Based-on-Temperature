@@ -1,0 +1,3226 @@
+[
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Polygon",
+        "importPath": "shapely.geometry",
+        "description": "shapely.geometry",
+        "isExtraImport": true,
+        "detail": "shapely.geometry",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "quote",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "urllib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib",
+        "description": "urllib",
+        "detail": "urllib",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "urllib",
+        "description": "urllib",
+        "isExtraImport": true,
+        "detail": "urllib",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "xlwt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "xlwt",
+        "description": "xlwt",
+        "detail": "xlwt",
+        "documentation": {}
+    },
+    {
+        "label": "gcj02_to_wgs84",
+        "importPath": "transCoordinateSystem",
+        "description": "transCoordinateSystem",
+        "isExtraImport": true,
+        "detail": "transCoordinateSystem",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "strftime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "asctime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "ctime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "gmtime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "mktime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "strftime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "asctime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "ctime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "gmtime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "mktime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "strftime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "asctime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "ctime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "gmtime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "mktime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "strftime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "asctime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "ctime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "gmtime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "mktime",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "tensorflow",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "cross_val_score",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "learning_curve",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "ShuffleSplit",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "scipy.stats",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scipy.stats",
+        "description": "scipy.stats",
+        "detail": "scipy.stats",
+        "documentation": {}
+    },
+    {
+        "label": "plot_model",
+        "importPath": "keras.utils",
+        "description": "keras.utils",
+        "isExtraImport": true,
+        "detail": "keras.utils",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "LinearRegression",
+        "importPath": "sklearn.linear_model",
+        "description": "sklearn.linear_model",
+        "isExtraImport": true,
+        "detail": "sklearn.linear_model",
+        "documentation": {}
+    },
+    {
+        "label": "MLPClassifier",
+        "importPath": "sklearn.neural_network",
+        "description": "sklearn.neural_network",
+        "isExtraImport": true,
+        "detail": "sklearn.neural_network",
+        "documentation": {}
+    },
+    {
+        "label": "folium",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "folium",
+        "description": "folium",
+        "detail": "folium",
+        "documentation": {}
+    },
+    {
+        "label": "LatLngPopup",
+        "importPath": "folium",
+        "description": "folium",
+        "isExtraImport": true,
+        "detail": "folium",
+        "documentation": {}
+    },
+    {
+        "label": "LatLngPopup",
+        "importPath": "folium",
+        "description": "folium",
+        "isExtraImport": true,
+        "detail": "folium",
+        "documentation": {}
+    },
+    {
+        "label": "codecs",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "codecs",
+        "description": "codecs",
+        "detail": "codecs",
+        "documentation": {}
+    },
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "st_folium",
+        "importPath": "streamlit_folium",
+        "description": "streamlit_folium",
+        "isExtraImport": true,
+        "detail": "streamlit_folium",
+        "documentation": {}
+    },
+    {
+        "label": "folium_static",
+        "importPath": "streamlit_folium",
+        "description": "streamlit_folium",
+        "isExtraImport": true,
+        "detail": "streamlit_folium",
+        "documentation": {}
+    },
+    {
+        "label": "folium_static",
+        "importPath": "streamlit_folium",
+        "description": "streamlit_folium",
+        "isExtraImport": true,
+        "detail": "streamlit_folium",
+        "documentation": {}
+    },
+    {
+        "label": "st_folium",
+        "importPath": "streamlit_folium",
+        "description": "streamlit_folium",
+        "isExtraImport": true,
+        "detail": "streamlit_folium",
+        "documentation": {}
+    },
+    {
+        "label": "GUI",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "GUI",
+        "description": "GUI",
+        "detail": "GUI",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "QApplication",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "QMainWindow",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
+        "label": "FigureCanvasQTAgg",
+        "importPath": "matplotlib.backends.backend_qt5agg",
+        "description": "matplotlib.backends.backend_qt5agg",
+        "isExtraImport": true,
+        "detail": "matplotlib.backends.backend_qt5agg",
+        "documentation": {}
+    },
+    {
+        "label": "Figure",
+        "importPath": "matplotlib.figure",
+        "description": "matplotlib.figure",
+        "isExtraImport": true,
+        "detail": "matplotlib.figure",
+        "documentation": {}
+    },
+    {
+        "label": "geopandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "geopandas",
+        "description": "geopandas",
+        "detail": "geopandas",
+        "documentation": {}
+    },
+    {
+        "label": "is_in_same_rect",
+        "kind": 2,
+        "importPath": "Crawler.getCluster",
+        "description": "Crawler.getCluster",
+        "peekOfCode": "def is_in_same_rect(x1, y1, x2, y2):\n  # 设置矩形的宽度和高度为0.01度\n  width = 0.01\n  height = 0.01\n  # 计算两个点的横向距离和纵向距离\n  dx = abs(x2 - x1)\n  dy = abs(y2 - y1)\n  # 如果两个点的横向距离小于等于宽度，并且纵向距离小于等于高度，就返回True，否则返回False\n  return dx <= width and dy <= height\n# 遍历所有的点的坐标值",
+        "detail": "Crawler.getCluster",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Crawler.getCluster",
+        "description": "Crawler.getCluster",
+        "peekOfCode": "df = pd.read_excel(\"Codes\\data.xls\")\n# 获取df中的经度和纬度列，并且转换成列表x和y\nx = df[\"x\"].tolist()\ny = df[\"y\"].tolist()\n# 创建一个空字典，用来存储矩形的坐标点和计数器\nwidth = 0.01\nheight = 0.01\nrect_dict = {}\n# 定义一个函数，用来判断两个点是否在同一个矩形范围内\ndef is_in_same_rect(x1, y1, x2, y2):",
+        "detail": "Crawler.getCluster",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Crawler.getCluster",
+        "description": "Crawler.getCluster",
+        "peekOfCode": "x = df[\"x\"].tolist()\ny = df[\"y\"].tolist()\n# 创建一个空字典，用来存储矩形的坐标点和计数器\nwidth = 0.01\nheight = 0.01\nrect_dict = {}\n# 定义一个函数，用来判断两个点是否在同一个矩形范围内\ndef is_in_same_rect(x1, y1, x2, y2):\n  # 设置矩形的宽度和高度为0.01度\n  width = 0.01",
+        "detail": "Crawler.getCluster",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Crawler.getCluster",
+        "description": "Crawler.getCluster",
+        "peekOfCode": "y = df[\"y\"].tolist()\n# 创建一个空字典，用来存储矩形的坐标点和计数器\nwidth = 0.01\nheight = 0.01\nrect_dict = {}\n# 定义一个函数，用来判断两个点是否在同一个矩形范围内\ndef is_in_same_rect(x1, y1, x2, y2):\n  # 设置矩形的宽度和高度为0.01度\n  width = 0.01\n  height = 0.01",
+        "detail": "Crawler.getCluster",
+        "documentation": {}
+    },
+    {
+        "label": "width",
+        "kind": 5,
+        "importPath": "Crawler.getCluster",
+        "description": "Crawler.getCluster",
+        "peekOfCode": "width = 0.01\nheight = 0.01\nrect_dict = {}\n# 定义一个函数，用来判断两个点是否在同一个矩形范围内\ndef is_in_same_rect(x1, y1, x2, y2):\n  # 设置矩形的宽度和高度为0.01度\n  width = 0.01\n  height = 0.01\n  # 计算两个点的横向距离和纵向距离\n  dx = abs(x2 - x1)",
+        "detail": "Crawler.getCluster",
+        "documentation": {}
+    },
+    {
+        "label": "height",
+        "kind": 5,
+        "importPath": "Crawler.getCluster",
+        "description": "Crawler.getCluster",
+        "peekOfCode": "height = 0.01\nrect_dict = {}\n# 定义一个函数，用来判断两个点是否在同一个矩形范围内\ndef is_in_same_rect(x1, y1, x2, y2):\n  # 设置矩形的宽度和高度为0.01度\n  width = 0.01\n  height = 0.01\n  # 计算两个点的横向距离和纵向距离\n  dx = abs(x2 - x1)\n  dy = abs(y2 - y1)",
+        "detail": "Crawler.getCluster",
+        "documentation": {}
+    },
+    {
+        "label": "rect_dict",
+        "kind": 5,
+        "importPath": "Crawler.getCluster",
+        "description": "Crawler.getCluster",
+        "peekOfCode": "rect_dict = {}\n# 定义一个函数，用来判断两个点是否在同一个矩形范围内\ndef is_in_same_rect(x1, y1, x2, y2):\n  # 设置矩形的宽度和高度为0.01度\n  width = 0.01\n  height = 0.01\n  # 计算两个点的横向距离和纵向距离\n  dx = abs(x2 - x1)\n  dy = abs(y2 - y1)\n  # 如果两个点的横向距离小于等于宽度，并且纵向距离小于等于高度，就返回True，否则返回False",
+        "detail": "Crawler.getCluster",
+        "documentation": {}
+    },
+    {
+        "label": "rect_list",
+        "kind": 5,
+        "importPath": "Crawler.getCluster",
+        "description": "Crawler.getCluster",
+        "peekOfCode": "rect_list = []\n# 遍历字典中的键（即矩形的坐标点）\nfor key in rect_dict:\n  # 将键分割成四个坐标值，并且转换成浮点数\n  y1, x1, y2, x2 = map(float, key.replace(\";\", \",\").split(\",\"))\n  # 创建一个多边形对象，表示矩形\n  rect = Polygon([(x1, y1), (x2, y1), (x2, y2), (x1, y2)])\n  # 初始化一个标志变量，表示当前矩形是否与已有的矩形重叠\n  overlap = False\n  # 遍历已有的矩形列表",
+        "detail": "Crawler.getCluster",
+        "documentation": {}
+    },
+    {
+        "label": "new_rect_dict",
+        "kind": 5,
+        "importPath": "Crawler.getCluster",
+        "description": "Crawler.getCluster",
+        "peekOfCode": "new_rect_dict = {}\n# 遍历不重复的矩形列表\nfor rect in rect_list:\n  # 获取矩形的边界值，即最小和最大的经度和纬度值，并且转换成字符串格式，纬度在前，经度在后，用分号和逗号分隔\n  key = \";\".join(map(str, [rect.bounds[1], rect.bounds[0], rect.bounds[3], rect.bounds[2]]))\n  # 获取原字典中对应键的值（即计数器），并且存储在新字典中\n  new_rect_dict[key] = rect_dict[key]\n# 导入csv模块，用来写入csv文件\nimport csv\n# 打开一个csv文件，以写入模式，并且指定编码为utf-8",
+        "detail": "Crawler.getCluster",
+        "documentation": {}
+    },
+    {
+        "label": "getpois",
+        "kind": 2,
+        "importPath": "Crawler.getPOIs",
+        "description": "Crawler.getPOIs",
+        "peekOfCode": "def getpois(cityname, keywords):\n    i = 1\n    poilist = []\n    while True:  # using while to continuous getting data\n        result = getpoi_page(cityname, keywords, i)\n        print(result)\n        result = json.loads(result)  # convert string to json\n        if result['count'] == '0':\n            break\n        hand(poilist, result)",
+        "detail": "Crawler.getPOIs",
+        "documentation": {}
+    },
+    {
+        "label": "write_to_excel",
+        "kind": 2,
+        "importPath": "Crawler.getPOIs",
+        "description": "Crawler.getPOIs",
+        "peekOfCode": "def write_to_excel(poilist, cityname, classfield):\n    # A Workbook object, which is equivalent to creating an Excel file\n    book = xlwt.Workbook(encoding='utf-8', style_compression=0)\n    sheet = book.add_sheet(classfield, cell_overwrite_ok=True)\n    # Headings\n    sheet.write(0, 0, 'x')\n    sheet.write(0, 1, 'y')\n    sheet.write(0, 2, 'count')\n    sheet.write(0, 3, 'name')\n    sheet.write(0, 4, 'address')",
+        "detail": "Crawler.getPOIs",
+        "documentation": {}
+    },
+    {
+        "label": "hand",
+        "kind": 2,
+        "importPath": "Crawler.getPOIs",
+        "description": "Crawler.getPOIs",
+        "peekOfCode": "def hand(poilist, result):\n    # result = json.loads(result)  # turning string to json\n    pois = result['pois']\n    for i in range(len(pois)):\n        poilist.append(pois[i])\n# get pois in a single page\ndef getpoi_page(cityname, keywords, page):\n    req_url = poi_search_url + \"?key=\" + amap_web_key + '&extensions=all&types=' + quote(\n        keywords) + '&city=' + quote(cityname) + '&citylimit=true' + '&offset=25' + '&page=' + str(\n        page) + '&output=json'",
+        "detail": "Crawler.getPOIs",
+        "documentation": {}
+    },
+    {
+        "label": "getpoi_page",
+        "kind": 2,
+        "importPath": "Crawler.getPOIs",
+        "description": "Crawler.getPOIs",
+        "peekOfCode": "def getpoi_page(cityname, keywords, page):\n    req_url = poi_search_url + \"?key=\" + amap_web_key + '&extensions=all&types=' + quote(\n        keywords) + '&city=' + quote(cityname) + '&citylimit=true' + '&offset=25' + '&page=' + str(\n        page) + '&output=json'\n    '''req_url = \"https://restapi.amap.com/v3/place/around?key=\" + amap_web_key + \"&location=116.473168,39.993015&radius=10000&types=011100\"'''\n    data = ''\n    with request.urlopen(req_url) as f:\n        data = f.read()\n        data = data.decode('utf-8')\n    return data",
+        "detail": "Crawler.getPOIs",
+        "documentation": {}
+    },
+    {
+        "label": "amap_web_key",
+        "kind": 5,
+        "importPath": "Crawler.getPOIs",
+        "description": "Crawler.getPOIs",
+        "peekOfCode": "amap_web_key = 'd7620288fea4be1bf89de3d32c0bf3b4'\npoi_search_url = \"http://restapi.amap.com/v3/place/text\"\npoi_boundary_url = \"https://ditu.amap.com/detail/get/detail\"\nfrom transCoordinateSystem import gcj02_to_wgs84\n# cityname is the city name of the POI to be crawled, \n# city_areas is the administrative area under the city,\n# classes is the set of multiple POI categories.\ncityname = '贵阳市'\ncity_areas = ['花溪区']\nclasses = ['050000']",
+        "detail": "Crawler.getPOIs",
+        "documentation": {}
+    },
+    {
+        "label": "poi_search_url",
+        "kind": 5,
+        "importPath": "Crawler.getPOIs",
+        "description": "Crawler.getPOIs",
+        "peekOfCode": "poi_search_url = \"http://restapi.amap.com/v3/place/text\"\npoi_boundary_url = \"https://ditu.amap.com/detail/get/detail\"\nfrom transCoordinateSystem import gcj02_to_wgs84\n# cityname is the city name of the POI to be crawled, \n# city_areas is the administrative area under the city,\n# classes is the set of multiple POI categories.\ncityname = '贵阳市'\ncity_areas = ['花溪区']\nclasses = ['050000']\n# Get poi data based on city name and category keywords",
+        "detail": "Crawler.getPOIs",
+        "documentation": {}
+    },
+    {
+        "label": "poi_boundary_url",
+        "kind": 5,
+        "importPath": "Crawler.getPOIs",
+        "description": "Crawler.getPOIs",
+        "peekOfCode": "poi_boundary_url = \"https://ditu.amap.com/detail/get/detail\"\nfrom transCoordinateSystem import gcj02_to_wgs84\n# cityname is the city name of the POI to be crawled, \n# city_areas is the administrative area under the city,\n# classes is the set of multiple POI categories.\ncityname = '贵阳市'\ncity_areas = ['花溪区']\nclasses = ['050000']\n# Get poi data based on city name and category keywords\ndef getpois(cityname, keywords):",
+        "detail": "Crawler.getPOIs",
+        "documentation": {}
+    },
+    {
+        "label": "cityname",
+        "kind": 5,
+        "importPath": "Crawler.getPOIs",
+        "description": "Crawler.getPOIs",
+        "peekOfCode": "cityname = '贵阳市'\ncity_areas = ['花溪区']\nclasses = ['050000']\n# Get poi data based on city name and category keywords\ndef getpois(cityname, keywords):\n    i = 1\n    poilist = []\n    while True:  # using while to continuous getting data\n        result = getpoi_page(cityname, keywords, i)\n        print(result)",
+        "detail": "Crawler.getPOIs",
+        "documentation": {}
+    },
+    {
+        "label": "city_areas",
+        "kind": 5,
+        "importPath": "Crawler.getPOIs",
+        "description": "Crawler.getPOIs",
+        "peekOfCode": "city_areas = ['花溪区']\nclasses = ['050000']\n# Get poi data based on city name and category keywords\ndef getpois(cityname, keywords):\n    i = 1\n    poilist = []\n    while True:  # using while to continuous getting data\n        result = getpoi_page(cityname, keywords, i)\n        print(result)\n        result = json.loads(result)  # convert string to json",
+        "detail": "Crawler.getPOIs",
+        "documentation": {}
+    },
+    {
+        "label": "classes",
+        "kind": 5,
+        "importPath": "Crawler.getPOIs",
+        "description": "Crawler.getPOIs",
+        "peekOfCode": "classes = ['050000']\n# Get poi data based on city name and category keywords\ndef getpois(cityname, keywords):\n    i = 1\n    poilist = []\n    while True:  # using while to continuous getting data\n        result = getpoi_page(cityname, keywords, i)\n        print(result)\n        result = json.loads(result)  # convert string to json\n        if result['count'] == '0':",
+        "detail": "Crawler.getPOIs",
+        "documentation": {}
+    },
+    {
+        "label": "fers",
+        "kind": 2,
+        "importPath": "Crawler.getRoadCon",
+        "description": "Crawler.getRoadCon",
+        "peekOfCode": "def fers(road_name): \n    city = '北京市'      \n    ak = 'pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG'        \n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)          #爬过数据的人应该都知道这是什么东西吧，哈哈\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) #returning data\n    decodejson=json.loads(re.text)\n    road_traffic_s=decodejson['road_traffic'][0]      #get traffic status                       \n    v=road_traffic_s['congestion_sections']\n    curr_time=datetime.datetime.now()",
+        "detail": "Crawler.getRoadCon",
+        "documentation": {}
+    },
+    {
+        "label": "es",
+        "kind": 2,
+        "importPath": "Crawler.getRoadCon",
+        "description": "Crawler.getRoadCon",
+        "peekOfCode": "def es(road_name,i):\n    city = '北京市'\n    ak = 'pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG'\n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) \n    res=re.json() \n    decodejson = json.loads(re.text)\n    description=decodejson['description']         #overall description\n    evaluation=decodejson['evaluation']     #overall status",
+        "detail": "Crawler.getRoadCon",
+        "documentation": {}
+    },
+    {
+        "label": "get_page",
+        "kind": 2,
+        "importPath": "Crawler.getRoadCon",
+        "description": "Crawler.getRoadCon",
+        "peekOfCode": "def get_page(road_name,i):\n    city = '北京市'\n    s=fers(road_name)\n    if not os.path.exists('Outputs\\Beijing'+str(i)+'Jam.csv'):\n           s.to_csv('Outputs\\Beijing'+str(i)+'Jam.csv',encoding='gbk',mode='a',index=False,index_label=False)\n    else:\n            s.to_csv('Outputs\\Beijing'+str(i)+'Jam.csv', encoding='gbk', mode='a', index=False, index_label=False,header=False)\n#crawling every 5 mins\nwhile True:\n    if __name__ == '__main__':",
+        "detail": "Crawler.getRoadCon",
+        "documentation": {}
+    },
+    {
+        "label": "fers",
+        "kind": 2,
+        "importPath": "Crawler.getRoadCon_GY",
+        "description": "Crawler.getRoadCon_GY",
+        "peekOfCode": "def fers(road_name): \n    city = '贵阳市'\n    ak = 'OtL3SspkTlxA5jYCZ2DxbSxEL91mlHVP'      \n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)          #爬过数据的人应该都知道这是什么东西吧，哈哈\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) #returning data\n    decodejson=json.loads(re.text)\n    road_traffic_s=decodejson['road_traffic'][0]      #get traffic status                       \n    v=road_traffic_s['congestion_sections']\n    curr_time=datetime.datetime.now()",
+        "detail": "Crawler.getRoadCon_GY",
+        "documentation": {}
+    },
+    {
+        "label": "es",
+        "kind": 2,
+        "importPath": "Crawler.getRoadCon_GY",
+        "description": "Crawler.getRoadCon_GY",
+        "peekOfCode": "def es(road_name,i):\n    city = '贵阳市'\n    ak = 'OtL3SspkTlxA5jYCZ2DxbSxEL91mlHVP'\n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) \n    res=re.json() \n    decodejson = json.loads(re.text)\n    description=decodejson['description']         #overall description\n    evaluation=decodejson['evaluation']     #overall status",
+        "detail": "Crawler.getRoadCon_GY",
+        "documentation": {}
+    },
+    {
+        "label": "get_page",
+        "kind": 2,
+        "importPath": "Crawler.getRoadCon_GY",
+        "description": "Crawler.getRoadCon_GY",
+        "peekOfCode": "def get_page(road_name,i):\n    city = '贵阳市'\n    s=fers(road_name)\n    if not os.path.exists('Outputs\\Guiyang'+str(i)+'Jam.csv'):\n           s.to_csv('Outputs\\Guiyang'+str(i)+'Jam.csv',encoding='gbk',mode='a',index=False,index_label=False)\n    else:\n            s.to_csv('Outputs\\Guiyang'+str(i)+'Jam.csv', encoding='gbk', mode='a', index=False, index_label=False,header=False)\n#crawling every 5 mins\nwhile True:\n    if __name__ == '__main__':",
+        "detail": "Crawler.getRoadCon_GY",
+        "documentation": {}
+    },
+    {
+        "label": "fers",
+        "kind": 2,
+        "importPath": "Crawler.getRoadCon_HEB",
+        "description": "Crawler.getRoadCon_HEB",
+        "peekOfCode": "def fers(road_name): \n    city = '哈尔滨市'\n    ak = '44yUvacNwA5kkSvGG7sTwnaKBDPGHynN'      \n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)          #爬过数据的人应该都知道这是什么东西吧，哈哈\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) #returning data\n    decodejson=json.loads(re.text)\n    road_traffic_s=decodejson['road_traffic'][0]      #get traffic status                       \n    v=road_traffic_s['congestion_sections']\n    curr_time=datetime.datetime.now()",
+        "detail": "Crawler.getRoadCon_HEB",
+        "documentation": {}
+    },
+    {
+        "label": "es",
+        "kind": 2,
+        "importPath": "Crawler.getRoadCon_HEB",
+        "description": "Crawler.getRoadCon_HEB",
+        "peekOfCode": "def es(road_name,i):\n    city = '哈尔滨市'\n    ak = '44yUvacNwA5kkSvGG7sTwnaKBDPGHynN'\n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) \n    res=re.json() \n    decodejson = json.loads(re.text)\n    description=decodejson['description']         #overall description\n    evaluation=decodejson['evaluation']     #overall status",
+        "detail": "Crawler.getRoadCon_HEB",
+        "documentation": {}
+    },
+    {
+        "label": "get_page",
+        "kind": 2,
+        "importPath": "Crawler.getRoadCon_HEB",
+        "description": "Crawler.getRoadCon_HEB",
+        "peekOfCode": "def get_page(road_name,i):\n    city = '哈尔滨市'\n    s=fers(road_name)\n    if not os.path.exists('Outputs\\HaErBin'+str(i)+'Jam.csv'):\n           s.to_csv('Outputs\\HaErBin'+str(i)+'Jam.csv',encoding='gbk',mode='a',index=False,index_label=False)\n    else:\n            s.to_csv('Outputs\\HaErBin'+str(i)+'Jam.csv', encoding='gbk', mode='a', index=False, index_label=False,header=False)\n#crawling every 5 mins\nwhile True:\n    if __name__ == '__main__':",
+        "detail": "Crawler.getRoadCon_HEB",
+        "documentation": {}
+    },
+    {
+        "label": "fers",
+        "kind": 2,
+        "importPath": "Crawler.getRoadCon_HK",
+        "description": "Crawler.getRoadCon_HK",
+        "peekOfCode": "def fers(road_name): \n    city = '海口市'      \n    ak = 'pYXwBQyGeD9LSApqsDnYTPPBz3RGo3Yx'        \n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)          #爬过数据的人应该都知道这是什么东西吧，哈哈\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) #returning data\n    decodejson=json.loads(re.text)\n    road_traffic_s=decodejson['road_traffic'][0]      #get traffic status                       \n    v=road_traffic_s['congestion_sections']\n    curr_time=datetime.datetime.now()",
+        "detail": "Crawler.getRoadCon_HK",
+        "documentation": {}
+    },
+    {
+        "label": "es",
+        "kind": 2,
+        "importPath": "Crawler.getRoadCon_HK",
+        "description": "Crawler.getRoadCon_HK",
+        "peekOfCode": "def es(road_name,i):\n    city = '海口市'\n    ak = 'pYXwBQyGeD9LSApqsDnYTPPBz3RGo3Yx'\n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) \n    res=re.json() \n    decodejson = json.loads(re.text)\n    description=decodejson['description']         #overall description\n    evaluation=decodejson['evaluation']     #overall status",
+        "detail": "Crawler.getRoadCon_HK",
+        "documentation": {}
+    },
+    {
+        "label": "get_page",
+        "kind": 2,
+        "importPath": "Crawler.getRoadCon_HK",
+        "description": "Crawler.getRoadCon_HK",
+        "peekOfCode": "def get_page(road_name,i):\n    city = '海口市'\n    s=fers(road_name)\n    if not os.path.exists('Outputs\\Haikou'+str(i)+'Jam.csv'):\n           s.to_csv('Outputs\\Haikou'+str(i)+'Jam.csv',encoding='gbk',mode='a',index=False,index_label=False)\n    else:\n            s.to_csv('Outputs\\Haikou'+str(i)+'Jam.csv', encoding='gbk', mode='a', index=False, index_label=False,header=False)\n#crawling every 5 mins\nwhile True:\n    if __name__ == '__main__':",
+        "detail": "Crawler.getRoadCon_HK",
+        "documentation": {}
+    },
+    {
+        "label": "ak",
+        "kind": 5,
+        "importPath": "Crawler.getWeather",
+        "description": "Crawler.getWeather",
+        "peekOfCode": "ak = \"d7620288fea4be1bf89de3d32c0bf3b4\"\n# 定义城市编码的列表\ncities = [\"110000\", \"520100\", \"230100\", \"460100\"] # 北京市、贵阳市、哈尔滨市、海口市\n# 定义查询间隔为10分钟（600秒）\ninterval = 1200\n# 使用while循环来重复执行查询和写入操作\nwhile True:\n    # 使用for循环来遍历每个城市编码\n    for city in cities:\n        # 构造请求URL",
+        "detail": "Crawler.getWeather",
+        "documentation": {}
+    },
+    {
+        "label": "cities",
+        "kind": 5,
+        "importPath": "Crawler.getWeather",
+        "description": "Crawler.getWeather",
+        "peekOfCode": "cities = [\"110000\", \"520100\", \"230100\", \"460100\"] # 北京市、贵阳市、哈尔滨市、海口市\n# 定义查询间隔为10分钟（600秒）\ninterval = 1200\n# 使用while循环来重复执行查询和写入操作\nwhile True:\n    # 使用for循环来遍历每个城市编码\n    for city in cities:\n        # 构造请求URL\n        url = f\"https://restapi.amap.com/v3/weather/weatherInfo?key={ak}&city={city}\"\n        # 发送GET请求并获取响应",
+        "detail": "Crawler.getWeather",
+        "documentation": {}
+    },
+    {
+        "label": "interval",
+        "kind": 5,
+        "importPath": "Crawler.getWeather",
+        "description": "Crawler.getWeather",
+        "peekOfCode": "interval = 1200\n# 使用while循环来重复执行查询和写入操作\nwhile True:\n    # 使用for循环来遍历每个城市编码\n    for city in cities:\n        # 构造请求URL\n        url = f\"https://restapi.amap.com/v3/weather/weatherInfo?key={ak}&city={city}\"\n        # 发送GET请求并获取响应\n        response = requests.get(url)\n        # 解析响应数据为JSON格式",
+        "detail": "Crawler.getWeather",
+        "documentation": {}
+    },
+    {
+        "label": "ak",
+        "kind": 5,
+        "importPath": "Crawler.RdCon_NewBing",
+        "description": "Crawler.RdCon_NewBing",
+        "peekOfCode": "ak = \"pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG\"\nbounds = \"39.905,116.371;39.909,116.377\"\nfilename = \"traffic_data.csv\"\ninterval = 10 * 60\nduration = 10#24 * 60 * 60\nstart_time = time.time()\nwith open(filename, \"w\", newline=\"\") as f:\n    writer = csv.writer(f)\n    writer.writerow([\"fetch_time\", \"road_name\", \"road_length\", \"road_speed\", \"congestion_status\"])\n    while time.time() < start_time + duration:",
+        "detail": "Crawler.RdCon_NewBing",
+        "documentation": {}
+    },
+    {
+        "label": "bounds",
+        "kind": 5,
+        "importPath": "Crawler.RdCon_NewBing",
+        "description": "Crawler.RdCon_NewBing",
+        "peekOfCode": "bounds = \"39.905,116.371;39.909,116.377\"\nfilename = \"traffic_data.csv\"\ninterval = 10 * 60\nduration = 10#24 * 60 * 60\nstart_time = time.time()\nwith open(filename, \"w\", newline=\"\") as f:\n    writer = csv.writer(f)\n    writer.writerow([\"fetch_time\", \"road_name\", \"road_length\", \"road_speed\", \"congestion_status\"])\n    while time.time() < start_time + duration:\n        url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}&coord_type_input=gcj02&coord_type_output=gcj02\"",
+        "detail": "Crawler.RdCon_NewBing",
+        "documentation": {}
+    },
+    {
+        "label": "filename",
+        "kind": 5,
+        "importPath": "Crawler.RdCon_NewBing",
+        "description": "Crawler.RdCon_NewBing",
+        "peekOfCode": "filename = \"traffic_data.csv\"\ninterval = 10 * 60\nduration = 10#24 * 60 * 60\nstart_time = time.time()\nwith open(filename, \"w\", newline=\"\") as f:\n    writer = csv.writer(f)\n    writer.writerow([\"fetch_time\", \"road_name\", \"road_length\", \"road_speed\", \"congestion_status\"])\n    while time.time() < start_time + duration:\n        url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}&coord_type_input=gcj02&coord_type_output=gcj02\"\n        response = requests.get(url)",
+        "detail": "Crawler.RdCon_NewBing",
+        "documentation": {}
+    },
+    {
+        "label": "interval",
+        "kind": 5,
+        "importPath": "Crawler.RdCon_NewBing",
+        "description": "Crawler.RdCon_NewBing",
+        "peekOfCode": "interval = 10 * 60\nduration = 10#24 * 60 * 60\nstart_time = time.time()\nwith open(filename, \"w\", newline=\"\") as f:\n    writer = csv.writer(f)\n    writer.writerow([\"fetch_time\", \"road_name\", \"road_length\", \"road_speed\", \"congestion_status\"])\n    while time.time() < start_time + duration:\n        url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}&coord_type_input=gcj02&coord_type_output=gcj02\"\n        response = requests.get(url)\n        if response.status_code == 200:",
+        "detail": "Crawler.RdCon_NewBing",
+        "documentation": {}
+    },
+    {
+        "label": "duration",
+        "kind": 5,
+        "importPath": "Crawler.RdCon_NewBing",
+        "description": "Crawler.RdCon_NewBing",
+        "peekOfCode": "duration = 10#24 * 60 * 60\nstart_time = time.time()\nwith open(filename, \"w\", newline=\"\") as f:\n    writer = csv.writer(f)\n    writer.writerow([\"fetch_time\", \"road_name\", \"road_length\", \"road_speed\", \"congestion_status\"])\n    while time.time() < start_time + duration:\n        url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}&coord_type_input=gcj02&coord_type_output=gcj02\"\n        response = requests.get(url)\n        if response.status_code == 200:\n            data = json.loads(response.text)",
+        "detail": "Crawler.RdCon_NewBing",
+        "documentation": {}
+    },
+    {
+        "label": "start_time",
+        "kind": 5,
+        "importPath": "Crawler.RdCon_NewBing",
+        "description": "Crawler.RdCon_NewBing",
+        "peekOfCode": "start_time = time.time()\nwith open(filename, \"w\", newline=\"\") as f:\n    writer = csv.writer(f)\n    writer.writerow([\"fetch_time\", \"road_name\", \"road_length\", \"road_speed\", \"congestion_status\"])\n    while time.time() < start_time + duration:\n        url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}&coord_type_input=gcj02&coord_type_output=gcj02\"\n        response = requests.get(url)\n        if response.status_code == 200:\n            data = json.loads(response.text)\n            if data[\"status\"] == 0:",
+        "detail": "Crawler.RdCon_NewBing",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_center",
+        "kind": 2,
+        "importPath": "Modelling.DataPreprocess.CenterPoints",
+        "description": "Modelling.DataPreprocess.CenterPoints",
+        "peekOfCode": "def calculate_center(bounds):\n    # 将字符串经纬度分割为两个列表\n    left_bottom_lng_lat = bounds.split(';')[0].split(',')\n    right_top_lng_lat = bounds.split(';')[1].split(',')\n    # 计算中心点经纬度\n    center_lng = (float(left_bottom_lng_lat[0]) + float(right_top_lng_lat[0])) / 2\n    center_lat = (float(left_bottom_lng_lat[1]) + float(right_top_lng_lat[1])) / 2\n    # 保留小数点后6位\n    center_lng = round(center_lng, 6)\n    center_lat = round(center_lat, 6)",
+        "detail": "Modelling.DataPreprocess.CenterPoints",
+        "documentation": {}
+    },
+    {
+        "label": "beijing_bounds",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.CenterPoints",
+        "description": "Modelling.DataPreprocess.CenterPoints",
+        "peekOfCode": "beijing_bounds = ['39.914614,116.446179;39.924614,116.456179', '39.987258,116.479573;39.997258,116.489573', '39.875608,116.461821;39.885608,116.471821']\nguiyang_bounds = ['26.58033,106.715074;26.59033,106.725074', '26.581553,106.702252;26.591553,106.712252', '26.595023,106.706234;26.605023,106.716234']\nhaerbin_bounds = ['45.76729,126.619968;45.77729,126.629968', '45.762358,126.650482;45.772358,126.660482', '45.75104,126.65113;45.76104,126.66113']\nhaikou_bounds = ['20.030734,110.317357;20.040734,110.327357', '20.034288,110.347809;20.044288,110.357809', '20.038505,110.336464;20.048505,110.346464']\n# 定义函数，用于计算经纬度范围的中心点\ndef calculate_center(bounds):\n    # 将字符串经纬度分割为两个列表\n    left_bottom_lng_lat = bounds.split(';')[0].split(',')\n    right_top_lng_lat = bounds.split(';')[1].split(',')\n    # 计算中心点经纬度",
+        "detail": "Modelling.DataPreprocess.CenterPoints",
+        "documentation": {}
+    },
+    {
+        "label": "guiyang_bounds",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.CenterPoints",
+        "description": "Modelling.DataPreprocess.CenterPoints",
+        "peekOfCode": "guiyang_bounds = ['26.58033,106.715074;26.59033,106.725074', '26.581553,106.702252;26.591553,106.712252', '26.595023,106.706234;26.605023,106.716234']\nhaerbin_bounds = ['45.76729,126.619968;45.77729,126.629968', '45.762358,126.650482;45.772358,126.660482', '45.75104,126.65113;45.76104,126.66113']\nhaikou_bounds = ['20.030734,110.317357;20.040734,110.327357', '20.034288,110.347809;20.044288,110.357809', '20.038505,110.336464;20.048505,110.346464']\n# 定义函数，用于计算经纬度范围的中心点\ndef calculate_center(bounds):\n    # 将字符串经纬度分割为两个列表\n    left_bottom_lng_lat = bounds.split(';')[0].split(',')\n    right_top_lng_lat = bounds.split(';')[1].split(',')\n    # 计算中心点经纬度\n    center_lng = (float(left_bottom_lng_lat[0]) + float(right_top_lng_lat[0])) / 2",
+        "detail": "Modelling.DataPreprocess.CenterPoints",
+        "documentation": {}
+    },
+    {
+        "label": "haerbin_bounds",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.CenterPoints",
+        "description": "Modelling.DataPreprocess.CenterPoints",
+        "peekOfCode": "haerbin_bounds = ['45.76729,126.619968;45.77729,126.629968', '45.762358,126.650482;45.772358,126.660482', '45.75104,126.65113;45.76104,126.66113']\nhaikou_bounds = ['20.030734,110.317357;20.040734,110.327357', '20.034288,110.347809;20.044288,110.357809', '20.038505,110.336464;20.048505,110.346464']\n# 定义函数，用于计算经纬度范围的中心点\ndef calculate_center(bounds):\n    # 将字符串经纬度分割为两个列表\n    left_bottom_lng_lat = bounds.split(';')[0].split(',')\n    right_top_lng_lat = bounds.split(';')[1].split(',')\n    # 计算中心点经纬度\n    center_lng = (float(left_bottom_lng_lat[0]) + float(right_top_lng_lat[0])) / 2\n    center_lat = (float(left_bottom_lng_lat[1]) + float(right_top_lng_lat[1])) / 2",
+        "detail": "Modelling.DataPreprocess.CenterPoints",
+        "documentation": {}
+    },
+    {
+        "label": "haikou_bounds",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.CenterPoints",
+        "description": "Modelling.DataPreprocess.CenterPoints",
+        "peekOfCode": "haikou_bounds = ['20.030734,110.317357;20.040734,110.327357', '20.034288,110.347809;20.044288,110.357809', '20.038505,110.336464;20.048505,110.346464']\n# 定义函数，用于计算经纬度范围的中心点\ndef calculate_center(bounds):\n    # 将字符串经纬度分割为两个列表\n    left_bottom_lng_lat = bounds.split(';')[0].split(',')\n    right_top_lng_lat = bounds.split(';')[1].split(',')\n    # 计算中心点经纬度\n    center_lng = (float(left_bottom_lng_lat[0]) + float(right_top_lng_lat[0])) / 2\n    center_lat = (float(left_bottom_lng_lat[1]) + float(right_top_lng_lat[1])) / 2\n    # 保留小数点后6位",
+        "detail": "Modelling.DataPreprocess.CenterPoints",
+        "documentation": {}
+    },
+    {
+        "label": "beijing_center_list",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.CenterPoints",
+        "description": "Modelling.DataPreprocess.CenterPoints",
+        "peekOfCode": "beijing_center_list = []\nguiyang_center_list = []\nhaerbin_center_list = []\nhaikou_center_list = []\n# 计算北京经纬度范围的中心点\nfor bounds in beijing_bounds:\n    beijing_center_list.append(calculate_center(bounds))\n# 计算贵阳经纬度范围的中心点\nfor bounds in guiyang_bounds:\n    guiyang_center_list.append(calculate_center(bounds))",
+        "detail": "Modelling.DataPreprocess.CenterPoints",
+        "documentation": {}
+    },
+    {
+        "label": "guiyang_center_list",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.CenterPoints",
+        "description": "Modelling.DataPreprocess.CenterPoints",
+        "peekOfCode": "guiyang_center_list = []\nhaerbin_center_list = []\nhaikou_center_list = []\n# 计算北京经纬度范围的中心点\nfor bounds in beijing_bounds:\n    beijing_center_list.append(calculate_center(bounds))\n# 计算贵阳经纬度范围的中心点\nfor bounds in guiyang_bounds:\n    guiyang_center_list.append(calculate_center(bounds))\n# 计算哈尔滨经纬度范围的中心点",
+        "detail": "Modelling.DataPreprocess.CenterPoints",
+        "documentation": {}
+    },
+    {
+        "label": "haerbin_center_list",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.CenterPoints",
+        "description": "Modelling.DataPreprocess.CenterPoints",
+        "peekOfCode": "haerbin_center_list = []\nhaikou_center_list = []\n# 计算北京经纬度范围的中心点\nfor bounds in beijing_bounds:\n    beijing_center_list.append(calculate_center(bounds))\n# 计算贵阳经纬度范围的中心点\nfor bounds in guiyang_bounds:\n    guiyang_center_list.append(calculate_center(bounds))\n# 计算哈尔滨经纬度范围的中心点\nfor bounds in haerbin_bounds:",
+        "detail": "Modelling.DataPreprocess.CenterPoints",
+        "documentation": {}
+    },
+    {
+        "label": "haikou_center_list",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.CenterPoints",
+        "description": "Modelling.DataPreprocess.CenterPoints",
+        "peekOfCode": "haikou_center_list = []\n# 计算北京经纬度范围的中心点\nfor bounds in beijing_bounds:\n    beijing_center_list.append(calculate_center(bounds))\n# 计算贵阳经纬度范围的中心点\nfor bounds in guiyang_bounds:\n    guiyang_center_list.append(calculate_center(bounds))\n# 计算哈尔滨经纬度范围的中心点\nfor bounds in haerbin_bounds:\n    haerbin_center_list.append(calculate_center(bounds))",
+        "detail": "Modelling.DataPreprocess.CenterPoints",
+        "documentation": {}
+    },
+    {
+        "label": "city_list",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.DataTransform",
+        "description": "Modelling.DataPreprocess.DataTransform",
+        "peekOfCode": "city_list = ['Beijing','Guiyang','HaErBin','Haikou']\nfor city in city_list: \n    for i in range(1,4): \n        dataset1 = 'Crawler\\Outputs\\%s%s.csv' % (city, i)\n        dataset2 = 'Crawler\\Outputs\\%s%sJam.csv' % (city, i)\n        output = 'Modelling\\DataPreprocess\\MeanTraffic\\%s%sMean.csv' % (city, i)\n        data1 = pd.read_csv(dataset1, encoding='gbk',usecols=['时间', 'status'])\n        data2 = pd.read_csv(dataset2, encoding='gbk', usecols=['time', 'status'])\n        # 将时间列转换为Pandas的日期时间类型\n        data1['time'] = pd.to_datetime(data1['时间']).dt.floor('min')",
+        "detail": "Modelling.DataPreprocess.DataTransform",
+        "documentation": {}
+    },
+    {
+        "label": "beijing_bounds",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "beijing_bounds = [(39.919614, 116.451179), (39.992258, 116.484573), (39.880608, 116.466821)]\nguiyang_bounds = [(26.58533, 106.720074), (26.586553, 106.707252), (26.600023, 106.711234)]\nhaerbin_bounds = [(45.77229, 126.624968), (45.767358, 126.655482), (45.75604, 126.65613)]\nhaikou_bounds = [(20.035734, 110.322357), (20.039288, 110.352809), (20.043505, 110.341464)]\n# 定义城市列表和对应的经纬度范围\ncities = ['Beijing', 'Guiyang', 'HaErBin', 'Haikou']\nbounds = [beijing_bounds, guiyang_bounds, haerbin_bounds, haikou_bounds]\n# 读取交通数据\ntraffic_data = []\nfor i in range(len(cities)):",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "guiyang_bounds",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "guiyang_bounds = [(26.58533, 106.720074), (26.586553, 106.707252), (26.600023, 106.711234)]\nhaerbin_bounds = [(45.77229, 126.624968), (45.767358, 126.655482), (45.75604, 126.65613)]\nhaikou_bounds = [(20.035734, 110.322357), (20.039288, 110.352809), (20.043505, 110.341464)]\n# 定义城市列表和对应的经纬度范围\ncities = ['Beijing', 'Guiyang', 'HaErBin', 'Haikou']\nbounds = [beijing_bounds, guiyang_bounds, haerbin_bounds, haikou_bounds]\n# 读取交通数据\ntraffic_data = []\nfor i in range(len(cities)):\n    city = cities[i]",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "haerbin_bounds",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "haerbin_bounds = [(45.77229, 126.624968), (45.767358, 126.655482), (45.75604, 126.65613)]\nhaikou_bounds = [(20.035734, 110.322357), (20.039288, 110.352809), (20.043505, 110.341464)]\n# 定义城市列表和对应的经纬度范围\ncities = ['Beijing', 'Guiyang', 'HaErBin', 'Haikou']\nbounds = [beijing_bounds, guiyang_bounds, haerbin_bounds, haikou_bounds]\n# 读取交通数据\ntraffic_data = []\nfor i in range(len(cities)):\n    city = cities[i]\n    for j in range(1, 4):",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "haikou_bounds",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "haikou_bounds = [(20.035734, 110.322357), (20.039288, 110.352809), (20.043505, 110.341464)]\n# 定义城市列表和对应的经纬度范围\ncities = ['Beijing', 'Guiyang', 'HaErBin', 'Haikou']\nbounds = [beijing_bounds, guiyang_bounds, haerbin_bounds, haikou_bounds]\n# 读取交通数据\ntraffic_data = []\nfor i in range(len(cities)):\n    city = cities[i]\n    for j in range(1, 4):\n        bounds_str = bounds[i][j-1]",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "cities",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "cities = ['Beijing', 'Guiyang', 'HaErBin', 'Haikou']\nbounds = [beijing_bounds, guiyang_bounds, haerbin_bounds, haikou_bounds]\n# 读取交通数据\ntraffic_data = []\nfor i in range(len(cities)):\n    city = cities[i]\n    for j in range(1, 4):\n        bounds_str = bounds[i][j-1]\n        filename = 'Modelling\\DataPreprocess\\MeanTraffic\\\\' + city + str(j) + 'Mean.csv'\n        df = pd.read_csv(filename)",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "bounds",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "bounds = [beijing_bounds, guiyang_bounds, haerbin_bounds, haikou_bounds]\n# 读取交通数据\ntraffic_data = []\nfor i in range(len(cities)):\n    city = cities[i]\n    for j in range(1, 4):\n        bounds_str = bounds[i][j-1]\n        filename = 'Modelling\\DataPreprocess\\MeanTraffic\\\\' + city + str(j) + 'Mean.csv'\n        df = pd.read_csv(filename)\n        df['location'] = city",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "traffic_data",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "traffic_data = []\nfor i in range(len(cities)):\n    city = cities[i]\n    for j in range(1, 4):\n        bounds_str = bounds[i][j-1]\n        filename = 'Modelling\\DataPreprocess\\MeanTraffic\\\\' + city + str(j) + 'Mean.csv'\n        df = pd.read_csv(filename)\n        df['location'] = city\n        df['latitude'] = bounds_str[0]\n        df['longitude'] = bounds_str[1]",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "traffic_data",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "traffic_data = pd.concat(traffic_data)\n# 读取温度数据\ntemperature_data = []\nfor city in ['Beijing', 'Guiyang', 'HaErBin', 'Haikou']:\n    filename = 'Modelling\\DataPreprocess\\Weather\\\\' +city + '.csv'\n    df = pd.read_csv(filename, header=None, names=['weather', 'temperature', 'time'],encoding='gbk')\n    df['location'] = city\n    temperature_data.append(df)\ntemperature_data = pd.concat(temperature_data)\n# 合并数据",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "temperature_data",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "temperature_data = []\nfor city in ['Beijing', 'Guiyang', 'HaErBin', 'Haikou']:\n    filename = 'Modelling\\DataPreprocess\\Weather\\\\' +city + '.csv'\n    df = pd.read_csv(filename, header=None, names=['weather', 'temperature', 'time'],encoding='gbk')\n    df['location'] = city\n    temperature_data.append(df)\ntemperature_data = pd.concat(temperature_data)\n# 合并数据\ntraffic_data['time'] = pd.to_datetime(traffic_data['time'])\ntemperature_data['time'] = pd.to_datetime(temperature_data['time'])",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "temperature_data",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "temperature_data = pd.concat(temperature_data)\n# 合并数据\ntraffic_data['time'] = pd.to_datetime(traffic_data['time'])\ntemperature_data['time'] = pd.to_datetime(temperature_data['time'])\ntraffic_data = traffic_data.sort_values(['time'])\ntemperature_data = temperature_data.sort_values(['time'])\ndata = pd.merge_asof(traffic_data, temperature_data, on='time', by='location', tolerance=pd.Timedelta('30min'))\ndata['status'] = data['status'].round(5)\n# 处理时间数据\ndata['time'] = pd.to_datetime(data['time'])",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "traffic_data['time']",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "traffic_data['time'] = pd.to_datetime(traffic_data['time'])\ntemperature_data['time'] = pd.to_datetime(temperature_data['time'])\ntraffic_data = traffic_data.sort_values(['time'])\ntemperature_data = temperature_data.sort_values(['time'])\ndata = pd.merge_asof(traffic_data, temperature_data, on='time', by='location', tolerance=pd.Timedelta('30min'))\ndata['status'] = data['status'].round(5)\n# 处理时间数据\ndata['time'] = pd.to_datetime(data['time'])\ndata['is_weekend'] = data['time'].apply(lambda x: 1 if x.weekday()>=5 else 0)\ndata['hour'] = data['time'].dt.hour",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "temperature_data['time']",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "temperature_data['time'] = pd.to_datetime(temperature_data['time'])\ntraffic_data = traffic_data.sort_values(['time'])\ntemperature_data = temperature_data.sort_values(['time'])\ndata = pd.merge_asof(traffic_data, temperature_data, on='time', by='location', tolerance=pd.Timedelta('30min'))\ndata['status'] = data['status'].round(5)\n# 处理时间数据\ndata['time'] = pd.to_datetime(data['time'])\ndata['is_weekend'] = data['time'].apply(lambda x: 1 if x.weekday()>=5 else 0)\ndata['hour'] = data['time'].dt.hour\ndata = data.drop(['time'], axis=1)",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "traffic_data",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "traffic_data = traffic_data.sort_values(['time'])\ntemperature_data = temperature_data.sort_values(['time'])\ndata = pd.merge_asof(traffic_data, temperature_data, on='time', by='location', tolerance=pd.Timedelta('30min'))\ndata['status'] = data['status'].round(5)\n# 处理时间数据\ndata['time'] = pd.to_datetime(data['time'])\ndata['is_weekend'] = data['time'].apply(lambda x: 1 if x.weekday()>=5 else 0)\ndata['hour'] = data['time'].dt.hour\ndata = data.drop(['time'], axis=1)\ndata = data.drop(['weather'],axis=1)",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "temperature_data",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "temperature_data = temperature_data.sort_values(['time'])\ndata = pd.merge_asof(traffic_data, temperature_data, on='time', by='location', tolerance=pd.Timedelta('30min'))\ndata['status'] = data['status'].round(5)\n# 处理时间数据\ndata['time'] = pd.to_datetime(data['time'])\ndata['is_weekend'] = data['time'].apply(lambda x: 1 if x.weekday()>=5 else 0)\ndata['hour'] = data['time'].dt.hour\ndata = data.drop(['time'], axis=1)\ndata = data.drop(['weather'],axis=1)\ndata = data.drop(['location'],axis=1)",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "data = pd.merge_asof(traffic_data, temperature_data, on='time', by='location', tolerance=pd.Timedelta('30min'))\ndata['status'] = data['status'].round(5)\n# 处理时间数据\ndata['time'] = pd.to_datetime(data['time'])\ndata['is_weekend'] = data['time'].apply(lambda x: 1 if x.weekday()>=5 else 0)\ndata['hour'] = data['time'].dt.hour\ndata = data.drop(['time'], axis=1)\ndata = data.drop(['weather'],axis=1)\ndata = data.drop(['location'],axis=1)\n#data = data.drop(['temperature'],axis=1)",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data['status']",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "data['status'] = data['status'].round(5)\n# 处理时间数据\ndata['time'] = pd.to_datetime(data['time'])\ndata['is_weekend'] = data['time'].apply(lambda x: 1 if x.weekday()>=5 else 0)\ndata['hour'] = data['time'].dt.hour\ndata = data.drop(['time'], axis=1)\ndata = data.drop(['weather'],axis=1)\ndata = data.drop(['location'],axis=1)\n#data = data.drop(['temperature'],axis=1)\n#data = data.drop(['latitude'],axis=1)",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data['time']",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "data['time'] = pd.to_datetime(data['time'])\ndata['is_weekend'] = data['time'].apply(lambda x: 1 if x.weekday()>=5 else 0)\ndata['hour'] = data['time'].dt.hour\ndata = data.drop(['time'], axis=1)\ndata = data.drop(['weather'],axis=1)\ndata = data.drop(['location'],axis=1)\n#data = data.drop(['temperature'],axis=1)\n#data = data.drop(['latitude'],axis=1)\n#data = data.drop(['longitude'],axis=1)\ndata = data.dropna()",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data['is_weekend']",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "data['is_weekend'] = data['time'].apply(lambda x: 1 if x.weekday()>=5 else 0)\ndata['hour'] = data['time'].dt.hour\ndata = data.drop(['time'], axis=1)\ndata = data.drop(['weather'],axis=1)\ndata = data.drop(['location'],axis=1)\n#data = data.drop(['temperature'],axis=1)\n#data = data.drop(['latitude'],axis=1)\n#data = data.drop(['longitude'],axis=1)\ndata = data.dropna()\n# 保存数据",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data['hour']",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "data['hour'] = data['time'].dt.hour\ndata = data.drop(['time'], axis=1)\ndata = data.drop(['weather'],axis=1)\ndata = data.drop(['location'],axis=1)\n#data = data.drop(['temperature'],axis=1)\n#data = data.drop(['latitude'],axis=1)\n#data = data.drop(['longitude'],axis=1)\ndata = data.dropna()\n# 保存数据\ndata.to_csv('Modelling\\DataPreprocess\\MergedData\\data.csv', index=False)",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "data = data.drop(['time'], axis=1)\ndata = data.drop(['weather'],axis=1)\ndata = data.drop(['location'],axis=1)\n#data = data.drop(['temperature'],axis=1)\n#data = data.drop(['latitude'],axis=1)\n#data = data.drop(['longitude'],axis=1)\ndata = data.dropna()\n# 保存数据\ndata.to_csv('Modelling\\DataPreprocess\\MergedData\\data.csv', index=False)",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "data = data.drop(['weather'],axis=1)\ndata = data.drop(['location'],axis=1)\n#data = data.drop(['temperature'],axis=1)\n#data = data.drop(['latitude'],axis=1)\n#data = data.drop(['longitude'],axis=1)\ndata = data.dropna()\n# 保存数据\ndata.to_csv('Modelling\\DataPreprocess\\MergedData\\data.csv', index=False)",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "data = data.drop(['location'],axis=1)\n#data = data.drop(['temperature'],axis=1)\n#data = data.drop(['latitude'],axis=1)\n#data = data.drop(['longitude'],axis=1)\ndata = data.dropna()\n# 保存数据\ndata.to_csv('Modelling\\DataPreprocess\\MergedData\\data.csv', index=False)",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "#data",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "#data = data.drop(['temperature'],axis=1)\n#data = data.drop(['latitude'],axis=1)\n#data = data.drop(['longitude'],axis=1)\ndata = data.dropna()\n# 保存数据\ndata.to_csv('Modelling\\DataPreprocess\\MergedData\\data.csv', index=False)",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "#data",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "#data = data.drop(['latitude'],axis=1)\n#data = data.drop(['longitude'],axis=1)\ndata = data.dropna()\n# 保存数据\ndata.to_csv('Modelling\\DataPreprocess\\MergedData\\data.csv', index=False)",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "#data",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "#data = data.drop(['longitude'],axis=1)\ndata = data.dropna()\n# 保存数据\ndata.to_csv('Modelling\\DataPreprocess\\MergedData\\data.csv', index=False)",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling.DataPreprocess.TrafficMerge",
+        "description": "Modelling.DataPreprocess.TrafficMerge",
+        "peekOfCode": "data = data.dropna()\n# 保存数据\ndata.to_csv('Modelling\\DataPreprocess\\MergedData\\data.csv', index=False)",
+        "detail": "Modelling.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "SEED",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "SEED = 1\n# 设置numpy的随机种子\nnp.random.seed(SEED)\n# 设置python的随机种子\nrandom.seed(SEED)\n# 设置tensorflow的随机种子\ntf.random.set_seed(SEED)\n# 读取数据文件\ndata = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "data = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出\nX = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "X = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为4D张量形式（样本数，时间步长，特征数，通道数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "y = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为4D张量形式（样本数，时间步长，特征数，通道数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为4D张量形式（样本数，时间步长，特征数，通道数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 5), activation='relu', input_shape=(1, 5, 1)),\n    tf.keras.layers.Flatten(),",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为4D张量形式（样本数，时间步长，特征数，通道数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 5), activation='relu', input_shape=(1, 5, 1)),\n    tf.keras.layers.Flatten(),\n    tf.keras.layers.Dense(1)",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "X_test = scaler.transform(X_test)\n# 将输入转换为4D张量形式（样本数，时间步长，特征数，通道数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 5), activation='relu', input_shape=(1, 5, 1)),\n    tf.keras.layers.Flatten(),\n    tf.keras.layers.Dense(1)\n])",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "X_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 5), activation='relu', input_shape=(1, 5, 1)),\n    tf.keras.layers.Flatten(),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "X_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 5), activation='relu', input_shape=(1, 5, 1)),\n    tf.keras.layers.Flatten(),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "model = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 5), activation='relu', input_shape=(1, 5, 1)),\n    tf.keras.layers.Flatten(),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录\nhistory = model.fit(X_train, y_train, epochs=100, validation_data=(X_test, y_test))\n# 绘制学习曲线",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "history",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "history = model.fit(X_train, y_train, epochs=100, validation_data=(X_test, y_test))\n# 绘制学习曲线\nplt.figure(figsize=(6, 6))\nplt.plot(history.history['loss'], label='train loss')\nplt.plot(history.history['val_loss'], label='test loss')\nplt.xlabel('iterations')\nplt.ylabel('loss')\nplt.legend()\nplt.title('loss curve')\nfig = plt.gcf()",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "fig = plt.gcf()\nplt.show()\nfig.savefig('Modelling\\Results\\CNNLearningCurve.png')\n# 使用pickle模块的dump函数将history对象保存到一个文件中\nwith open('Modelling\\Model\\CNN\\History\\history.pkl', 'wb') as f:\n    pickle.dump(history, f)\ntf.saved_model.save(model, 'Modelling\\Model\\CNN\\Model')\n# 进行预测\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "y_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig2 = plt.gcf()",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig2 = plt.gcf()\nplt.show()",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "fig2",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "fig2 = plt.gcf()\nplt.show()\nfig2.savefig('Modelling\\Results\\CNNSimpleScatter.png')\n# 计算准确率\ny_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "y_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_test",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "y_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "y_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "accuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "x = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")\nfig3 = plt.gcf()\nplt.show()\nfig3.savefig('Modelling\\Results\\CNNAccuracyScatter.png')",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "fig3",
+        "kind": 5,
+        "importPath": "Modelling.CNN",
+        "description": "Modelling.CNN",
+        "peekOfCode": "fig3 = plt.gcf()\nplt.show()\nfig3.savefig('Modelling\\Results\\CNNAccuracyScatter.png')",
+        "detail": "Modelling.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "SEED",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "SEED = 1\n# 设置numpy的随机种子\nnp.random.seed(SEED)\n# 设置python的随机种子\nrandom.seed(SEED)\n# 设置tensorflow的随机种子\ntf.random.set_seed(SEED)\n# 读取数据文件\ndata = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "data = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出\nX = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "X = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\nmodel = tf.keras.Sequential([",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "y = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Dense(10, activation='relu', input_shape=(5,)),",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Dense(10, activation='relu', input_shape=(5,)),\n    tf.keras.layers.Dense(25, activation='relu', input_shape=(5,)),\n    tf.keras.layers.Dense(125, activation='relu'),\n    tf.keras.layers.Dense(1)\n])",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Dense(10, activation='relu', input_shape=(5,)),\n    tf.keras.layers.Dense(25, activation='relu', input_shape=(5,)),\n    tf.keras.layers.Dense(125, activation='relu'),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "X_test = scaler.transform(X_test)\n# 定义DNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Dense(10, activation='relu', input_shape=(5,)),\n    tf.keras.layers.Dense(25, activation='relu', input_shape=(5,)),\n    tf.keras.layers.Dense(125, activation='relu'),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "model = tf.keras.Sequential([\n    tf.keras.layers.Dense(10, activation='relu', input_shape=(5,)),\n    tf.keras.layers.Dense(25, activation='relu', input_shape=(5,)),\n    tf.keras.layers.Dense(125, activation='relu'),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录\nhistory = model.fit(X_train, y_train, epochs=100, validation_data=(X_test, y_test))",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "history",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "history = model.fit(X_train, y_train, epochs=100, validation_data=(X_test, y_test))\ncv = cross_val_score(model, X, y, cv=5)\nprint(cv)\n# 绘制学习曲线\nplt.figure(figsize=(6, 6))\nplt.plot(history.history['loss'], label='train loss')\nplt.plot(history.history['val_loss'], label='test loss')\nplt.xlabel('iterations')\nplt.ylabel('loss')\nplt.legend()",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "cv",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "cv = cross_val_score(model, X, y, cv=5)\nprint(cv)\n# 绘制学习曲线\nplt.figure(figsize=(6, 6))\nplt.plot(history.history['loss'], label='train loss')\nplt.plot(history.history['val_loss'], label='test loss')\nplt.xlabel('iterations')\nplt.ylabel('loss')\nplt.legend()\nplt.title('loss curve')",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "fig = plt.gcf()\nplt.show()\nfig.savefig('Modelling\\Results\\DNNLearningCurve.png')\n# 使用pickle模块的dump函数将history对象保存到一个文件中\nwith open('Modelling\\Model\\DNN\\History\\history.pkl', 'wb') as f:\n    pickle.dump(history, f)\ntf.saved_model.save(model, 'Modelling\\Model\\DNN\\Model')\n# 进行预测\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "y_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig2 = plt.gcf()",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig2 = plt.gcf()\nplt.show()",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "fig2",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "fig2 = plt.gcf()\nplt.show()\nfig2.savefig('Modelling\\Results\\DNNSimpleScatter.png')\n# 计算准确率\ny_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n#kde = stats.gaussian_kde(accuracy)\n# 绘制图像",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "y_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n#kde = stats.gaussian_kde(accuracy)\n# 绘制图像\n#plt.plot([-0.5,0.5], kde([-0.5,0.5]), label='accuracy')\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_test",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "y_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n#kde = stats.gaussian_kde(accuracy)\n# 绘制图像\n#plt.plot([-0.5,0.5], kde([-0.5,0.5]), label='accuracy')\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "y_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n#kde = stats.gaussian_kde(accuracy)\n# 绘制图像\n#plt.plot([-0.5,0.5], kde([-0.5,0.5]), label='accuracy')\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "accuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n#kde = stats.gaussian_kde(accuracy)\n# 绘制图像\n#plt.plot([-0.5,0.5], kde([-0.5,0.5]), label='accuracy')\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "#kde",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "#kde = stats.gaussian_kde(accuracy)\n# 绘制图像\n#plt.plot([-0.5,0.5], kde([-0.5,0.5]), label='accuracy')\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "x = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")\n# plt.xlabel('accuracy')\n# plt.ylabel('number of test')\n# plt.legend()\n# plt.title('accuracy - number of test')",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "fig3",
+        "kind": 5,
+        "importPath": "Modelling.DNN",
+        "description": "Modelling.DNN",
+        "peekOfCode": "fig3 = plt.gcf()\nplt.show()\nfig3.savefig('Modelling\\Results\\DNNAccuracyScatter.png')\n#plot_model(model, to_file='model.png')",
+        "detail": "Modelling.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "SEED",
+        "kind": 5,
+        "importPath": "Modelling.Linear",
+        "description": "Modelling.Linear",
+        "peekOfCode": "SEED = 1\n# 设置numpy的随机种子\nnp.random.seed(SEED)\n# 设置python的随机种子\nrandom.seed(SEED)\n# 设置tensorflow的随机种子\ntf.random.set_seed(SEED)\n# 读取数据文件\ndata = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出",
+        "detail": "Modelling.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling.Linear",
+        "description": "Modelling.Linear",
+        "peekOfCode": "data = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出\nX = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 训练线性回归模型\nmodel = LinearRegression()\n# 训练模型并保存历史记录\nhistory = model.fit(X_train, y_train)\n# 进行预测",
+        "detail": "Modelling.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Modelling.Linear",
+        "description": "Modelling.Linear",
+        "peekOfCode": "X = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 训练线性回归模型\nmodel = LinearRegression()\n# 训练模型并保存历史记录\nhistory = model.fit(X_train, y_train)\n# 进行预测\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)",
+        "detail": "Modelling.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Modelling.Linear",
+        "description": "Modelling.Linear",
+        "peekOfCode": "y = data['status']\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 训练线性回归模型\nmodel = LinearRegression()\n# 训练模型并保存历史记录\nhistory = model.fit(X_train, y_train)\n# 进行预测\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 使用pickle模块的dump函数将history对象保存到一个文件中",
+        "detail": "Modelling.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Modelling.Linear",
+        "description": "Modelling.Linear",
+        "peekOfCode": "model = LinearRegression()\n# 训练模型并保存历史记录\nhistory = model.fit(X_train, y_train)\n# 进行预测\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 使用pickle模块的dump函数将history对象保存到一个文件中\nwith open('Modelling\\Model\\Linear\\History\\history.pkl', 'wb') as f:\n    pickle.dump(history, f)\n# 绘制图像",
+        "detail": "Modelling.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "history",
+        "kind": 5,
+        "importPath": "Modelling.Linear",
+        "description": "Modelling.Linear",
+        "peekOfCode": "history = model.fit(X_train, y_train)\n# 进行预测\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 使用pickle模块的dump函数将history对象保存到一个文件中\nwith open('Modelling\\Model\\Linear\\History\\history.pkl', 'wb') as f:\n    pickle.dump(history, f)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')",
+        "detail": "Modelling.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling.Linear",
+        "description": "Modelling.Linear",
+        "peekOfCode": "y_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 使用pickle模块的dump函数将history对象保存到一个文件中\nwith open('Modelling\\Model\\Linear\\History\\history.pkl', 'wb') as f:\n    pickle.dump(history, f)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)",
+        "detail": "Modelling.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Modelling.Linear",
+        "description": "Modelling.Linear",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 使用pickle模块的dump函数将history对象保存到一个文件中\nwith open('Modelling\\Model\\Linear\\History\\history.pkl', 'wb') as f:\n    pickle.dump(history, f)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)",
+        "detail": "Modelling.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "fig2",
+        "kind": 5,
+        "importPath": "Modelling.Linear",
+        "description": "Modelling.Linear",
+        "peekOfCode": "fig2 = plt.gcf()\nplt.show()\nfig2.savefig('Modelling\\Results\\LinearSimpleScatter.png')\n# 计算准确率\ny_pred = y_pred.tolist()\ny_test = y_test.tolist()\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)",
+        "detail": "Modelling.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling.Linear",
+        "description": "Modelling.Linear",
+        "peekOfCode": "y_pred = y_pred.tolist()\ny_test = y_test.tolist()\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签",
+        "detail": "Modelling.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "y_test",
+        "kind": 5,
+        "importPath": "Modelling.Linear",
+        "description": "Modelling.Linear",
+        "peekOfCode": "y_test = y_test.tolist()\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")",
+        "detail": "Modelling.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy",
+        "kind": 5,
+        "importPath": "Modelling.Linear",
+        "description": "Modelling.Linear",
+        "peekOfCode": "accuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")",
+        "detail": "Modelling.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Modelling.Linear",
+        "description": "Modelling.Linear",
+        "peekOfCode": "x = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")\nfig3 = plt.gcf()\nplt.show()\nfig3.savefig('Modelling\\Results\\LinearAccuracyScatter.png')",
+        "detail": "Modelling.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "fig3",
+        "kind": 5,
+        "importPath": "Modelling.Linear",
+        "description": "Modelling.Linear",
+        "peekOfCode": "fig3 = plt.gcf()\nplt.show()\nfig3.savefig('Modelling\\Results\\LinearAccuracyScatter.png')",
+        "detail": "Modelling.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "SEED",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "SEED = 1\n# 设置numpy的随机种子\nnp.random.seed(SEED)\n# 设置python的随机种子\nrandom.seed(SEED)\n# 设置tensorflow的随机种子\ntf.random.set_seed(SEED)\n# 读取数据文件\ndata = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "data = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出\nX = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "X = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "y = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "X_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "X_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "X_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录\nhistory = model.fit(X_train, y_train, epochs=200, validation_data=(X_test, y_test))",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "model = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录\nhistory = model.fit(X_train, y_train, epochs=200, validation_data=(X_test, y_test))\n# 绘制学习曲线\nplt.figure(figsize=(6, 6))",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "history",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "history = model.fit(X_train, y_train, epochs=200, validation_data=(X_test, y_test))\n# 绘制学习曲线\nplt.figure(figsize=(6, 6))\nplt.plot(history.history['loss'], label='train loss')\nplt.plot(history.history['val_loss'], label='test loss')\nplt.xlabel('iterations')\nplt.ylabel('loss')\nplt.legend()\nplt.title('loss curve')\nfig = plt.gcf()",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "fig = plt.gcf()\nplt.show()\nfig.savefig('Modelling\\Results\\LSTMLearningCurve.png')\n# 使用pickle模块的dump函数将history对象保存到一个文件中\nwith open('Modelling\\Model\\LSTM\\History\\history.pkl', 'wb') as f:\n    pickle.dump(history, f)\ntf.saved_model.save(model, 'Modelling\\Model\\LSTM\\Model')\n# 进行预测\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "y_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig2 = plt.gcf()",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig2 = plt.gcf()\nplt.show()",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "fig2",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "fig2 = plt.gcf()\nplt.show()\nfig2.savefig('Modelling\\Results\\LSTMSimpleScatter.png')\n# 计算准确率\ny_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "y_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "y_test",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "y_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "y_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "accuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "x = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")\nfig3 = plt.gcf()\nplt.show()\nfig3.savefig('Modelling\\Results\\LSTMAccuracyScatter.png')",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "fig3",
+        "kind": 5,
+        "importPath": "Modelling.LSTM",
+        "description": "Modelling.LSTM",
+        "peekOfCode": "fig3 = plt.gcf()\nplt.show()\nfig3.savefig('Modelling\\Results\\LSTMAccuracyScatter.png')",
+        "detail": "Modelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "SEED",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "SEED = 1\n# 设置numpy的随机种子\nnp.random.seed(SEED)\n# 设置python的随机种子\nrandom.seed(SEED)\n# 设置tensorflow的随机种子\ntf.random.set_seed(SEED)\n# 读取数据文件\ndata = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "data = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出\nX = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "X = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "y = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义RNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义RNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "X_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义RNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "X_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义RNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "X_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义RNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录\nhistory = model.fit(X_train, y_train, epochs=200, validation_data=(X_test, y_test))",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "model = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录\nhistory = model.fit(X_train, y_train, epochs=200, validation_data=(X_test, y_test))\n# 绘制学习曲线\nplt.figure(figsize=(6, 6))",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "history",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "history = model.fit(X_train, y_train, epochs=200, validation_data=(X_test, y_test))\n# 绘制学习曲线\nplt.figure(figsize=(6, 6))\nplt.plot(history.history['loss'], label='train loss')\nplt.plot(history.history['val_loss'], label='test loss')\nplt.xlabel('iterations')\nplt.ylabel('loss')\nplt.legend()\nplt.title('loss curve')\nfig = plt.gcf()",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "fig = plt.gcf()\nplt.show()\nfig.savefig('Modelling\\Results\\RNNLearningCurve.png')\n# 使用pickle模块的dump函数将history对象保存到一个文件中\nwith open('Modelling\\Model\\RNN\\History\\history.pkl', 'wb') as f:\n    pickle.dump(history, f)\ntf.saved_model.save(model, 'Modelling\\Model\\RNN\\Model')\n# 进行预测\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "y_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig2 = plt.gcf()",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig2 = plt.gcf()\nplt.show()",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "fig2",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "fig2 = plt.gcf()\nplt.show()\nfig2.savefig('Modelling\\Results\\RNNSimpleScatter.png')\n# 计算准确率\ny_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "y_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_test",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "y_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "y_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "accuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "x = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")\nfig3 = plt.gcf()\nplt.show()\nfig3.savefig('Modelling\\Results\\RNNAccuracyScatter.png')",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "fig3",
+        "kind": 5,
+        "importPath": "Modelling.RNN",
+        "description": "Modelling.RNN",
+        "peekOfCode": "fig3 = plt.gcf()\nplt.show()\nfig3.savefig('Modelling\\Results\\RNNAccuracyScatter.png')",
+        "detail": "Modelling.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "dataset1",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.DataTransform",
+        "description": "Modelling1.DataPreprocess.DataTransform",
+        "peekOfCode": "dataset1 = 'Crawler\\Outputs\\Haikou3.csv'\ndataset2 = 'Crawler\\Outputs\\Haikou3Jam.csv'\noutput = 'Modelling\\DataPreprocess\\MeanTraffic\\Haikou3Mean.csv'\n# 读取数据\ndata1 = pd.read_csv(dataset1, encoding='gbk',usecols=['时间', 'status'])\ndata2 = pd.read_csv(dataset2, encoding='gbk', usecols=['time', 'status'])\n# 将时间列转换为Pandas的日期时间类型\ndata1['time'] = pd.to_datetime(data1['时间']).dt.floor('min')\ndata2['time'] = pd.to_datetime(data2['time']).dt.floor('min')\n# 将数据按照时间和地点分组",
+        "detail": "Modelling1.DataPreprocess.DataTransform",
+        "documentation": {}
+    },
+    {
+        "label": "dataset2",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.DataTransform",
+        "description": "Modelling1.DataPreprocess.DataTransform",
+        "peekOfCode": "dataset2 = 'Crawler\\Outputs\\Haikou3Jam.csv'\noutput = 'Modelling\\DataPreprocess\\MeanTraffic\\Haikou3Mean.csv'\n# 读取数据\ndata1 = pd.read_csv(dataset1, encoding='gbk',usecols=['时间', 'status'])\ndata2 = pd.read_csv(dataset2, encoding='gbk', usecols=['time', 'status'])\n# 将时间列转换为Pandas的日期时间类型\ndata1['time'] = pd.to_datetime(data1['时间']).dt.floor('min')\ndata2['time'] = pd.to_datetime(data2['time']).dt.floor('min')\n# 将数据按照时间和地点分组\ndata = pd.concat([data1, data2])",
+        "detail": "Modelling1.DataPreprocess.DataTransform",
+        "documentation": {}
+    },
+    {
+        "label": "output",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.DataTransform",
+        "description": "Modelling1.DataPreprocess.DataTransform",
+        "peekOfCode": "output = 'Modelling\\DataPreprocess\\MeanTraffic\\Haikou3Mean.csv'\n# 读取数据\ndata1 = pd.read_csv(dataset1, encoding='gbk',usecols=['时间', 'status'])\ndata2 = pd.read_csv(dataset2, encoding='gbk', usecols=['time', 'status'])\n# 将时间列转换为Pandas的日期时间类型\ndata1['time'] = pd.to_datetime(data1['时间']).dt.floor('min')\ndata2['time'] = pd.to_datetime(data2['time']).dt.floor('min')\n# 将数据按照时间和地点分组\ndata = pd.concat([data1, data2])\ngrouped_data = data.groupby(['time'])",
+        "detail": "Modelling1.DataPreprocess.DataTransform",
+        "documentation": {}
+    },
+    {
+        "label": "data1",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.DataTransform",
+        "description": "Modelling1.DataPreprocess.DataTransform",
+        "peekOfCode": "data1 = pd.read_csv(dataset1, encoding='gbk',usecols=['时间', 'status'])\ndata2 = pd.read_csv(dataset2, encoding='gbk', usecols=['time', 'status'])\n# 将时间列转换为Pandas的日期时间类型\ndata1['time'] = pd.to_datetime(data1['时间']).dt.floor('min')\ndata2['time'] = pd.to_datetime(data2['time']).dt.floor('min')\n# 将数据按照时间和地点分组\ndata = pd.concat([data1, data2])\ngrouped_data = data.groupby(['time'])\n# 计算每个地点每个时间点的平均交通状况\nmean_data = grouped_data.mean(numeric_only=True)",
+        "detail": "Modelling1.DataPreprocess.DataTransform",
+        "documentation": {}
+    },
+    {
+        "label": "data2",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.DataTransform",
+        "description": "Modelling1.DataPreprocess.DataTransform",
+        "peekOfCode": "data2 = pd.read_csv(dataset2, encoding='gbk', usecols=['time', 'status'])\n# 将时间列转换为Pandas的日期时间类型\ndata1['time'] = pd.to_datetime(data1['时间']).dt.floor('min')\ndata2['time'] = pd.to_datetime(data2['time']).dt.floor('min')\n# 将数据按照时间和地点分组\ndata = pd.concat([data1, data2])\ngrouped_data = data.groupby(['time'])\n# 计算每个地点每个时间点的平均交通状况\nmean_data = grouped_data.mean(numeric_only=True)\n# 将数据转换为数值型数据",
+        "detail": "Modelling1.DataPreprocess.DataTransform",
+        "documentation": {}
+    },
+    {
+        "label": "data1['time']",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.DataTransform",
+        "description": "Modelling1.DataPreprocess.DataTransform",
+        "peekOfCode": "data1['time'] = pd.to_datetime(data1['时间']).dt.floor('min')\ndata2['time'] = pd.to_datetime(data2['time']).dt.floor('min')\n# 将数据按照时间和地点分组\ndata = pd.concat([data1, data2])\ngrouped_data = data.groupby(['time'])\n# 计算每个地点每个时间点的平均交通状况\nmean_data = grouped_data.mean(numeric_only=True)\n# 将数据转换为数值型数据\nnumeric_data = mean_data.apply(pd.to_numeric)\nnumeric_data.to_csv(output, encoding='gbk')",
+        "detail": "Modelling1.DataPreprocess.DataTransform",
+        "documentation": {}
+    },
+    {
+        "label": "data2['time']",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.DataTransform",
+        "description": "Modelling1.DataPreprocess.DataTransform",
+        "peekOfCode": "data2['time'] = pd.to_datetime(data2['time']).dt.floor('min')\n# 将数据按照时间和地点分组\ndata = pd.concat([data1, data2])\ngrouped_data = data.groupby(['time'])\n# 计算每个地点每个时间点的平均交通状况\nmean_data = grouped_data.mean(numeric_only=True)\n# 将数据转换为数值型数据\nnumeric_data = mean_data.apply(pd.to_numeric)\nnumeric_data.to_csv(output, encoding='gbk')",
+        "detail": "Modelling1.DataPreprocess.DataTransform",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.DataTransform",
+        "description": "Modelling1.DataPreprocess.DataTransform",
+        "peekOfCode": "data = pd.concat([data1, data2])\ngrouped_data = data.groupby(['time'])\n# 计算每个地点每个时间点的平均交通状况\nmean_data = grouped_data.mean(numeric_only=True)\n# 将数据转换为数值型数据\nnumeric_data = mean_data.apply(pd.to_numeric)\nnumeric_data.to_csv(output, encoding='gbk')",
+        "detail": "Modelling1.DataPreprocess.DataTransform",
+        "documentation": {}
+    },
+    {
+        "label": "grouped_data",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.DataTransform",
+        "description": "Modelling1.DataPreprocess.DataTransform",
+        "peekOfCode": "grouped_data = data.groupby(['time'])\n# 计算每个地点每个时间点的平均交通状况\nmean_data = grouped_data.mean(numeric_only=True)\n# 将数据转换为数值型数据\nnumeric_data = mean_data.apply(pd.to_numeric)\nnumeric_data.to_csv(output, encoding='gbk')",
+        "detail": "Modelling1.DataPreprocess.DataTransform",
+        "documentation": {}
+    },
+    {
+        "label": "mean_data",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.DataTransform",
+        "description": "Modelling1.DataPreprocess.DataTransform",
+        "peekOfCode": "mean_data = grouped_data.mean(numeric_only=True)\n# 将数据转换为数值型数据\nnumeric_data = mean_data.apply(pd.to_numeric)\nnumeric_data.to_csv(output, encoding='gbk')",
+        "detail": "Modelling1.DataPreprocess.DataTransform",
+        "documentation": {}
+    },
+    {
+        "label": "numeric_data",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.DataTransform",
+        "description": "Modelling1.DataPreprocess.DataTransform",
+        "peekOfCode": "numeric_data = mean_data.apply(pd.to_numeric)\nnumeric_data.to_csv(output, encoding='gbk')",
+        "detail": "Modelling1.DataPreprocess.DataTransform",
+        "documentation": {}
+    },
+    {
+        "label": "traffic_data",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.TrafficMerge",
+        "description": "Modelling1.DataPreprocess.TrafficMerge",
+        "peekOfCode": "traffic_data = []\nfor city in ['Beijing', 'Guiyang', 'HaErBin', 'Haikou']:\n    for i in range(1, 4):\n        filename = 'Modelling\\DataPreprocess\\MeanTraffic\\\\' + city + str(i) + 'Mean.csv'\n        df = pd.read_csv(filename)\n        df['location'] = city\n        traffic_data.append(df)\ntraffic_data = pd.concat(traffic_data)\n# 读取温度数据\ntemperature_data = []",
+        "detail": "Modelling1.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "traffic_data",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.TrafficMerge",
+        "description": "Modelling1.DataPreprocess.TrafficMerge",
+        "peekOfCode": "traffic_data = pd.concat(traffic_data)\n# 读取温度数据\ntemperature_data = []\nfor city in ['Beijing', 'Guiyang', 'HaErBin', 'Haikou']:\n    filename = 'Modelling\\DataPreprocess\\Weather\\\\' +city + '.csv'\n    df = pd.read_csv(filename, header=None, names=['weather', 'temperature', 'time'],encoding='gbk')\n    df['location'] = city\n    temperature_data.append(df)\ntemperature_data = pd.concat(temperature_data)\n# 合并数据",
+        "detail": "Modelling1.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "temperature_data",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.TrafficMerge",
+        "description": "Modelling1.DataPreprocess.TrafficMerge",
+        "peekOfCode": "temperature_data = []\nfor city in ['Beijing', 'Guiyang', 'HaErBin', 'Haikou']:\n    filename = 'Modelling\\DataPreprocess\\Weather\\\\' +city + '.csv'\n    df = pd.read_csv(filename, header=None, names=['weather', 'temperature', 'time'],encoding='gbk')\n    df['location'] = city\n    temperature_data.append(df)\ntemperature_data = pd.concat(temperature_data)\n# 合并数据\ntraffic_data['time'] = pd.to_datetime(traffic_data['time'])\ntemperature_data['time'] = pd.to_datetime(temperature_data['time'])",
+        "detail": "Modelling1.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "temperature_data",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.TrafficMerge",
+        "description": "Modelling1.DataPreprocess.TrafficMerge",
+        "peekOfCode": "temperature_data = pd.concat(temperature_data)\n# 合并数据\ntraffic_data['time'] = pd.to_datetime(traffic_data['time'])\ntemperature_data['time'] = pd.to_datetime(temperature_data['time'])\ntraffic_data = traffic_data.sort_values(['time'])\ntemperature_data = temperature_data.sort_values(['time'])\ndata = pd.merge_asof(traffic_data, temperature_data, on='time', by='location', tolerance=pd.Timedelta('30min'))\ndata['status'] = data['status'].round(5)\n# 处理时间数据\ndata['time'] = pd.to_datetime(data['time'])",
+        "detail": "Modelling1.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "traffic_data['time']",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.TrafficMerge",
+        "description": "Modelling1.DataPreprocess.TrafficMerge",
+        "peekOfCode": "traffic_data['time'] = pd.to_datetime(traffic_data['time'])\ntemperature_data['time'] = pd.to_datetime(temperature_data['time'])\ntraffic_data = traffic_data.sort_values(['time'])\ntemperature_data = temperature_data.sort_values(['time'])\ndata = pd.merge_asof(traffic_data, temperature_data, on='time', by='location', tolerance=pd.Timedelta('30min'))\ndata['status'] = data['status'].round(5)\n# 处理时间数据\ndata['time'] = pd.to_datetime(data['time'])\ndata['is_weekend'] = data['time'].apply(lambda x: 1 if x.weekday()>=5 else 0)\ndata['hour'] = data['time'].dt.hour",
+        "detail": "Modelling1.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "temperature_data['time']",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.TrafficMerge",
+        "description": "Modelling1.DataPreprocess.TrafficMerge",
+        "peekOfCode": "temperature_data['time'] = pd.to_datetime(temperature_data['time'])\ntraffic_data = traffic_data.sort_values(['time'])\ntemperature_data = temperature_data.sort_values(['time'])\ndata = pd.merge_asof(traffic_data, temperature_data, on='time', by='location', tolerance=pd.Timedelta('30min'))\ndata['status'] = data['status'].round(5)\n# 处理时间数据\ndata['time'] = pd.to_datetime(data['time'])\ndata['is_weekend'] = data['time'].apply(lambda x: 1 if x.weekday()>=5 else 0)\ndata['hour'] = data['time'].dt.hour\ndata = data.drop(['time'], axis=1)",
+        "detail": "Modelling1.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "traffic_data",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.TrafficMerge",
+        "description": "Modelling1.DataPreprocess.TrafficMerge",
+        "peekOfCode": "traffic_data = traffic_data.sort_values(['time'])\ntemperature_data = temperature_data.sort_values(['time'])\ndata = pd.merge_asof(traffic_data, temperature_data, on='time', by='location', tolerance=pd.Timedelta('30min'))\ndata['status'] = data['status'].round(5)\n# 处理时间数据\ndata['time'] = pd.to_datetime(data['time'])\ndata['is_weekend'] = data['time'].apply(lambda x: 1 if x.weekday()>=5 else 0)\ndata['hour'] = data['time'].dt.hour\ndata = data.drop(['time'], axis=1)\ndata = data.drop(['weather'],axis=1)",
+        "detail": "Modelling1.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "temperature_data",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.TrafficMerge",
+        "description": "Modelling1.DataPreprocess.TrafficMerge",
+        "peekOfCode": "temperature_data = temperature_data.sort_values(['time'])\ndata = pd.merge_asof(traffic_data, temperature_data, on='time', by='location', tolerance=pd.Timedelta('30min'))\ndata['status'] = data['status'].round(5)\n# 处理时间数据\ndata['time'] = pd.to_datetime(data['time'])\ndata['is_weekend'] = data['time'].apply(lambda x: 1 if x.weekday()>=5 else 0)\ndata['hour'] = data['time'].dt.hour\ndata = data.drop(['time'], axis=1)\ndata = data.drop(['weather'],axis=1)\n# 保存数据",
+        "detail": "Modelling1.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.TrafficMerge",
+        "description": "Modelling1.DataPreprocess.TrafficMerge",
+        "peekOfCode": "data = pd.merge_asof(traffic_data, temperature_data, on='time', by='location', tolerance=pd.Timedelta('30min'))\ndata['status'] = data['status'].round(5)\n# 处理时间数据\ndata['time'] = pd.to_datetime(data['time'])\ndata['is_weekend'] = data['time'].apply(lambda x: 1 if x.weekday()>=5 else 0)\ndata['hour'] = data['time'].dt.hour\ndata = data.drop(['time'], axis=1)\ndata = data.drop(['weather'],axis=1)\n# 保存数据\ndata.to_csv('Modelling\\DataPreprocess\\Weather\\data.csv', index=False)",
+        "detail": "Modelling1.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data['status']",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.TrafficMerge",
+        "description": "Modelling1.DataPreprocess.TrafficMerge",
+        "peekOfCode": "data['status'] = data['status'].round(5)\n# 处理时间数据\ndata['time'] = pd.to_datetime(data['time'])\ndata['is_weekend'] = data['time'].apply(lambda x: 1 if x.weekday()>=5 else 0)\ndata['hour'] = data['time'].dt.hour\ndata = data.drop(['time'], axis=1)\ndata = data.drop(['weather'],axis=1)\n# 保存数据\ndata.to_csv('Modelling\\DataPreprocess\\Weather\\data.csv', index=False)",
+        "detail": "Modelling1.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data['time']",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.TrafficMerge",
+        "description": "Modelling1.DataPreprocess.TrafficMerge",
+        "peekOfCode": "data['time'] = pd.to_datetime(data['time'])\ndata['is_weekend'] = data['time'].apply(lambda x: 1 if x.weekday()>=5 else 0)\ndata['hour'] = data['time'].dt.hour\ndata = data.drop(['time'], axis=1)\ndata = data.drop(['weather'],axis=1)\n# 保存数据\ndata.to_csv('Modelling\\DataPreprocess\\Weather\\data.csv', index=False)",
+        "detail": "Modelling1.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data['is_weekend']",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.TrafficMerge",
+        "description": "Modelling1.DataPreprocess.TrafficMerge",
+        "peekOfCode": "data['is_weekend'] = data['time'].apply(lambda x: 1 if x.weekday()>=5 else 0)\ndata['hour'] = data['time'].dt.hour\ndata = data.drop(['time'], axis=1)\ndata = data.drop(['weather'],axis=1)\n# 保存数据\ndata.to_csv('Modelling\\DataPreprocess\\Weather\\data.csv', index=False)",
+        "detail": "Modelling1.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data['hour']",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.TrafficMerge",
+        "description": "Modelling1.DataPreprocess.TrafficMerge",
+        "peekOfCode": "data['hour'] = data['time'].dt.hour\ndata = data.drop(['time'], axis=1)\ndata = data.drop(['weather'],axis=1)\n# 保存数据\ndata.to_csv('Modelling\\DataPreprocess\\Weather\\data.csv', index=False)",
+        "detail": "Modelling1.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.TrafficMerge",
+        "description": "Modelling1.DataPreprocess.TrafficMerge",
+        "peekOfCode": "data = data.drop(['time'], axis=1)\ndata = data.drop(['weather'],axis=1)\n# 保存数据\ndata.to_csv('Modelling\\DataPreprocess\\Weather\\data.csv', index=False)",
+        "detail": "Modelling1.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling1.DataPreprocess.TrafficMerge",
+        "description": "Modelling1.DataPreprocess.TrafficMerge",
+        "peekOfCode": "data = data.drop(['weather'],axis=1)\n# 保存数据\ndata.to_csv('Modelling\\DataPreprocess\\Weather\\data.csv', index=False)",
+        "detail": "Modelling1.DataPreprocess.TrafficMerge",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling1.CNN",
+        "description": "Modelling1.CNN",
+        "peekOfCode": "data = pd.read_csv('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/DataPreprocess/Weather/data.csv')\n# 将数据分为输入和输出\nX = data[['temperature', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
+        "detail": "Modelling1.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Modelling1.CNN",
+        "description": "Modelling1.CNN",
+        "peekOfCode": "X = data[['temperature', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为4D张量形式（样本数，时间步长，特征数，通道数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))",
+        "detail": "Modelling1.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Modelling1.CNN",
+        "description": "Modelling1.CNN",
+        "peekOfCode": "y = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为4D张量形式（样本数，时间步长，特征数，通道数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))",
+        "detail": "Modelling1.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "Modelling1.CNN",
+        "description": "Modelling1.CNN",
+        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为4D张量形式（样本数，时间步长，特征数，通道数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 3), activation='relu', input_shape=(1, 3, 1)),\n    tf.keras.layers.Flatten(),",
+        "detail": "Modelling1.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "Modelling1.CNN",
+        "description": "Modelling1.CNN",
+        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为4D张量形式（样本数，时间步长，特征数，通道数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 3), activation='relu', input_shape=(1, 3, 1)),\n    tf.keras.layers.Flatten(),\n    tf.keras.layers.Dense(1)",
+        "detail": "Modelling1.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "Modelling1.CNN",
+        "description": "Modelling1.CNN",
+        "peekOfCode": "X_test = scaler.transform(X_test)\n# 将输入转换为4D张量形式（样本数，时间步长，特征数，通道数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 3), activation='relu', input_shape=(1, 3, 1)),\n    tf.keras.layers.Flatten(),\n    tf.keras.layers.Dense(1)\n])",
+        "detail": "Modelling1.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "Modelling1.CNN",
+        "description": "Modelling1.CNN",
+        "peekOfCode": "X_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 3), activation='relu', input_shape=(1, 3, 1)),\n    tf.keras.layers.Flatten(),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')",
+        "detail": "Modelling1.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "Modelling1.CNN",
+        "description": "Modelling1.CNN",
+        "peekOfCode": "X_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 3), activation='relu', input_shape=(1, 3, 1)),\n    tf.keras.layers.Flatten(),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型",
+        "detail": "Modelling1.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Modelling1.CNN",
+        "description": "Modelling1.CNN",
+        "peekOfCode": "model = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 3), activation='relu', input_shape=(1, 3, 1)),\n    tf.keras.layers.Flatten(),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型\nmodel.fit(X_train, y_train, epochs=100)\n# 评估模型性能",
+        "detail": "Modelling1.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Modelling1.CNN",
+        "description": "Modelling1.CNN",
+        "peekOfCode": "mse = model.evaluate(X_test, y_test)\nprint('MSE:', mse)\n# 进行预测\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)",
+        "detail": "Modelling1.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling1.CNN",
+        "description": "Modelling1.CNN",
+        "peekOfCode": "y_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nplt.savefig('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Results/CNNSimpleScatter.png')",
+        "detail": "Modelling1.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Modelling1.CNN",
+        "description": "Modelling1.CNN",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nplt.savefig('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Results/CNNSimpleScatter.png')",
+        "detail": "Modelling1.CNN",
+        "documentation": {}
+    },
+    {
+        "label": "plot_learning_curve",
+        "kind": 2,
+        "importPath": "Modelling1.DNN",
+        "description": "Modelling1.DNN",
+        "peekOfCode": "def plot_learning_curve(estimator, title, X, y, ylim=None, cv=None,\n                        n_jobs=None, train_sizes=np.linspace(.1, 1.0, 5)):\n    plt.figure()\n    plt.title(title)\n    if ylim is not None:\n        plt.ylim(*ylim)\n    plt.xlabel(\"Training examples\")\n    plt.ylabel(\"Score\")\n    train_sizes, train_scores, test_scores = learning_curve(\n        estimator, X, y, cv=cv, n_jobs=n_jobs, train_sizes=train_sizes, scoring='accuracy')",
+        "detail": "Modelling1.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling1.DNN",
+        "description": "Modelling1.DNN",
+        "peekOfCode": "data = pd.read_csv('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/DataPreprocess/Weather/data.csv')\n# 将数据分为输入和输出\nX = data[['temperature', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
+        "detail": "Modelling1.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Modelling1.DNN",
+        "description": "Modelling1.DNN",
+        "peekOfCode": "X = data[['temperature', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\nmodel = tf.keras.Sequential([",
+        "detail": "Modelling1.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Modelling1.DNN",
+        "description": "Modelling1.DNN",
+        "peekOfCode": "y = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Dense(64, activation='relu', input_shape=(3,)),",
+        "detail": "Modelling1.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "Modelling1.DNN",
+        "description": "Modelling1.DNN",
+        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Dense(64, activation='relu', input_shape=(3,)),\n    tf.keras.layers.Dense(128, activation='relu'),\n    tf.keras.layers.Dense(64, activation='relu'),\n    tf.keras.layers.Dense(1)\n])",
+        "detail": "Modelling1.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "Modelling1.DNN",
+        "description": "Modelling1.DNN",
+        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Dense(64, activation='relu', input_shape=(3,)),\n    tf.keras.layers.Dense(128, activation='relu'),\n    tf.keras.layers.Dense(64, activation='relu'),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型",
+        "detail": "Modelling1.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "Modelling1.DNN",
+        "description": "Modelling1.DNN",
+        "peekOfCode": "X_test = scaler.transform(X_test)\n# 定义DNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Dense(64, activation='relu', input_shape=(3,)),\n    tf.keras.layers.Dense(128, activation='relu'),\n    tf.keras.layers.Dense(64, activation='relu'),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')",
+        "detail": "Modelling1.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Modelling1.DNN",
+        "description": "Modelling1.DNN",
+        "peekOfCode": "model = tf.keras.Sequential([\n    tf.keras.layers.Dense(64, activation='relu', input_shape=(3,)),\n    tf.keras.layers.Dense(128, activation='relu'),\n    tf.keras.layers.Dense(64, activation='relu'),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型\nmodel.fit(X_train, y_train, epochs=100)",
+        "detail": "Modelling1.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Modelling1.DNN",
+        "description": "Modelling1.DNN",
+        "peekOfCode": "mse = model.evaluate(X_test, y_test)\nprint('MSE:', mse)\n# 进行预测\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 将模型保存到磁盘上\ntf.saved_model.save(model, '/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Model/DNN')\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')",
+        "detail": "Modelling1.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling1.DNN",
+        "description": "Modelling1.DNN",
+        "peekOfCode": "y_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 将模型保存到磁盘上\ntf.saved_model.save(model, '/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Model/DNN')\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)",
+        "detail": "Modelling1.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Modelling1.DNN",
+        "description": "Modelling1.DNN",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 将模型保存到磁盘上\ntf.saved_model.save(model, '/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Model/DNN')\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)",
+        "detail": "Modelling1.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "title",
+        "kind": 5,
+        "importPath": "Modelling1.DNN",
+        "description": "Modelling1.DNN",
+        "peekOfCode": "title = \"Learning Curves (MLPClassifier)\"\ncv = ShuffleSplit(n_splits=10, test_size=0.2, random_state=0)\nestimator = model\nplt.figure()\nplot_learning_curve(estimator, title, X, y, ylim=(0.7, 1.01), cv=cv, n_jobs=4)\nplt.savefig('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Results/LearningCurve-DNN.png')",
+        "detail": "Modelling1.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "cv",
+        "kind": 5,
+        "importPath": "Modelling1.DNN",
+        "description": "Modelling1.DNN",
+        "peekOfCode": "cv = ShuffleSplit(n_splits=10, test_size=0.2, random_state=0)\nestimator = model\nplt.figure()\nplot_learning_curve(estimator, title, X, y, ylim=(0.7, 1.01), cv=cv, n_jobs=4)\nplt.savefig('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Results/LearningCurve-DNN.png')",
+        "detail": "Modelling1.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "estimator",
+        "kind": 5,
+        "importPath": "Modelling1.DNN",
+        "description": "Modelling1.DNN",
+        "peekOfCode": "estimator = model\nplt.figure()\nplot_learning_curve(estimator, title, X, y, ylim=(0.7, 1.01), cv=cv, n_jobs=4)\nplt.savefig('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Results/LearningCurve-DNN.png')",
+        "detail": "Modelling1.DNN",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling1.Linear",
+        "description": "Modelling1.Linear",
+        "peekOfCode": "data = pd.read_csv('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/DataPreprocess/Weather/data.csv')\n# 将数据分为输入和输出\nX = data[['temperature', 'is_weekend', 'hour']]\ny = data['status']\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 训练线性回归模型\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n# 预测结果\ny_pred = model.predict(X_test)",
+        "detail": "Modelling1.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Modelling1.Linear",
+        "description": "Modelling1.Linear",
+        "peekOfCode": "X = data[['temperature', 'is_weekend', 'hour']]\ny = data['status']\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 训练线性回归模型\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n# 预测结果\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像",
+        "detail": "Modelling1.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Modelling1.Linear",
+        "description": "Modelling1.Linear",
+        "peekOfCode": "y = data['status']\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 训练线性回归模型\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\n# 预测结果\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)",
+        "detail": "Modelling1.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Modelling1.Linear",
+        "description": "Modelling1.Linear",
+        "peekOfCode": "model = LinearRegression()\nmodel.fit(X_train, y_train)\n# 预测结果\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)",
+        "detail": "Modelling1.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling1.Linear",
+        "description": "Modelling1.Linear",
+        "peekOfCode": "y_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nplt.savefig('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Results/LinearSimpleScatter.png')",
+        "detail": "Modelling1.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Modelling1.Linear",
+        "description": "Modelling1.Linear",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nplt.savefig('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Results/LinearSimpleScatter.png')",
+        "detail": "Modelling1.Linear",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling1.LSTM",
+        "description": "Modelling1.LSTM",
+        "peekOfCode": "data = pd.read_csv('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/DataPreprocess/Weather/data.csv')\n# 将数据分为输入和输出\nX = data[['temperature', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
+        "detail": "Modelling1.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Modelling1.LSTM",
+        "description": "Modelling1.LSTM",
+        "peekOfCode": "X = data[['temperature', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))",
+        "detail": "Modelling1.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Modelling1.LSTM",
+        "description": "Modelling1.LSTM",
+        "peekOfCode": "y = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))",
+        "detail": "Modelling1.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "Modelling1.LSTM",
+        "description": "Modelling1.LSTM",
+        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 3)),\n    tf.keras.layers.Dense(1)",
+        "detail": "Modelling1.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "Modelling1.LSTM",
+        "description": "Modelling1.LSTM",
+        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 3)),\n    tf.keras.layers.Dense(1)\n])",
+        "detail": "Modelling1.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "Modelling1.LSTM",
+        "description": "Modelling1.LSTM",
+        "peekOfCode": "X_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 3)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型",
+        "detail": "Modelling1.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "Modelling1.LSTM",
+        "description": "Modelling1.LSTM",
+        "peekOfCode": "X_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 3)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型",
+        "detail": "Modelling1.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "Modelling1.LSTM",
+        "description": "Modelling1.LSTM",
+        "peekOfCode": "X_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 3)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型\nmodel.fit(X_train, y_train, epochs=100)",
+        "detail": "Modelling1.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Modelling1.LSTM",
+        "description": "Modelling1.LSTM",
+        "peekOfCode": "model = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 3)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型\nmodel.fit(X_train, y_train, epochs=100)\n# 评估模型性能\nmse = model.evaluate(X_test, y_test)",
+        "detail": "Modelling1.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Modelling1.LSTM",
+        "description": "Modelling1.LSTM",
+        "peekOfCode": "mse = model.evaluate(X_test, y_test)\nprint('MSE:', mse)\n# 进行预测\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 将模型保存到磁盘上\ntf.saved_model.save(model, '/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Model')\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')",
+        "detail": "Modelling1.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling1.LSTM",
+        "description": "Modelling1.LSTM",
+        "peekOfCode": "y_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 将模型保存到磁盘上\ntf.saved_model.save(model, '/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Model')\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)",
+        "detail": "Modelling1.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Modelling1.LSTM",
+        "description": "Modelling1.LSTM",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 将模型保存到磁盘上\ntf.saved_model.save(model, '/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Model')\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)",
+        "detail": "Modelling1.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "Modelling1.RNN",
+        "description": "Modelling1.RNN",
+        "peekOfCode": "data = pd.read_csv('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/DataPreprocess/Weather/data.csv')\n# 将数据分为输入和输出\nX = data[['temperature', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
+        "detail": "Modelling1.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "Modelling1.RNN",
+        "description": "Modelling1.RNN",
+        "peekOfCode": "X = data[['temperature', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))",
+        "detail": "Modelling1.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Modelling1.RNN",
+        "description": "Modelling1.RNN",
+        "peekOfCode": "y = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))",
+        "detail": "Modelling1.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "scaler",
+        "kind": 5,
+        "importPath": "Modelling1.RNN",
+        "description": "Modelling1.RNN",
+        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义RNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 3)),\n    tf.keras.layers.Dense(1)",
+        "detail": "Modelling1.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "Modelling1.RNN",
+        "description": "Modelling1.RNN",
+        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义RNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 3)),\n    tf.keras.layers.Dense(1)\n])",
+        "detail": "Modelling1.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "Modelling1.RNN",
+        "description": "Modelling1.RNN",
+        "peekOfCode": "X_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义RNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 3)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型",
+        "detail": "Modelling1.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_train",
+        "kind": 5,
+        "importPath": "Modelling1.RNN",
+        "description": "Modelling1.RNN",
+        "peekOfCode": "X_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义RNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 3)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型",
+        "detail": "Modelling1.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "X_test",
+        "kind": 5,
+        "importPath": "Modelling1.RNN",
+        "description": "Modelling1.RNN",
+        "peekOfCode": "X_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义RNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 3)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型\nmodel.fit(X_train, y_train, epochs=100)",
+        "detail": "Modelling1.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "Modelling1.RNN",
+        "description": "Modelling1.RNN",
+        "peekOfCode": "model = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 3)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型\nmodel.fit(X_train, y_train, epochs=100)\n# 评估模型性能\nmse = model.evaluate(X_test, y_test)",
+        "detail": "Modelling1.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Modelling1.RNN",
+        "description": "Modelling1.RNN",
+        "peekOfCode": "mse = model.evaluate(X_test, y_test)\nprint('MSE:', mse)\n# 进行预测\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)",
+        "detail": "Modelling1.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "Modelling1.RNN",
+        "description": "Modelling1.RNN",
+        "peekOfCode": "y_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nplt.savefig('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Results/RNNSimpleScatter.png')",
+        "detail": "Modelling1.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "Modelling1.RNN",
+        "description": "Modelling1.RNN",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nplt.savefig('/content/drive/MyDrive/FinalProject/Population-Density-Pridiction-Based-on-Temperature/Modelling/Results/RNNSimpleScatter.png')",
+        "detail": "Modelling1.RNN",
+        "documentation": {}
+    },
+    {
+        "label": "m",
+        "kind": 5,
+        "importPath": "Visualising.新建文件夹.nrjGUI.GUI",
+        "description": "Visualising.新建文件夹.nrjGUI.GUI",
+        "peekOfCode": "m = folium.Map(location=[39.9, 116.3], zoom_start=5, control_scale=True)\nm.add_child(folium.LatLngPopup())\nm.save(\"index.html\")",
+        "detail": "Visualising.新建文件夹.nrjGUI.GUI",
+        "documentation": {}
+    },
+    {
+        "label": "execute_code_on_map_interaction",
+        "kind": 2,
+        "importPath": "Visualising.新建文件夹.nrjGUI.ui2",
+        "description": "Visualising.新建文件夹.nrjGUI.ui2",
+        "peekOfCode": "def execute_code_on_map_interaction(map):\n    lat, lng = map['last_clicked']['lat'], map['last_clicked']['lng']\n    print(lat, lng)\n# f = open('index.html', 'r')\n# map = st_folium(m, height=350, width=700)\n# data = map['last_clicked']['lat'], map['last_clicked']['lng']\n# data = get_pos(map['last_clicked']['lat'],map['last_clicked']['lng'])\n# if data is not None:\n#    st.write(data)\n# print(data)",
+        "detail": "Visualising.新建文件夹.nrjGUI.ui2",
+        "documentation": {}
+    },
+    {
+        "label": "clickButton",
+        "kind": 2,
+        "importPath": "Visualising.GUI",
+        "description": "Visualising.GUI",
+        "peekOfCode": "def clickButton():\n    global longitude\n    global latitude\n    # 利用百度地图API获取城市名\n    url = \"http://api.map.baidu.com/geocoder/v2/\"\n    params = {\n        \"callback\": \"renderReverse\",\n        \"location\": str(longitude) + \",\" + str(latitude),\n        \"output\": \"json\",\n        \"pois\": \"1\",",
+        "detail": "Visualising.GUI",
+        "documentation": {}
+    },
+    {
+        "label": "click",
+        "kind": 2,
+        "importPath": "Visualising.GUI",
+        "description": "Visualising.GUI",
+        "peekOfCode": "def click(event):\n    global longitude\n    global latitude\n    # 获取用户点击的坐标\n    x = event.x\n    y = event.y\n    # 标记用户点击的位置\n    canvas.create_oval(x - 3, y - 3, x + 3, y + 3, fill=\"red\")\n    # 保存经纬度值\n    longitude = x",
+        "detail": "Visualising.GUI",
+        "documentation": {}
+    },
+    {
+        "label": "ak",
+        "kind": 5,
+        "importPath": "Visualising.GUI",
+        "description": "Visualising.GUI",
+        "peekOfCode": "ak = \"pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG\"\n# 定义主窗口\nroot = tk.Tk()\nroot.title(\"Population predict\")\nroot.geometry(\"500x400\")\n# 定义变量用于保存用户点击的坐标\nlongitude = 0\nlatitude = 0\n# 定义按钮点击事件\ndef clickButton():",
+        "detail": "Visualising.GUI",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "Visualising.GUI",
+        "description": "Visualising.GUI",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"Population predict\")\nroot.geometry(\"500x400\")\n# 定义变量用于保存用户点击的坐标\nlongitude = 0\nlatitude = 0\n# 定义按钮点击事件\ndef clickButton():\n    global longitude\n    global latitude",
+        "detail": "Visualising.GUI",
+        "documentation": {}
+    },
+    {
+        "label": "longitude",
+        "kind": 5,
+        "importPath": "Visualising.GUI",
+        "description": "Visualising.GUI",
+        "peekOfCode": "longitude = 0\nlatitude = 0\n# 定义按钮点击事件\ndef clickButton():\n    global longitude\n    global latitude\n    # 利用百度地图API获取城市名\n    url = \"http://api.map.baidu.com/geocoder/v2/\"\n    params = {\n        \"callback\": \"renderReverse\",",
+        "detail": "Visualising.GUI",
+        "documentation": {}
+    },
+    {
+        "label": "latitude",
+        "kind": 5,
+        "importPath": "Visualising.GUI",
+        "description": "Visualising.GUI",
+        "peekOfCode": "latitude = 0\n# 定义按钮点击事件\ndef clickButton():\n    global longitude\n    global latitude\n    # 利用百度地图API获取城市名\n    url = \"http://api.map.baidu.com/geocoder/v2/\"\n    params = {\n        \"callback\": \"renderReverse\",\n        \"location\": str(longitude) + \",\" + str(latitude),",
+        "detail": "Visualising.GUI",
+        "documentation": {}
+    },
+    {
+        "label": "btn",
+        "kind": 5,
+        "importPath": "Visualising.GUI",
+        "description": "Visualising.GUI",
+        "peekOfCode": "btn = tk.Button(root, text=\"Get prediction\", command=clickButton)\nbtn.pack()\n# 定义画布\ncanvas = tk.Canvas(root, bg=\"white\", width=500, height=400)\ncanvas.pack()\n# 加载中国地图\nurl = \"http://api.map.baidu.com/staticimage/v2?\"\nparams = {\n    \"ak\": ak,\n    \"width\": 500,",
+        "detail": "Visualising.GUI",
+        "documentation": {}
+    },
+    {
+        "label": "canvas",
+        "kind": 5,
+        "importPath": "Visualising.GUI",
+        "description": "Visualising.GUI",
+        "peekOfCode": "canvas = tk.Canvas(root, bg=\"white\", width=500, height=400)\ncanvas.pack()\n# 加载中国地图\nurl = \"http://api.map.baidu.com/staticimage/v2?\"\nparams = {\n    \"ak\": ak,\n    \"width\": 500,\n    \"height\": 400,\n    \"center\": \"116.403874,39.914889\",\n    \"markers\": \"116.403874,39.914889\",",
+        "detail": "Visualising.GUI",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "Visualising.GUI",
+        "description": "Visualising.GUI",
+        "peekOfCode": "url = \"http://api.map.baidu.com/staticimage/v2?\"\nparams = {\n    \"ak\": ak,\n    \"width\": 500,\n    \"height\": 400,\n    \"center\": \"116.403874,39.914889\",\n    \"markers\": \"116.403874,39.914889\",\n    \"markerStyles\": \"l,A\",\n    \"format\": \"png\"  # 修改图片格式\n}",
+        "detail": "Visualising.GUI",
+        "documentation": {}
+    },
+    {
+        "label": "params",
+        "kind": 5,
+        "importPath": "Visualising.GUI",
+        "description": "Visualising.GUI",
+        "peekOfCode": "params = {\n    \"ak\": ak,\n    \"width\": 500,\n    \"height\": 400,\n    \"center\": \"116.403874,39.914889\",\n    \"markers\": \"116.403874,39.914889\",\n    \"markerStyles\": \"l,A\",\n    \"format\": \"png\"  # 修改图片格式\n}\nurl += urllib.parse.urlencode(params)",
+        "detail": "Visualising.GUI",
+        "documentation": {}
+    },
+    {
+        "label": "image_data",
+        "kind": 5,
+        "importPath": "Visualising.GUI",
+        "description": "Visualising.GUI",
+        "peekOfCode": "image_data = urllib.request.urlopen(url).read()\nimage = tk.PhotoImage(data=image_data)\ncanvas.create_image(250, 200, image=image)\n# 定义鼠标点击事件\ndef click(event):\n    global longitude\n    global latitude\n    # 获取用户点击的坐标\n    x = event.x\n    y = event.y",
+        "detail": "Visualising.GUI",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "kind": 5,
+        "importPath": "Visualising.GUI",
+        "description": "Visualising.GUI",
+        "peekOfCode": "image = tk.PhotoImage(data=image_data)\ncanvas.create_image(250, 200, image=image)\n# 定义鼠标点击事件\ndef click(event):\n    global longitude\n    global latitude\n    # 获取用户点击的坐标\n    x = event.x\n    y = event.y\n    # 标记用户点击的位置",
+        "detail": "Visualising.GUI",
+        "documentation": {}
+    },
+    {
+        "label": "MapWidget",
+        "kind": 6,
+        "importPath": "Visualising.mapGUI",
+        "description": "Visualising.mapGUI",
+        "peekOfCode": "class MapWidget(QMainWindow):\n    def __init__(self, map_data):\n        super().__init__()\n        self.map_data = map_data\n        # 创建一个图形和轴对象\n        self.figure = Figure()\n        self.canvas = FigureCanvas(self.figure)\n        self.axes = self.figure.add_subplot(111)\n        # 将地图数据绘制到轴对象上\n        self.map_data.plot(ax=self.axes)",
+        "detail": "Visualising.mapGUI",
+        "documentation": {}
+    },
+    {
+        "label": "execute_code_on_map_interaction",
+        "kind": 2,
+        "importPath": "Visualising.ui2",
+        "description": "Visualising.ui2",
+        "peekOfCode": "def execute_code_on_map_interaction(map):\n    lat, lng = map['last_clicked']['lat'], map['last_clicked']['lng']\n    print(lat, lng)\n# f = open('index.html', 'r')\n# map = st_folium(m, height=350, width=700)\n# data = map['last_clicked']['lat'], map['last_clicked']['lng']\n# data = get_pos(map['last_clicked']['lat'],map['last_clicked']['lng'])\n# if data is not None:\n#    st.write(data)\n# print(data)",
+        "detail": "Visualising.ui2",
+        "documentation": {}
+    },
+    {
+        "label": "m",
+        "kind": 5,
+        "importPath": "Visualising.webGUI",
+        "description": "Visualising.webGUI",
+        "peekOfCode": "m = folium.Map(location=[39.9, 116.3], zoom_start=5, control_scale=True)\nm.add_child(folium.LatLngPopup())\nm.save(\"index.html\")",
+        "detail": "Visualising.webGUI",
+        "documentation": {}
+    }
+]
