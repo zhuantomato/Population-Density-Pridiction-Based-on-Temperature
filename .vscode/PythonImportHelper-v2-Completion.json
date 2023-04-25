@@ -72,6 +72,15 @@
         "documentation": {}
     },
     {
+        "label": "keras_tuner",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "keras_tuner",
+        "description": "keras_tuner",
+        "detail": "keras_tuner",
+        "documentation": {}
+    },
+    {
         "label": "train_test_split",
         "importPath": "sklearn.model_selection",
         "description": "sklearn.model_selection",
@@ -446,15 +455,6 @@
         "importPath": "scipy.stats",
         "description": "scipy.stats",
         "detail": "scipy.stats",
-        "documentation": {}
-    },
-    {
-        "label": "keras_tuner",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "keras_tuner",
-        "description": "keras_tuner",
-        "detail": "keras_tuner",
         "documentation": {}
     },
     {
@@ -871,44 +871,68 @@
         "documentation": {}
     },
     {
-        "label": "QApplication",
-        "importPath": "PyQt5.QtWidgets",
-        "description": "PyQt5.QtWidgets",
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
         "isExtraImport": true,
-        "detail": "PyQt5.QtWidgets",
+        "detail": "PIL",
         "documentation": {}
     },
     {
-        "label": "QMainWindow",
-        "importPath": "PyQt5.QtWidgets",
-        "description": "PyQt5.QtWidgets",
+        "label": "ImageTk",
+        "importPath": "PIL",
+        "description": "PIL",
         "isExtraImport": true,
-        "detail": "PyQt5.QtWidgets",
+        "detail": "PIL",
         "documentation": {}
     },
     {
-        "label": "FigureCanvasQTAgg",
-        "importPath": "matplotlib.backends.backend_qt5agg",
-        "description": "matplotlib.backends.backend_qt5agg",
-        "isExtraImport": true,
-        "detail": "matplotlib.backends.backend_qt5agg",
-        "documentation": {}
-    },
-    {
-        "label": "Figure",
-        "importPath": "matplotlib.figure",
-        "description": "matplotlib.figure",
-        "isExtraImport": true,
-        "detail": "matplotlib.figure",
-        "documentation": {}
-    },
-    {
-        "label": "geopandas",
+        "label": "math",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "geopandas",
-        "description": "geopandas",
-        "detail": "geopandas",
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "CORS",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "cross_origin",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
         "documentation": {}
     },
     {
@@ -1236,11 +1260,20 @@
         "documentation": {}
     },
     {
+        "label": "build_model",
+        "kind": 2,
+        "importPath": "AutoModelling.CNN",
+        "description": "AutoModelling.CNN",
+        "peekOfCode": "def build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Conv2D(hp.Int('conv_1_filter', min_value=16, max_value=128, step=8),\n                               kernel_size=(1, 5),\n                               activation='relu',\n                               input_shape=(1, 5, 1)),\n        tf.keras.layers.Flatten(),\n        tf.keras.layers.Dense(hp.Int('dense_1_units', min_value=4, max_value=64, step=4)),\n        tf.keras.layers.Dense(1)\n    ])",
+        "detail": "AutoModelling.CNN",
+        "documentation": {}
+    },
+    {
         "label": "SEED",
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "SEED = 1\n# 设置numpy的随机种子\nnp.random.seed(SEED)\n# 设置python的随机种子\nrandom.seed(SEED)\n# 设置tensorflow的随机种子\ntf.random.set_seed(SEED)\n# 读取数据文件\ndata = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出",
+        "peekOfCode": "SEED = 1\n# 设置numpy的随机种子\nnp.random.seed(SEED)\n# 设置python的随机种子\nrandom.seed(SEED)\n# 设置tensorflow的随机种子\ntf.random.set_seed(SEED)\n# 读取数据文件\ndata = pd.read_csv('AutoModelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
@@ -1249,7 +1282,7 @@
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "data = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出\nX = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
+        "peekOfCode": "data = pd.read_csv('AutoModelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出\nX = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
@@ -1276,7 +1309,7 @@
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为4D张量形式（样本数，时间步长，特征数，通道数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 5), activation='relu', input_shape=(1, 5, 1)),\n    tf.keras.layers.Flatten(),",
+        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为4D张量形式（样本数，时间步长，特征数，通道数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Conv2D(hp.Int('conv_1_filter', min_value=16, max_value=128, step=8),",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
@@ -1285,7 +1318,7 @@
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为4D张量形式（样本数，时间步长，特征数，通道数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 5), activation='relu', input_shape=(1, 5, 1)),\n    tf.keras.layers.Flatten(),\n    tf.keras.layers.Dense(1)",
+        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为4D张量形式（样本数，时间步长，特征数，通道数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Conv2D(hp.Int('conv_1_filter', min_value=16, max_value=128, step=8),\n                               kernel_size=(1, 5),",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
@@ -1294,7 +1327,7 @@
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "X_test = scaler.transform(X_test)\n# 将输入转换为4D张量形式（样本数，时间步长，特征数，通道数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 5), activation='relu', input_shape=(1, 5, 1)),\n    tf.keras.layers.Flatten(),\n    tf.keras.layers.Dense(1)\n])",
+        "peekOfCode": "X_test = scaler.transform(X_test)\n# 将输入转换为4D张量形式（样本数，时间步长，特征数，通道数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Conv2D(hp.Int('conv_1_filter', min_value=16, max_value=128, step=8),\n                               kernel_size=(1, 5),\n                               activation='relu',",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
@@ -1303,7 +1336,7 @@
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "X_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 5), activation='relu', input_shape=(1, 5, 1)),\n    tf.keras.layers.Flatten(),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')",
+        "peekOfCode": "X_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Conv2D(hp.Int('conv_1_filter', min_value=16, max_value=128, step=8),\n                               kernel_size=(1, 5),\n                               activation='relu',\n                               input_shape=(1, 5, 1)),\n        tf.keras.layers.Flatten(),",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
@@ -1312,34 +1345,16 @@
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "X_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 5), activation='relu', input_shape=(1, 5, 1)),\n    tf.keras.layers.Flatten(),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录",
+        "peekOfCode": "X_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))\n# 定义CNN模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Conv2D(hp.Int('conv_1_filter', min_value=16, max_value=128, step=8),\n                               kernel_size=(1, 5),\n                               activation='relu',\n                               input_shape=(1, 5, 1)),\n        tf.keras.layers.Flatten(),\n        tf.keras.layers.Dense(hp.Int('dense_1_units', min_value=4, max_value=64, step=4)),",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
     {
-        "label": "model",
+        "label": "best_model",
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "model = tf.keras.Sequential([\n    tf.keras.layers.Conv2D(64, kernel_size=(1, 5), activation='relu', input_shape=(1, 5, 1)),\n    tf.keras.layers.Flatten(),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录\nhistory = model.fit(X_train, y_train, epochs=100, validation_data=(X_test, y_test))\n# 绘制学习曲线",
-        "detail": "AutoModelling.CNN",
-        "documentation": {}
-    },
-    {
-        "label": "history",
-        "kind": 5,
-        "importPath": "AutoModelling.CNN",
-        "description": "AutoModelling.CNN",
-        "peekOfCode": "history = model.fit(X_train, y_train, epochs=100, validation_data=(X_test, y_test))\n# 绘制学习曲线\nplt.figure(figsize=(6, 6))\nplt.plot(history.history['loss'], label='train loss')\nplt.plot(history.history['val_loss'], label='test loss')\nplt.xlabel('iterations')\nplt.ylabel('loss')\nplt.legend()\nplt.title('loss curve')\nfig = plt.gcf()",
-        "detail": "AutoModelling.CNN",
-        "documentation": {}
-    },
-    {
-        "label": "fig",
-        "kind": 5,
-        "importPath": "AutoModelling.CNN",
-        "description": "AutoModelling.CNN",
-        "peekOfCode": "fig = plt.gcf()\nplt.show()\nfig.savefig('Modelling\\Results\\CNNLearningCurve.png')\n# 使用pickle模块的dump函数将history对象保存到一个文件中\nwith open('Modelling\\Model\\CNN\\History\\history.pkl', 'wb') as f:\n    pickle.dump(history, f)\ntf.saved_model.save(model, 'Modelling\\Model\\CNN\\Model')\n# 进行预测\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)",
+        "peekOfCode": "best_model = tuner.get_best_models(num_models=1)[0]\n# 将最优模型保存为文件\nbest_model.save('AutoAdjustedModels\\CNN\\CNNSimple.h5')\n# 进行预测\ny_pred = best_model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
@@ -1348,7 +1363,7 @@
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "y_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig2 = plt.gcf()",
+        "peekOfCode": "y_pred = best_model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig = plt.gcf()",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
@@ -1357,16 +1372,16 @@
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig2 = plt.gcf()\nplt.show()",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig = plt.gcf()\nplt.show()",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
     {
-        "label": "fig2",
+        "label": "fig",
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "fig2 = plt.gcf()\nplt.show()\nfig2.savefig('Modelling\\Results\\CNNSimpleScatter.png')\n# 计算准确率\ny_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点",
+        "peekOfCode": "fig = plt.gcf()\nplt.show()\nfig.savefig('AutoModelling\\Results\\CNNSimpleScatter.png')\n# 计算准确率\ny_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
@@ -1375,7 +1390,7 @@
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "y_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)",
+        "peekOfCode": "y_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
@@ -1384,7 +1399,7 @@
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "y_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签",
+        "peekOfCode": "y_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
@@ -1393,7 +1408,7 @@
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "y_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")",
+        "peekOfCode": "y_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
@@ -1402,7 +1417,7 @@
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "accuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")",
+        "peekOfCode": "accuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
@@ -1411,16 +1426,16 @@
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "x = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")\nfig3 = plt.gcf()\nplt.show()\nfig3.savefig('Modelling\\Results\\CNNAccuracyScatter.png')",
+        "peekOfCode": "x = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")\nfig2 = plt.gcf()\nplt.show()\nfig2.savefig('AutoModelling\\Results\\CNNAccuracyScatter.png')",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
     {
-        "label": "fig3",
+        "label": "fig2",
         "kind": 5,
         "importPath": "AutoModelling.CNN",
         "description": "AutoModelling.CNN",
-        "peekOfCode": "fig3 = plt.gcf()\nplt.show()\nfig3.savefig('Modelling\\Results\\CNNAccuracyScatter.png')",
+        "peekOfCode": "fig2 = plt.gcf()\nplt.show()\nfig2.savefig('AutoModelling\\Results\\CNNAccuracyScatter.png')",
         "detail": "AutoModelling.CNN",
         "documentation": {}
     },
@@ -1429,7 +1444,7 @@
         "kind": 2,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "def build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Dense(hp.Int('input_units',min_value=1,max_value=64,step=4),\n                              activation='relu', input_shape=(5,)),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_1',min_value=1,max_value=256,step=4),\n                              activation='relu'),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_2',min_value=32,max_value=128,step=4),\n                              activation='relu'),\n        tf.keras.layers.Dense(1)\n    ])",
+        "peekOfCode": "def build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Dense(hp.Int('input_units',min_value=4,max_value=128,step=4),\n                              activation='relu', input_shape=(5,)),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_1',min_value=4,max_value=256,step=4),\n                              activation='relu'),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_2',min_value=4,max_value=128,step=4),\n                              activation='relu'),\n        tf.keras.layers.Dense(1)\n    ])",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
@@ -1438,7 +1453,7 @@
         "kind": 5,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "SEED = 1\n# 设置numpy的随机种子\nnp.random.seed(SEED)\n# 设置python的随机种子\nrandom.seed(SEED)\n# 设置tensorflow的随机种子\ntf.random.set_seed(SEED)\n# 读取数据文件\ndata = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出",
+        "peekOfCode": "SEED = 1\n# 设置numpy的随机种子\nnp.random.seed(SEED)\n# 设置python的随机种子\nrandom.seed(SEED)\n# 设置tensorflow的随机种子\ntf.random.set_seed(SEED)\n# 读取数据文件\ndata = pd.read_csv('AutoModelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
@@ -1447,7 +1462,7 @@
         "kind": 5,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "data = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出\nX = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
+        "peekOfCode": "data = pd.read_csv('AutoModelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出\nX = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
@@ -1474,7 +1489,7 @@
         "kind": 5,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Dense(hp.Int('input_units',min_value=1,max_value=64,step=4),\n                              activation='relu', input_shape=(5,)),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_1',min_value=1,max_value=256,step=4),\n                              activation='relu'),",
+        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Dense(hp.Int('input_units',min_value=4,max_value=128,step=4),\n                              activation='relu', input_shape=(5,)),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_1',min_value=4,max_value=256,step=4),\n                              activation='relu'),",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
@@ -1483,7 +1498,7 @@
         "kind": 5,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Dense(hp.Int('input_units',min_value=1,max_value=64,step=4),\n                              activation='relu', input_shape=(5,)),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_1',min_value=1,max_value=256,step=4),\n                              activation='relu'),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_2',min_value=32,max_value=128,step=4),",
+        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Dense(hp.Int('input_units',min_value=4,max_value=128,step=4),\n                              activation='relu', input_shape=(5,)),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_1',min_value=4,max_value=256,step=4),\n                              activation='relu'),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_2',min_value=4,max_value=128,step=4),",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
@@ -1492,7 +1507,7 @@
         "kind": 5,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "X_test = scaler.transform(X_test)\n# 定义DNN模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Dense(hp.Int('input_units',min_value=1,max_value=64,step=4),\n                              activation='relu', input_shape=(5,)),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_1',min_value=1,max_value=256,step=4),\n                              activation='relu'),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_2',min_value=32,max_value=128,step=4),\n                              activation='relu'),",
+        "peekOfCode": "X_test = scaler.transform(X_test)\n# 定义DNN模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Dense(hp.Int('input_units',min_value=4,max_value=128,step=4),\n                              activation='relu', input_shape=(5,)),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_1',min_value=4,max_value=256,step=4),\n                              activation='relu'),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_2',min_value=4,max_value=128,step=4),\n                              activation='relu'),",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
@@ -1501,7 +1516,7 @@
         "kind": 5,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "best_model = tuner.get_best_models(num_models=1)[0]\n# # 绘制学习曲线\n# plt.figure(figsize=(6, 6))\n# plt.plot(history.history['loss'], label='train loss')\n# plt.plot(history.history['val_loss'], label='test loss')\n# plt.xlabel('iterations')\n# plt.ylabel('loss')\n# plt.legend()\n# plt.title('loss curve')\n# fig = plt.gcf()",
+        "peekOfCode": "best_model = tuner.get_best_models(num_models=1)[0]\n# 将最优模型保存为文件\nbest_model.save('AutoAdjustedModels\\DNN\\DNNSimple.h5')\n# 进行预测\ny_pred = best_model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
@@ -1510,7 +1525,7 @@
         "kind": 5,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "y_pred = best_model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig2 = plt.gcf()",
+        "peekOfCode": "y_pred = best_model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig = plt.gcf()",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
@@ -1519,16 +1534,16 @@
         "kind": 5,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig2 = plt.gcf()\nplt.show()",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig = plt.gcf()\nplt.show()",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
     {
-        "label": "fig2",
+        "label": "fig",
         "kind": 5,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "fig2 = plt.gcf()\nplt.show()\n#fig2.savefig('Modelling\\Results\\DNNSimpleScatter.png')\n# 计算准确率\ny_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)",
+        "peekOfCode": "fig = plt.gcf()\nplt.show()\nfig.savefig('AutoModelling\\Results\\DNNSimpleScatter.png')\n# 计算准确率\ny_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
@@ -1573,16 +1588,16 @@
         "kind": 5,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "x = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")\nfig3 = plt.gcf()\nplt.show()\n#fig3.savefig('Modelling\\Results\\DNNAccuracyScatter.png')",
+        "peekOfCode": "x = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")\nfig2 = plt.gcf()\nplt.show()\nfig2.savefig('AutoModelling\\Results\\DNNAccuracyScatter.png')",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
     {
-        "label": "fig3",
+        "label": "fig2",
         "kind": 5,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "fig3 = plt.gcf()\nplt.show()\n#fig3.savefig('Modelling\\Results\\DNNAccuracyScatter.png')",
+        "peekOfCode": "fig2 = plt.gcf()\nplt.show()\nfig2.savefig('AutoModelling\\Results\\DNNAccuracyScatter.png')",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
@@ -1713,11 +1728,20 @@
         "documentation": {}
     },
     {
+        "label": "build_model",
+        "kind": 2,
+        "importPath": "AutoModelling.LSTM",
+        "description": "AutoModelling.LSTM",
+        "peekOfCode": "def build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.LSTM(hp.Int('units', min_value=32, max_value=128, step=16), input_shape=(1, 5)),\n        tf.keras.layers.Dense(1)\n    ])\n    # 编译模型\n    model.compile(optimizer=tf.keras.optimizers.Adam(\n        hp.Choice('learning_rate',values=[1e-2, 1e-3, 1e-4])),\n                  loss='mse')\n    return model",
+        "detail": "AutoModelling.LSTM",
+        "documentation": {}
+    },
+    {
         "label": "SEED",
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "SEED = 1\n# 设置numpy的随机种子\nnp.random.seed(SEED)\n# 设置python的随机种子\nrandom.seed(SEED)\n# 设置tensorflow的随机种子\ntf.random.set_seed(SEED)\n# 读取数据文件\ndata = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出",
+        "peekOfCode": "SEED = 1\n# 设置numpy的随机种子\nnp.random.seed(SEED)\n# 设置python的随机种子\nrandom.seed(SEED)\n# 设置tensorflow的随机种子\ntf.random.set_seed(SEED)\n# 读取数据文件\ndata = pd.read_csv('AutoModelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出",
         "detail": "AutoModelling.LSTM",
         "documentation": {}
     },
@@ -1726,7 +1750,7 @@
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "data = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出\nX = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
+        "peekOfCode": "data = pd.read_csv('AutoModelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出\nX = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
         "detail": "AutoModelling.LSTM",
         "documentation": {}
     },
@@ -1753,7 +1777,7 @@
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)",
+        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.LSTM(hp.Int('units', min_value=32, max_value=128, step=16), input_shape=(1, 5)),",
         "detail": "AutoModelling.LSTM",
         "documentation": {}
     },
@@ -1762,7 +1786,7 @@
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])",
+        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.LSTM(hp.Int('units', min_value=32, max_value=128, step=16), input_shape=(1, 5)),\n        tf.keras.layers.Dense(1)",
         "detail": "AutoModelling.LSTM",
         "documentation": {}
     },
@@ -1771,7 +1795,7 @@
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "X_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型",
+        "peekOfCode": "X_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.LSTM(hp.Int('units', min_value=32, max_value=128, step=16), input_shape=(1, 5)),\n        tf.keras.layers.Dense(1)\n    ])",
         "detail": "AutoModelling.LSTM",
         "documentation": {}
     },
@@ -1780,7 +1804,7 @@
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "X_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录",
+        "peekOfCode": "X_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.LSTM(hp.Int('units', min_value=32, max_value=128, step=16), input_shape=(1, 5)),\n        tf.keras.layers.Dense(1)\n    ])\n    # 编译模型\n    model.compile(optimizer=tf.keras.optimizers.Adam(",
         "detail": "AutoModelling.LSTM",
         "documentation": {}
     },
@@ -1789,34 +1813,16 @@
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "X_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录\nhistory = model.fit(X_train, y_train, epochs=200, validation_data=(X_test, y_test))",
+        "peekOfCode": "X_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.LSTM(hp.Int('units', min_value=32, max_value=128, step=16), input_shape=(1, 5)),\n        tf.keras.layers.Dense(1)\n    ])\n    # 编译模型\n    model.compile(optimizer=tf.keras.optimizers.Adam(\n        hp.Choice('learning_rate',values=[1e-2, 1e-3, 1e-4])),",
         "detail": "AutoModelling.LSTM",
         "documentation": {}
     },
     {
-        "label": "model",
+        "label": "best_model",
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "model = tf.keras.Sequential([\n    tf.keras.layers.LSTM(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录\nhistory = model.fit(X_train, y_train, epochs=200, validation_data=(X_test, y_test))\n# 绘制学习曲线\nplt.figure(figsize=(6, 6))",
-        "detail": "AutoModelling.LSTM",
-        "documentation": {}
-    },
-    {
-        "label": "history",
-        "kind": 5,
-        "importPath": "AutoModelling.LSTM",
-        "description": "AutoModelling.LSTM",
-        "peekOfCode": "history = model.fit(X_train, y_train, epochs=200, validation_data=(X_test, y_test))\n# 绘制学习曲线\nplt.figure(figsize=(6, 6))\nplt.plot(history.history['loss'], label='train loss')\nplt.plot(history.history['val_loss'], label='test loss')\nplt.xlabel('iterations')\nplt.ylabel('loss')\nplt.legend()\nplt.title('loss curve')\nfig = plt.gcf()",
-        "detail": "AutoModelling.LSTM",
-        "documentation": {}
-    },
-    {
-        "label": "fig",
-        "kind": 5,
-        "importPath": "AutoModelling.LSTM",
-        "description": "AutoModelling.LSTM",
-        "peekOfCode": "fig = plt.gcf()\nplt.show()\nfig.savefig('Modelling\\Results\\LSTMLearningCurve.png')\n# 使用pickle模块的dump函数将history对象保存到一个文件中\nwith open('Modelling\\Model\\LSTM\\History\\history.pkl', 'wb') as f:\n    pickle.dump(history, f)\ntf.saved_model.save(model, 'Modelling\\Model\\LSTM\\Model')\n# 进行预测\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)",
+        "peekOfCode": "best_model = tuner.get_best_models(num_models=1)[0]\n# 将最优模型保存为文件\nbest_model.save('AutoAdjustedModels\\LSTM\\LSTMSimple.h5')\n# 进行预测\ny_pred = best_model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')",
         "detail": "AutoModelling.LSTM",
         "documentation": {}
     },
@@ -1825,7 +1831,7 @@
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "y_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig2 = plt.gcf()",
+        "peekOfCode": "y_pred = best_model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig = plt.gcf()",
         "detail": "AutoModelling.LSTM",
         "documentation": {}
     },
@@ -1834,16 +1840,16 @@
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig2 = plt.gcf()\nplt.show()",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig = plt.gcf()\nplt.show()",
         "detail": "AutoModelling.LSTM",
         "documentation": {}
     },
     {
-        "label": "fig2",
+        "label": "fig",
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "fig2 = plt.gcf()\nplt.show()\nfig2.savefig('Modelling\\Results\\LSTMSimpleScatter.png')\n# 计算准确率\ny_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点",
+        "peekOfCode": "fig = plt.gcf()\nplt.show()\nfig.savefig('AutoModelling\\Results\\LSTMSimpleScatter.png')\n# 计算准确率\ny_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)",
         "detail": "AutoModelling.LSTM",
         "documentation": {}
     },
@@ -1852,7 +1858,7 @@
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "y_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)",
+        "peekOfCode": "y_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线",
         "detail": "AutoModelling.LSTM",
         "documentation": {}
     },
@@ -1861,7 +1867,7 @@
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "y_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签",
+        "peekOfCode": "y_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)",
         "detail": "AutoModelling.LSTM",
         "documentation": {}
     },
@@ -1870,7 +1876,7 @@
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "y_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")",
+        "peekOfCode": "y_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签",
         "detail": "AutoModelling.LSTM",
         "documentation": {}
     },
@@ -1879,7 +1885,7 @@
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "accuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")",
+        "peekOfCode": "accuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")",
         "detail": "AutoModelling.LSTM",
         "documentation": {}
     },
@@ -1888,17 +1894,26 @@
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "x = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")\nfig3 = plt.gcf()\nplt.show()\nfig3.savefig('Modelling\\Results\\LSTMAccuracyScatter.png')",
+        "peekOfCode": "x = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")\nfig2 = plt.gcf()\nplt.show()\nfig2.savefig('AutoModelling\\Results\\LSTMAccuracyScatter.png')",
         "detail": "AutoModelling.LSTM",
         "documentation": {}
     },
     {
-        "label": "fig3",
+        "label": "fig2",
         "kind": 5,
         "importPath": "AutoModelling.LSTM",
         "description": "AutoModelling.LSTM",
-        "peekOfCode": "fig3 = plt.gcf()\nplt.show()\nfig3.savefig('Modelling\\Results\\LSTMAccuracyScatter.png')",
+        "peekOfCode": "fig2 = plt.gcf()\nplt.show()\nfig2.savefig('AutoModelling\\Results\\LSTMAccuracyScatter.png')",
         "detail": "AutoModelling.LSTM",
+        "documentation": {}
+    },
+    {
+        "label": "build_model",
+        "kind": 2,
+        "importPath": "AutoModelling.RNN",
+        "description": "AutoModelling.RNN",
+        "peekOfCode": "def build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.SimpleRNN(hp.Int('units', min_value=32, max_value=128, step=16), input_shape=(1, 5)),\n        tf.keras.layers.Dense(1)\n    ])\n    # 编译模型\n    model.compile(optimizer=tf.keras.optimizers.Adam(\n        hp.Choice('learning_rate',values=[1e-2, 1e-3, 1e-4])),\n                  loss='mse')\n    return model",
+        "detail": "AutoModelling.RNN",
         "documentation": {}
     },
     {
@@ -1906,7 +1921,7 @@
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "SEED = 1\n# 设置numpy的随机种子\nnp.random.seed(SEED)\n# 设置python的随机种子\nrandom.seed(SEED)\n# 设置tensorflow的随机种子\ntf.random.set_seed(SEED)\n# 读取数据文件\ndata = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出",
+        "peekOfCode": "SEED = 1\n# 设置numpy的随机种子\nnp.random.seed(SEED)\n# 设置python的随机种子\nrandom.seed(SEED)\n# 设置tensorflow的随机种子\ntf.random.set_seed(SEED)\n# 读取数据文件\ndata = pd.read_csv('AutoModelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
@@ -1915,7 +1930,7 @@
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "data = pd.read_csv('Modelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出\nX = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
+        "peekOfCode": "data = pd.read_csv('AutoModelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出\nX = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
@@ -1942,7 +1957,7 @@
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义RNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)",
+        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.SimpleRNN(hp.Int('units', min_value=32, max_value=128, step=16), input_shape=(1, 5)),",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
@@ -1951,7 +1966,7 @@
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义RNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])",
+        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.SimpleRNN(hp.Int('units', min_value=32, max_value=128, step=16), input_shape=(1, 5)),\n        tf.keras.layers.Dense(1)",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
@@ -1960,7 +1975,7 @@
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "X_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义RNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型",
+        "peekOfCode": "X_test = scaler.transform(X_test)\n# 将输入转换为3D张量形式（样本数，时间步长，特征数）\nX_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.SimpleRNN(hp.Int('units', min_value=32, max_value=128, step=16), input_shape=(1, 5)),\n        tf.keras.layers.Dense(1)\n    ])",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
@@ -1969,7 +1984,7 @@
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "X_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义RNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录",
+        "peekOfCode": "X_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1]))\nX_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.SimpleRNN(hp.Int('units', min_value=32, max_value=128, step=16), input_shape=(1, 5)),\n        tf.keras.layers.Dense(1)\n    ])\n    # 编译模型\n    model.compile(optimizer=tf.keras.optimizers.Adam(",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
@@ -1978,34 +1993,16 @@
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "X_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义RNN模型架构\nmodel = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录\nhistory = model.fit(X_train, y_train, epochs=200, validation_data=(X_test, y_test))",
+        "peekOfCode": "X_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1]))\n# 定义LSTM模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.SimpleRNN(hp.Int('units', min_value=32, max_value=128, step=16), input_shape=(1, 5)),\n        tf.keras.layers.Dense(1)\n    ])\n    # 编译模型\n    model.compile(optimizer=tf.keras.optimizers.Adam(\n        hp.Choice('learning_rate',values=[1e-2, 1e-3, 1e-4])),",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
     {
-        "label": "model",
+        "label": "best_model",
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "model = tf.keras.Sequential([\n    tf.keras.layers.SimpleRNN(64, input_shape=(1, 5)),\n    tf.keras.layers.Dense(1)\n])\n# 编译模型\nmodel.compile(optimizer='adam', loss='mse')\n# 训练模型并保存历史记录\nhistory = model.fit(X_train, y_train, epochs=200, validation_data=(X_test, y_test))\n# 绘制学习曲线\nplt.figure(figsize=(6, 6))",
-        "detail": "AutoModelling.RNN",
-        "documentation": {}
-    },
-    {
-        "label": "history",
-        "kind": 5,
-        "importPath": "AutoModelling.RNN",
-        "description": "AutoModelling.RNN",
-        "peekOfCode": "history = model.fit(X_train, y_train, epochs=200, validation_data=(X_test, y_test))\n# 绘制学习曲线\nplt.figure(figsize=(6, 6))\nplt.plot(history.history['loss'], label='train loss')\nplt.plot(history.history['val_loss'], label='test loss')\nplt.xlabel('iterations')\nplt.ylabel('loss')\nplt.legend()\nplt.title('loss curve')\nfig = plt.gcf()",
-        "detail": "AutoModelling.RNN",
-        "documentation": {}
-    },
-    {
-        "label": "fig",
-        "kind": 5,
-        "importPath": "AutoModelling.RNN",
-        "description": "AutoModelling.RNN",
-        "peekOfCode": "fig = plt.gcf()\nplt.show()\nfig.savefig('Modelling\\Results\\RNNLearningCurve.png')\n# 使用pickle模块的dump函数将history对象保存到一个文件中\nwith open('Modelling\\Model\\RNN\\History\\history.pkl', 'wb') as f:\n    pickle.dump(history, f)\ntf.saved_model.save(model, 'Modelling\\Model\\RNN\\Model')\n# 进行预测\ny_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)",
+        "peekOfCode": "best_model = tuner.get_best_models(num_models=1)[0]\n# 将最优模型保存为文件\nbest_model.save('AutoAdjustedModels\\RNN\\RNNSimple.h5')\n# 进行预测\ny_pred = best_model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
@@ -2014,7 +2011,7 @@
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "y_pred = model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig2 = plt.gcf()",
+        "peekOfCode": "y_pred = best_model.predict(X_test)\nmse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig = plt.gcf()",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
@@ -2023,16 +2020,16 @@
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig2 = plt.gcf()\nplt.show()",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\n# 绘制图像\nplt.scatter(y_test, y_pred)\nplt.xlabel('True Values')\nplt.ylabel('Predictions')\nplt.xlim(1,2.5)\nplt.ylim(1,2.5)\nplt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)\nfig = plt.gcf()\nplt.show()",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
     {
-        "label": "fig2",
+        "label": "fig",
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "fig2 = plt.gcf()\nplt.show()\nfig2.savefig('Modelling\\Results\\RNNSimpleScatter.png')\n# 计算准确率\ny_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点",
+        "peekOfCode": "fig = plt.gcf()\nplt.show()\nfig.savefig('AutoModelling\\Results\\RNNSimpleScatter.png')\n# 计算准确率\ny_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
@@ -2041,7 +2038,7 @@
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "y_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)",
+        "peekOfCode": "y_pred = y_pred.tolist()\ny_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
@@ -2050,7 +2047,7 @@
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "y_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签",
+        "peekOfCode": "y_test = y_test.tolist()\ny_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
@@ -2059,7 +2056,7 @@
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "y_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")",
+        "peekOfCode": "y_pred = [item for sublist in y_pred for item in sublist]\naccuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
@@ -2068,7 +2065,7 @@
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "accuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")",
+        "peekOfCode": "accuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]\n# 绘制图像\nplt.hist(accuracy, bins=200, density=True)\n# 计算频率密度和区间中点\ndensity, bins = np.histogram(accuracy, bins=200, density=True)\nx = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
@@ -2077,16 +2074,16 @@
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "x = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")\nfig3 = plt.gcf()\nplt.show()\nfig3.savefig('Modelling\\Results\\RNNAccuracyScatter.png')",
+        "peekOfCode": "x = (bins[1:] + bins[:-1]) / 2 # 区间中点\n# 绘制密度曲线\nplt.plot(x, density)\n# 添加横轴和纵轴标签\nplt.xlabel(\"Accuracy\")\nplt.ylabel(\"Frequency Density\")\nfig2 = plt.gcf()\nplt.show()\nfig2.savefig('AutoModelling\\Results\\RNNAccuracyScatter.png')",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
     {
-        "label": "fig3",
+        "label": "fig2",
         "kind": 5,
         "importPath": "AutoModelling.RNN",
         "description": "AutoModelling.RNN",
-        "peekOfCode": "fig3 = plt.gcf()\nplt.show()\nfig3.savefig('Modelling\\Results\\RNNAccuracyScatter.png')",
+        "peekOfCode": "fig2 = plt.gcf()\nplt.show()\nfig2.savefig('AutoModelling\\Results\\RNNAccuracyScatter.png')",
         "detail": "AutoModelling.RNN",
         "documentation": {}
     },
@@ -4512,11 +4509,29 @@
         "documentation": {}
     },
     {
-        "label": "MapWidget",
+        "label": "MapViewer",
         "kind": 6,
         "importPath": "Visualising.mapGUI",
         "description": "Visualising.mapGUI",
-        "peekOfCode": "class MapWidget(QMainWindow):\n    def __init__(self, map_data):\n        super().__init__()\n        self.map_data = map_data\n        # 创建一个图形和轴对象\n        self.figure = Figure()\n        self.canvas = FigureCanvas(self.figure)\n        self.axes = self.figure.add_subplot(111)\n        # 将地图数据绘制到轴对象上\n        self.map_data.plot(ax=self.axes)",
+        "peekOfCode": "class MapViewer(tk.Frame):\n    def __init__(self, master=None):\n        super().__init__(master)\n        self.pack()\n        self.create_widgets()\n    # 创建GUI所需的所有控件\n    def create_widgets(self):\n        # 创建一个画布用于显示中国区域地图\n        self.canvas = tk.Canvas(self, width=600, height=400, bg=\"white\")\n        self.canvas.pack()",
+        "detail": "Visualising.mapGUI",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "Visualising.mapGUI",
+        "description": "Visualising.mapGUI",
+        "peekOfCode": "root = tk.Tk()\napp = MapViewer(master=root)\napp.mainloop()",
+        "detail": "Visualising.mapGUI",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "Visualising.mapGUI",
+        "description": "Visualising.mapGUI",
+        "peekOfCode": "app = MapViewer(master=root)\napp.mainloop()",
         "detail": "Visualising.mapGUI",
         "documentation": {}
     },
@@ -4536,6 +4551,24 @@
         "description": "Visualising.webGUI",
         "peekOfCode": "m = folium.Map(location=[39.9, 116.3], zoom_start=5, control_scale=True)\nm.add_child(folium.LatLngPopup())\nm.save(\"index.html\")",
         "detail": "Visualising.webGUI",
+        "documentation": {}
+    },
+    {
+        "label": "handle_data",
+        "kind": 2,
+        "importPath": "Web.BackEnd",
+        "description": "Web.BackEnd",
+        "peekOfCode": "def handle_data():\n    # 获取 JSON 格式的请求数据\n    data = request.get_json()\n    # 获取下拉菜单的选中值和鼠标点击的经纬度\n    selectedOption = data['option']\n    lnglat = data['lnglat']\n    # 在这里处理数据...\n    print(selectedOption, lnglat)\n    result = 'your result'\n    # 将处理结果作为 JSON 格式的响应返回给前端页面",
+        "detail": "Web.BackEnd",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "Web.BackEnd",
+        "description": "Web.BackEnd",
+        "peekOfCode": "app = Flask(__name__)\nCORS(app) # enable CORS for all routes\n@app.route('/process', methods=['POST'])\n@cross_origin() # enable CORS for this route\ndef handle_data():\n    # 获取 JSON 格式的请求数据\n    data = request.get_json()\n    # 获取下拉菜单的选中值和鼠标点击的经纬度\n    selectedOption = data['option']\n    lnglat = data['lnglat']",
+        "detail": "Web.BackEnd",
         "documentation": {}
     }
 ]

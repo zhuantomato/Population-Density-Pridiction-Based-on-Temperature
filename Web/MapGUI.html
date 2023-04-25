@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>本地可视化地图程序</title>
+    <style>
+        #container {
+            width: 100vw;
+            height: 100vh;
+        }
+        #sidebar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 25vw;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: block;
+        }
+        #options {
+            margin-top: 80px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 60%;
+            height: 50px;
+            display: block;
+            text-align: center;
+        }
+        #sendBtn {
+            margin-top: 40px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 60%;
+            height: 50px;
+            display: block;
+        }
+        #result {
+            margin-top: 80px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 66.67%;
+            height: 50%;
+            border: solid 1px black;
+        }
+        #h1 {
+          height: 80px;
+          font-size: 25px; /* Change this value to adjust the size */
+          text-align: center;
+          font: Calibri;
+          padding-top: 23px;
+        }
+    </style>
+    <!--使用Bootstrap4框架美化界面-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <!--引入高德地图JS文件-->
+    <script type="text/javascript">
+            window._AMapSecurityConfig = {
+                securityJsCode:'d1a4e99a27c8a78396d2b4adfb412093',
+            }
+    </script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=82e27dd912dbb37a72d7300d766f499a"></script> 
+</head>
+<body>
+    <!--创建一个地图容器-->
+    <div id="container"></div>
+
+    <!--创建一个侧边栏容器-->
+    <div id="sidebar" class="card">
+        <h1 id="h1" class="card-header">The prediction program</h1>
+        <!--添加一个下拉菜单-->
+        <select id="options" class="form-control custom-select">
+            <option value="option1">Eating POIs</option>
+            <option value="option2">Sports POIs</option>
+            <option value="option3">Entertaining POIs</option>
+        </select>
+
+        <!--添加一个按钮-->
+        <button class="btn btn-primary" id="sendBtn">Send Data</button>
+
+        <!--添加一个结果显示框-->
+        <div class="card-body"> <!-- 添加这个属性 -->
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <!--添加一个脚本标签-->
+    <script>
+        //创建一个地图对象
+        var map = new AMap.Map('container', {
+            //设置地图语言为英文
+            lang: 'en'
+        });
+        var currentLnglat = null;
+        //给地图添加一个点击事件监听器
+        map.on('click', function(e) {
+            //获取点击位置的经纬度
+            var lnglat = e.lnglat;
+            currentLnglat = lnglat;
+            //创建一个信息窗口
+            var infoWindow = new AMap.InfoWindow({
+                //设置信息窗口的内容为经纬度
+                content: '经度：' + lnglat.lng + '<br>纬度：' + lnglat.lat,
+                //设置信息窗口的偏移量
+                offset: new AMap.Pixel(0, -20)
+            });
+
+            //在点击位置打开信息窗口
+            infoWindow.open(map, lnglat);
+        });
+
+        //获取下拉菜单和按钮元素
+        var options = document.getElementById('options');
+        var sendBtn = document.getElementById('sendBtn');
+        var result = document.getElementById('result');
+        
+        //监听按钮的点击事件
+        sendBtn.addEventListener('click', function() {
+            //获取下拉菜单的选中值
+            var selectedOption = options.value;
+            //获取鼠标点击的经纬度（这里假设你已经获取到了）
+            var lnglat = {lng: currentLnglat.lng, lat: currentLnglat.lat};
+            //使用 AJAX 将数据发送到后端 Python 程序（这里只是演示，具体实现需要根据你的需求来编写）
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'http://localhost:5000/process');
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify({
+                option: selectedOption,
+                lnglat: lnglat
+            }));
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    // 获取响应数据
+                    var data = JSON.parse(xhr.responseText);
+                    // 获取处理结果
+                    var result = data.result;
+                    // 在结果显示框中展示处理结果
+                    result.innerHTML = result;
+                }
+            };
+        });
+    </script>
+</body>
+</html>

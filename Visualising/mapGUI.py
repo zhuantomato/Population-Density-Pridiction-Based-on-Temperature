@@ -1,50 +1,104 @@
-import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
-from matplotlib.figure import Figure
-import geopandas as gpd
-
-class MapWidget(QMainWindow):
-    def __init__(self, map_data):
-        super().__init__()
-
-        self.map_data = map_data
-
-        # 创建一个图形和轴对象
-        self.figure = Figure()
-        self.canvas = FigureCanvas(self.figure)
-        self.axes = self.figure.add_subplot(111)
-
-        # 将地图数据绘制到轴对象上
-        self.map_data.plot(ax=self.axes)
-
-        # 设置轴对象的初始状态
-        self.axes.set_xlim(self.map_data.total_bounds[0], self.map_data.total_bounds[2])
-        self.axes.set_ylim(self.map_data.total_bounds[1], self.map_data.total_bounds[3])
-        self.axes.set_aspect('equal')
-
-        # 添加canvas到窗口中
-        self.setCentralWidget(self.canvas)
-
-        # 连接canvas的点击事件处理器
-        self.canvas.mpl_connect('button_press_event', self.on_click)
-
-    def on_click(self, event):
-        # 将点击的坐标转换为经纬度
-        x, y = event.xdata, event.ydata
-        lon, lat = self.axes.transData.inverted().transform((x, y))
-
-        # 在屏幕上显示经纬度
-        print(f"Clicked on ({lon:.4f}, {lat:.4f})")
-
-if __name__ == '__main__':
-    # 读取中国区域地图数据
-    map_data = gpd.read_file('path/to/shapefile')
-
-    # 初始化应用程序和主窗口
-    app = QApplication(sys.argv)
-    window = MapWidget(map_data)
-
-    # 显示主窗口
-    window.show()
-    sys.exit(app.exec_())
+import tkinter as tk #导入tkinter库 
+from PIL import Image, ImageTk #导入PIL库 
+import math #导入math库 
+ 
+#定义一个类，用于显示中国区域地图的GUI程序 
+class MapViewer(tk.Frame):
+    
+    def __init__(self, master=None):
+        super().__init__(master)
+        self.pack()
+        self.create_widgets()
+        
+    # 创建GUI所需的所有控件
+    def create_widgets(self):
+        # 创建一个画布用于显示中国区域地图
+        self.canvas = tk.Canvas(self, width=600, height=400, bg="white")
+        self.canvas.pack()
+        # 将地图图片加载到画布中
+        self.image = Image.open('Visualising\china_map.png')
+        self.image = self.image.resize((600, 400), Image.ANTIALIAS)
+        self.image = ImageTk.PhotoImage(self.image)
+        self.canvas.create_image(0, 0, image=self.image, anchor="nw")
+        
+        # 创建一个放大按钮
+        self.zoom_in_btn = tk.Button(self, text="放大", command=self.zoom_in)
+        self.zoom_in_btn.pack()
+        
+        # 创建一个缩小按钮
+        self.zoom_out_btn = tk.Button(self, text="缩小", command=self.zoom_out)
+        self.zoom_out_btn.pack()
+        
+        # 创建一个移动按钮
+        self.move_btn = tk.Button(self, text="移动", command=self.move)
+        self.move_btn.pack()
+        
+        # 创建一个显示地理坐标信息的标签
+        self.coordinate_label = tk.Label(self, text="经纬度：")
+        self.coordinate_label.pack()
+        
+    # 放大函数，用于放大地图
+    def zoom_in(self):
+        # 获取画布的当前大小
+        width = self.canvas.winfo_width()
+        height = self.canvas.winfo_height()
+        # 画布放大一倍
+        self.canvas.config(width=width*2, height=height*2)
+        # 将放大后的地图图片加载到画布中
+        self.image = Image.open('Visualising\china_map.png')
+        self.image = self.image.resize((width*2, height*2), Image.ANTIALIAS)
+        self.image = ImageTk.PhotoImage(self.image)
+        self.canvas.create_image(0, 0, image=self.image, anchor="nw")
+        # 绑定点击事件
+        self.canvas.bind("<Button-1>", self.click_map)
+        
+    # 缩小函数，用于缩小地图
+    def zoom_out(self):
+        # 获取画布的当前大小
+        width = self.canvas.winfo_width()
+        height = self.canvas.winfo_height()
+        # 画布缩小一倍
+        self.canvas.config(width=width//2, height=height//2)
+        # 将缩小后的地图图片加载到画布中
+        self.image = Image.open('map.jpg')
+        self.image = self.image.resize((width//2, height//2), Image.ANTIALIAS)
+        self.image = ImageTk.PhotoImage(self.image)
+        self.canvas.create_image(0, 0, image=self.image, anchor="nw")
+        # 绑定点击事件
+        self.canvas.bind("<Button-1>", self.click_map)
+        
+    # 移动函数，用于移动地图
+    def move(self):
+        # 获取画布的当前大小
+        width = self.canvas.winfo_width()
+        height = self.canvas.winfo_height()
+        # 获取画布的当前位置
+        x = self.canvas.winfo_x()
+        y = self.canvas.winfo_y()
+        # 计算移动之后的位置
+        x += 10
+        y += 10
+        if x > width:
+            x = 0
+        if y > height:
+            y = 0
+        # 画布移动到新的位置
+        self.canvas.place(x=x, y=y)
+        # 绑定点击事件
+        self.canvas.bind("<Button-1>", self.click_map)
+    
+    # 点击事件，用于返回点击位置的经纬度
+    def click_map(self, event):
+        # 获取点击位置的像素坐标
+        x = event.x
+        y = event.y
+        # 计算点击位置的地理坐标（经纬度）
+        longitude = round(x / self.canvas.winfo_width() * 360 - 180, 3)
+        latitude = round(math.degrees(math.atan(math.exp(y / self.canvas.winfo_height() * math.pi - math.pi / 2)) - 90, 3))
+        # 更新显示地理坐标信息的标签
+        self.coordinate_label.config(text="经纬度："+str(longitude)+", "+str(latitude))
+        
+# 启动GUI程序
+root = tk.Tk()
+app = MapViewer(master=root)
+app.mainloop()

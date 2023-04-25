@@ -4,6 +4,7 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 import random
 import pickle
+import keras_tuner as kt
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error
@@ -18,7 +19,7 @@ random.seed(SEED)
 tf.random.set_seed(SEED)
 
 # 读取数据文件
-data = pd.read_csv('Modelling\DataPreprocess\MergedData\data.csv')
+data = pd.read_csv('AutoModelling\DataPreprocess\MergedData\data.csv')
 
 # 将数据分为输入和输出
 X = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]
@@ -37,40 +38,42 @@ X_train = np.reshape(X_train, (X_train.shape[0], 1, X_train.shape[1], 1))
 X_test = np.reshape(X_test, (X_test.shape[0], 1, X_test.shape[1], 1))
 
 # 定义CNN模型架构
-model = tf.keras.Sequential([
-    tf.keras.layers.Conv2D(64, kernel_size=(1, 5), activation='relu', input_shape=(1, 5, 1)),
-    tf.keras.layers.Flatten(),
-    tf.keras.layers.Dense(1)
-])
+def build_model(hp):
+    model = tf.keras.Sequential([
+        tf.keras.layers.Conv2D(hp.Int('conv_1_filter', min_value=16, max_value=128, step=8),
+                               kernel_size=(1, 5),
+                               activation='relu',
+                               input_shape=(1, 5, 1)),
+        tf.keras.layers.Flatten(),
+        tf.keras.layers.Dense(hp.Int('dense_1_units', min_value=4, max_value=64, step=4)),
+        tf.keras.layers.Dense(1)
+    ])
+    # 编译模型
+    model.compile(optimizer=tf.keras.optimizers.Adam(
+        hp.Choice('learning_rate',values=[1e-2, 1e-3, 1e-4])),
+                  loss='mse')
+    return model
 
-# 编译模型
-model.compile(optimizer='adam', loss='mse')
+# 使用Keras Tuner搜索最优参数
+tuner=kt.BayesianOptimization(
+    build_model,
+    objective='val_loss',
+    max_trials=10,
+    directory = 'AutoAdjustedModels',
+    project_name = 'CNN'
+    )
 
 # 训练模型并保存历史记录
-history = model.fit(X_train, y_train, epochs=100, validation_data=(X_test, y_test))
+tuner.search(X_train, y_train,epochs = 100, validation_data=(X_test, y_test))
 
-# 绘制学习曲线
-plt.figure(figsize=(6, 6))
-plt.plot(history.history['loss'], label='train loss')
-plt.plot(history.history['val_loss'], label='test loss')
-plt.xlabel('iterations')
-plt.ylabel('loss')
-plt.legend()
-plt.title('loss curve')
-fig = plt.gcf()
-plt.show()
-fig.savefig('Modelling\Results\CNNLearningCurve.png')
-
-# 使用pickle模块的dump函数将history对象保存到一个文件中
-with open('Modelling\Model\CNN\History\history.pkl', 'wb') as f:
-    pickle.dump(history, f)
-
-tf.saved_model.save(model, 'Modelling\Model\CNN\Model')
+# 获取最优模型
+best_model = tuner.get_best_models(num_models=1)[0]
+# 将最优模型保存为文件
+best_model.save('AutoAdjustedModels\CNN\CNNSimple.h5')
 
 # 进行预测
-y_pred = model.predict(X_test)
+y_pred = best_model.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
-
 
 # 绘制图像
 plt.scatter(y_test, y_pred)
@@ -79,15 +82,16 @@ plt.ylabel('Predictions')
 plt.xlim(1,2.5)
 plt.ylim(1,2.5)
 plt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)
-fig2 = plt.gcf()
+fig = plt.gcf()
 plt.show()
-fig2.savefig('Modelling\Results\CNNSimpleScatter.png')
+fig.savefig('AutoModelling\Results\CNNSimpleScatter.png')
 
 # 计算准确率
 y_pred = y_pred.tolist()
 y_test = y_test.tolist()
 y_pred = [item for sublist in y_pred for item in sublist]
 accuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]
+# 绘制图像
 plt.hist(accuracy, bins=200, density=True)
 # 计算频率密度和区间中点
 density, bins = np.histogram(accuracy, bins=200, density=True)
@@ -99,6 +103,6 @@ plt.plot(x, density)
 # 添加横轴和纵轴标签
 plt.xlabel("Accuracy")
 plt.ylabel("Frequency Density")
-fig3 = plt.gcf()
+fig2 = plt.gcf()
 plt.show()
-fig3.savefig('Modelling\Results\CNNAccuracyScatter.png')
+fig2.savefig('AutoModelling\Results\CNNAccuracyScatter.png')

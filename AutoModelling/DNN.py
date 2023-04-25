@@ -21,12 +21,11 @@ random.seed(SEED)
 tf.random.set_seed(SEED)
 
 # 读取数据文件
-data = pd.read_csv('Modelling\DataPreprocess\MergedData\data.csv')
+data = pd.read_csv('AutoModelling\DataPreprocess\MergedData\data.csv')
 
 # 将数据分为输入和输出
 X = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]
 y = data['status']
-
 
 # 将数据分为训练集和测试集
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
@@ -39,11 +38,11 @@ X_test = scaler.transform(X_test)
 # 定义DNN模型架构
 def build_model(hp):
     model = tf.keras.Sequential([
-        tf.keras.layers.Dense(hp.Int('input_units',min_value=1,max_value=64,step=4),
+        tf.keras.layers.Dense(hp.Int('input_units',min_value=4,max_value=128,step=4),
                               activation='relu', input_shape=(5,)),
-        tf.keras.layers.Dense(hp.Int('hidden_layers_1',min_value=1,max_value=256,step=4),
+        tf.keras.layers.Dense(hp.Int('hidden_layers_1',min_value=4,max_value=256,step=4),
                               activation='relu'),
-        tf.keras.layers.Dense(hp.Int('hidden_layers_2',min_value=32,max_value=128,step=4),
+        tf.keras.layers.Dense(hp.Int('hidden_layers_2',min_value=4,max_value=128,step=4),
                               activation='relu'),
         tf.keras.layers.Dense(1)
     ])
@@ -56,7 +55,7 @@ def build_model(hp):
 tuner=kt.BayesianOptimization(
     build_model,
     objective='val_loss',
-    max_trials=5,
+    max_trials=10,
     directory = 'AutoAdjustedModels',
     project_name = 'DNN'
     )
@@ -66,24 +65,8 @@ tuner.search(X_train, y_train,epochs = 100, validation_data=(X_test, y_test))
 
 # 获取最优模型
 best_model = tuner.get_best_models(num_models=1)[0]
-
-# # 绘制学习曲线
-# plt.figure(figsize=(6, 6))
-# plt.plot(history.history['loss'], label='train loss')
-# plt.plot(history.history['val_loss'], label='test loss')
-# plt.xlabel('iterations')
-# plt.ylabel('loss')
-# plt.legend()
-# plt.title('loss curve')
-# fig = plt.gcf()
-# plt.show()
-# fig.savefig('Modelling\Results\DNNLearningCurve.png')
-
-# # 使用pickle模块的dump函数将history对象保存到一个文件中
-# with open('Modelling\Model\DNN\History\history.pkl', 'wb') as f:
-#     pickle.dump(history, f)
-
-# tf.saved_model.save(best_model, 'Modelling\Model\DNN\Model')
+# 将最优模型保存为文件
+best_model.save('AutoAdjustedModels\DNN\DNNSimple.h5')
 
 # 进行预测
 y_pred = best_model.predict(X_test)
@@ -97,9 +80,9 @@ plt.ylabel('Predictions')
 plt.xlim(1,2.5)
 plt.ylim(1,2.5)
 plt.text(0.95, 0.95, 'MSE: {:.4f}'.format(mse), transform=plt.gca().transAxes)
-fig2 = plt.gcf()
+fig = plt.gcf()
 plt.show()
-#fig2.savefig('Modelling\Results\DNNSimpleScatter.png')
+fig.savefig('AutoModelling\Results\DNNSimpleScatter.png')
 
 # 计算准确率
 y_pred = y_pred.tolist()
@@ -118,6 +101,6 @@ plt.plot(x, density)
 # 添加横轴和纵轴标签
 plt.xlabel("Accuracy")
 plt.ylabel("Frequency Density")
-fig3 = plt.gcf()
+fig2 = plt.gcf()
 plt.show()
-#fig3.savefig('Modelling\Results\DNNAccuracyScatter.png')
+fig2.savefig('AutoModelling\Results\DNNAccuracyScatter.png')
