@@ -14,7 +14,6 @@ amap_web_key = 'd7620288fea4be1bf89de3d32c0bf3b4'
 
 poi_search_url = "http://restapi.amap.com/v3/place/text"
 poi_boundary_url = "https://ditu.amap.com/detail/get/detail"
-from transCoordinateSystem import gcj02_to_wgs84
 
 # cityname is the city name of the POI to be crawled, 
 # city_areas is the administrative area under the city,

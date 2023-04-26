@@ -567,14 +567,6 @@
         "documentation": {}
     },
     {
-        "label": "gcj02_to_wgs84",
-        "importPath": "transCoordinateSystem",
-        "description": "transCoordinateSystem",
-        "isExtraImport": true,
-        "detail": "transCoordinateSystem",
-        "documentation": {}
-    },
-    {
         "label": "requests",
         "kind": 6,
         "isExtraImport": true,
@@ -762,6 +754,15 @@
         "documentation": {}
     },
     {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
         "label": "MLPClassifier",
         "importPath": "sklearn.neural_network",
         "description": "sklearn.neural_network",
@@ -887,12 +888,28 @@
         "documentation": {}
     },
     {
-        "label": "math",
+        "label": "StandardScaler",
+        "importPath": "sklearn.discriminant_analysis",
+        "description": "sklearn.discriminant_analysis",
+        "isExtraImport": true,
+        "detail": "sklearn.discriminant_analysis",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.discriminant_analysis",
+        "description": "sklearn.discriminant_analysis",
+        "isExtraImport": true,
+        "detail": "sklearn.discriminant_analysis",
+        "documentation": {}
+    },
+    {
+        "label": "BusinessLogic",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "math",
-        "description": "math",
-        "detail": "math",
+        "importPath": "BusinessLogic",
+        "description": "BusinessLogic",
+        "detail": "BusinessLogic",
         "documentation": {}
     },
     {
@@ -1462,7 +1479,7 @@
         "kind": 5,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "data = pd.read_csv('AutoModelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出\nX = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)",
+        "peekOfCode": "data = pd.read_csv('AutoModelling\\DataPreprocess\\MergedData\\data.csv')\n# 将数据分为输入和输出\nX = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\npickle.dump(scaler, open('WebGUI\\scaler.pkl', 'wb'))",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
@@ -1471,7 +1488,7 @@
         "kind": 5,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "X = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\ndef build_model(hp):",
+        "peekOfCode": "X = data[['temperature','latitude','longitude', 'is_weekend', 'hour']]\ny = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\npickle.dump(scaler, open('WebGUI\\scaler.pkl', 'wb'))\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
@@ -1480,7 +1497,7 @@
         "kind": 5,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "y = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([",
+        "peekOfCode": "y = data['status']\n# 将数据分为训练集和测试集\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n# 对数据进行标准化处理\nscaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\npickle.dump(scaler, open('WebGUI\\scaler.pkl', 'wb'))\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\ndef build_model(hp):",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
@@ -1489,7 +1506,7 @@
         "kind": 5,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Dense(hp.Int('input_units',min_value=4,max_value=128,step=4),\n                              activation='relu', input_shape=(5,)),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_1',min_value=4,max_value=256,step=4),\n                              activation='relu'),",
+        "peekOfCode": "scaler = StandardScaler()\nX_train = scaler.fit_transform(X_train)\npickle.dump(scaler, open('WebGUI\\scaler.pkl', 'wb'))\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Dense(hp.Int('input_units',min_value=4,max_value=128,step=4),\n                              activation='relu', input_shape=(5,)),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_1',min_value=4,max_value=256,step=4),",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
@@ -1498,7 +1515,7 @@
         "kind": 5,
         "importPath": "AutoModelling.DNN",
         "description": "AutoModelling.DNN",
-        "peekOfCode": "X_train = scaler.fit_transform(X_train)\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Dense(hp.Int('input_units',min_value=4,max_value=128,step=4),\n                              activation='relu', input_shape=(5,)),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_1',min_value=4,max_value=256,step=4),\n                              activation='relu'),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_2',min_value=4,max_value=128,step=4),",
+        "peekOfCode": "X_train = scaler.fit_transform(X_train)\npickle.dump(scaler, open('WebGUI\\scaler.pkl', 'wb'))\nX_test = scaler.transform(X_test)\n# 定义DNN模型架构\ndef build_model(hp):\n    model = tf.keras.Sequential([\n        tf.keras.layers.Dense(hp.Int('input_units',min_value=4,max_value=128,step=4),\n                              activation='relu', input_shape=(5,)),\n        tf.keras.layers.Dense(hp.Int('hidden_layers_1',min_value=4,max_value=256,step=4),\n                              activation='relu'),",
         "detail": "AutoModelling.DNN",
         "documentation": {}
     },
@@ -2209,7 +2226,7 @@
         "kind": 5,
         "importPath": "Crawler.getPOIs",
         "description": "Crawler.getPOIs",
-        "peekOfCode": "amap_web_key = 'd7620288fea4be1bf89de3d32c0bf3b4'\npoi_search_url = \"http://restapi.amap.com/v3/place/text\"\npoi_boundary_url = \"https://ditu.amap.com/detail/get/detail\"\nfrom transCoordinateSystem import gcj02_to_wgs84\n# cityname is the city name of the POI to be crawled, \n# city_areas is the administrative area under the city,\n# classes is the set of multiple POI categories.\ncityname = '贵阳市'\ncity_areas = ['花溪区']\nclasses = ['050000']",
+        "peekOfCode": "amap_web_key = 'd7620288fea4be1bf89de3d32c0bf3b4'\npoi_search_url = \"http://restapi.amap.com/v3/place/text\"\npoi_boundary_url = \"https://ditu.amap.com/detail/get/detail\"\n# cityname is the city name of the POI to be crawled, \n# city_areas is the administrative area under the city,\n# classes is the set of multiple POI categories.\ncityname = '贵阳市'\ncity_areas = ['花溪区']\nclasses = ['050000']\n# Get poi data based on city name and category keywords",
         "detail": "Crawler.getPOIs",
         "documentation": {}
     },
@@ -2218,7 +2235,7 @@
         "kind": 5,
         "importPath": "Crawler.getPOIs",
         "description": "Crawler.getPOIs",
-        "peekOfCode": "poi_search_url = \"http://restapi.amap.com/v3/place/text\"\npoi_boundary_url = \"https://ditu.amap.com/detail/get/detail\"\nfrom transCoordinateSystem import gcj02_to_wgs84\n# cityname is the city name of the POI to be crawled, \n# city_areas is the administrative area under the city,\n# classes is the set of multiple POI categories.\ncityname = '贵阳市'\ncity_areas = ['花溪区']\nclasses = ['050000']\n# Get poi data based on city name and category keywords",
+        "peekOfCode": "poi_search_url = \"http://restapi.amap.com/v3/place/text\"\npoi_boundary_url = \"https://ditu.amap.com/detail/get/detail\"\n# cityname is the city name of the POI to be crawled, \n# city_areas is the administrative area under the city,\n# classes is the set of multiple POI categories.\ncityname = '贵阳市'\ncity_areas = ['花溪区']\nclasses = ['050000']\n# Get poi data based on city name and category keywords\ndef getpois(cityname, keywords):",
         "detail": "Crawler.getPOIs",
         "documentation": {}
     },
@@ -2227,7 +2244,7 @@
         "kind": 5,
         "importPath": "Crawler.getPOIs",
         "description": "Crawler.getPOIs",
-        "peekOfCode": "poi_boundary_url = \"https://ditu.amap.com/detail/get/detail\"\nfrom transCoordinateSystem import gcj02_to_wgs84\n# cityname is the city name of the POI to be crawled, \n# city_areas is the administrative area under the city,\n# classes is the set of multiple POI categories.\ncityname = '贵阳市'\ncity_areas = ['花溪区']\nclasses = ['050000']\n# Get poi data based on city name and category keywords\ndef getpois(cityname, keywords):",
+        "peekOfCode": "poi_boundary_url = \"https://ditu.amap.com/detail/get/detail\"\n# cityname is the city name of the POI to be crawled, \n# city_areas is the administrative area under the city,\n# classes is the set of multiple POI categories.\ncityname = '贵阳市'\ncity_areas = ['花溪区']\nclasses = ['050000']\n# Get poi data based on city name and category keywords\ndef getpois(cityname, keywords):\n    i = 1",
         "detail": "Crawler.getPOIs",
         "documentation": {}
     },
@@ -2394,57 +2411,111 @@
         "documentation": {}
     },
     {
-        "label": "ak",
-        "kind": 5,
-        "importPath": "Crawler.RdCon_NewBing",
-        "description": "Crawler.RdCon_NewBing",
-        "peekOfCode": "ak = \"pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG\"\nbounds = \"39.905,116.371;39.909,116.377\"\nfilename = \"traffic_data.csv\"\ninterval = 10 * 60\nduration = 10#24 * 60 * 60\nstart_time = time.time()\nwith open(filename, \"w\", newline=\"\") as f:\n    writer = csv.writer(f)\n    writer.writerow([\"fetch_time\", \"road_name\", \"road_length\", \"road_speed\", \"congestion_status\"])\n    while time.time() < start_time + duration:",
-        "detail": "Crawler.RdCon_NewBing",
+        "label": "Geocoding",
+        "kind": 6,
+        "importPath": "Crawler.transCoordinateSystem",
+        "description": "Crawler.transCoordinateSystem",
+        "peekOfCode": "class Geocoding:\n    def __init__(self, api_key):\n        self.api_key = api_key\n    def geocode(self, address):\n        \"\"\"\n        利用高德geocoding服务解析地址获取位置坐标\n        :param address:需要解析的地址\n        :return:\n        \"\"\"\n        geocoding = {'s': 'rsv3',",
+        "detail": "Crawler.transCoordinateSystem",
         "documentation": {}
     },
     {
-        "label": "bounds",
-        "kind": 5,
-        "importPath": "Crawler.RdCon_NewBing",
-        "description": "Crawler.RdCon_NewBing",
-        "peekOfCode": "bounds = \"39.905,116.371;39.909,116.377\"\nfilename = \"traffic_data.csv\"\ninterval = 10 * 60\nduration = 10#24 * 60 * 60\nstart_time = time.time()\nwith open(filename, \"w\", newline=\"\") as f:\n    writer = csv.writer(f)\n    writer.writerow([\"fetch_time\", \"road_name\", \"road_length\", \"road_speed\", \"congestion_status\"])\n    while time.time() < start_time + duration:\n        url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}&coord_type_input=gcj02&coord_type_output=gcj02\"",
-        "detail": "Crawler.RdCon_NewBing",
+        "label": "gcj02_to_bd09",
+        "kind": 2,
+        "importPath": "Crawler.transCoordinateSystem",
+        "description": "Crawler.transCoordinateSystem",
+        "peekOfCode": "def gcj02_to_bd09(lng, lat):\n    \"\"\"\n    火星坐标系(GCJ-02)转百度坐标系(BD-09)\n    谷歌、高德——>百度\n    :param lng:火星坐标经度\n    :param lat:火星坐标纬度\n    :return:\n    \"\"\"\n    z = math.sqrt(lng * lng + lat * lat) + 0.00002 * math.sin(lat * x_pi)\n    theta = math.atan2(lat, lng) + 0.000003 * math.cos(lng * x_pi)",
+        "detail": "Crawler.transCoordinateSystem",
         "documentation": {}
     },
     {
-        "label": "filename",
-        "kind": 5,
-        "importPath": "Crawler.RdCon_NewBing",
-        "description": "Crawler.RdCon_NewBing",
-        "peekOfCode": "filename = \"traffic_data.csv\"\ninterval = 10 * 60\nduration = 10#24 * 60 * 60\nstart_time = time.time()\nwith open(filename, \"w\", newline=\"\") as f:\n    writer = csv.writer(f)\n    writer.writerow([\"fetch_time\", \"road_name\", \"road_length\", \"road_speed\", \"congestion_status\"])\n    while time.time() < start_time + duration:\n        url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}&coord_type_input=gcj02&coord_type_output=gcj02\"\n        response = requests.get(url)",
-        "detail": "Crawler.RdCon_NewBing",
+        "label": "bd09_to_gcj02",
+        "kind": 2,
+        "importPath": "Crawler.transCoordinateSystem",
+        "description": "Crawler.transCoordinateSystem",
+        "peekOfCode": "def bd09_to_gcj02(bd_lon, bd_lat):\n    \"\"\"\n    百度坐标系(BD-09)转火星坐标系(GCJ-02)\n    百度——>谷歌、高德\n    :param bd_lat:百度坐标纬度\n    :param bd_lon:百度坐标经度\n    :return:转换后的坐标列表形式\n    \"\"\"\n    x = bd_lon - 0.0065\n    y = bd_lat - 0.006",
+        "detail": "Crawler.transCoordinateSystem",
         "documentation": {}
     },
     {
-        "label": "interval",
-        "kind": 5,
-        "importPath": "Crawler.RdCon_NewBing",
-        "description": "Crawler.RdCon_NewBing",
-        "peekOfCode": "interval = 10 * 60\nduration = 10#24 * 60 * 60\nstart_time = time.time()\nwith open(filename, \"w\", newline=\"\") as f:\n    writer = csv.writer(f)\n    writer.writerow([\"fetch_time\", \"road_name\", \"road_length\", \"road_speed\", \"congestion_status\"])\n    while time.time() < start_time + duration:\n        url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}&coord_type_input=gcj02&coord_type_output=gcj02\"\n        response = requests.get(url)\n        if response.status_code == 200:",
-        "detail": "Crawler.RdCon_NewBing",
+        "label": "wgs84_to_gcj02",
+        "kind": 2,
+        "importPath": "Crawler.transCoordinateSystem",
+        "description": "Crawler.transCoordinateSystem",
+        "peekOfCode": "def wgs84_to_gcj02(lng, lat):\n    \"\"\"\n    WGS84转GCJ02(火星坐标系)\n    :param lng:WGS84坐标系的经度\n    :param lat:WGS84坐标系的纬度\n    :return:\n    \"\"\"\n    if out_of_china(lng, lat):  # 判断是否在国内\n        return [lng, lat]\n    dlat = _transformlat(lng - 105.0, lat - 35.0)",
+        "detail": "Crawler.transCoordinateSystem",
         "documentation": {}
     },
     {
-        "label": "duration",
-        "kind": 5,
-        "importPath": "Crawler.RdCon_NewBing",
-        "description": "Crawler.RdCon_NewBing",
-        "peekOfCode": "duration = 10#24 * 60 * 60\nstart_time = time.time()\nwith open(filename, \"w\", newline=\"\") as f:\n    writer = csv.writer(f)\n    writer.writerow([\"fetch_time\", \"road_name\", \"road_length\", \"road_speed\", \"congestion_status\"])\n    while time.time() < start_time + duration:\n        url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}&coord_type_input=gcj02&coord_type_output=gcj02\"\n        response = requests.get(url)\n        if response.status_code == 200:\n            data = json.loads(response.text)",
-        "detail": "Crawler.RdCon_NewBing",
+        "label": "gcj02_to_wgs84",
+        "kind": 2,
+        "importPath": "Crawler.transCoordinateSystem",
+        "description": "Crawler.transCoordinateSystem",
+        "peekOfCode": "def gcj02_to_wgs84(lng, lat):\n    \"\"\"\n    GCJ02(火星坐标系)转GPS84\n    :param lng:火星坐标系的经度\n    :param lat:火星坐标系纬度\n    :return:\n    \"\"\"\n    if out_of_china(lng, lat):\n        return [lng, lat]\n    dlat = _transformlat(lng - 105.0, lat - 35.0)",
+        "detail": "Crawler.transCoordinateSystem",
         "documentation": {}
     },
     {
-        "label": "start_time",
+        "label": "bd09_to_wgs84",
+        "kind": 2,
+        "importPath": "Crawler.transCoordinateSystem",
+        "description": "Crawler.transCoordinateSystem",
+        "peekOfCode": "def bd09_to_wgs84(bd_lon, bd_lat):\n    lon, lat = bd09_to_gcj02(bd_lon, bd_lat)\n    return gcj02_to_wgs84(lon, lat)\ndef wgs84_to_bd09(lon, lat):\n    lon, lat = wgs84_to_gcj02(lon, lat)\n    return gcj02_to_bd09(lon, lat)\ndef _transformlat(lng, lat):\n    ret = -100.0 + 2.0 * lng + 3.0 * lat + 0.2 * lat * lat + \\\n          0.1 * lng * lat + 0.2 * math.sqrt(math.fabs(lng))\n    ret += (20.0 * math.sin(6.0 * lng * pi) + 20.0 *",
+        "detail": "Crawler.transCoordinateSystem",
+        "documentation": {}
+    },
+    {
+        "label": "wgs84_to_bd09",
+        "kind": 2,
+        "importPath": "Crawler.transCoordinateSystem",
+        "description": "Crawler.transCoordinateSystem",
+        "peekOfCode": "def wgs84_to_bd09(lon, lat):\n    lon, lat = wgs84_to_gcj02(lon, lat)\n    return gcj02_to_bd09(lon, lat)\ndef _transformlat(lng, lat):\n    ret = -100.0 + 2.0 * lng + 3.0 * lat + 0.2 * lat * lat + \\\n          0.1 * lng * lat + 0.2 * math.sqrt(math.fabs(lng))\n    ret += (20.0 * math.sin(6.0 * lng * pi) + 20.0 *\n            math.sin(2.0 * lng * pi)) * 2.0 / 3.0\n    ret += (20.0 * math.sin(lat * pi) + 40.0 *\n            math.sin(lat / 3.0 * pi)) * 2.0 / 3.0",
+        "detail": "Crawler.transCoordinateSystem",
+        "documentation": {}
+    },
+    {
+        "label": "out_of_china",
+        "kind": 2,
+        "importPath": "Crawler.transCoordinateSystem",
+        "description": "Crawler.transCoordinateSystem",
+        "peekOfCode": "def out_of_china(lng, lat):\n    \"\"\"\n    判断是否在国内，不在国内不做偏移\n    :param lng:\n    :param lat:\n    :return:\n    \"\"\"\n    return not (lng > 73.66 and lng < 135.05 and lat > 3.86 and lat < 53.55)\nif __name__ == '__main__':\n    lng = 116.382997",
+        "detail": "Crawler.transCoordinateSystem",
+        "documentation": {}
+    },
+    {
+        "label": "x_pi",
         "kind": 5,
-        "importPath": "Crawler.RdCon_NewBing",
-        "description": "Crawler.RdCon_NewBing",
-        "peekOfCode": "start_time = time.time()\nwith open(filename, \"w\", newline=\"\") as f:\n    writer = csv.writer(f)\n    writer.writerow([\"fetch_time\", \"road_name\", \"road_length\", \"road_speed\", \"congestion_status\"])\n    while time.time() < start_time + duration:\n        url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}&coord_type_input=gcj02&coord_type_output=gcj02\"\n        response = requests.get(url)\n        if response.status_code == 200:\n            data = json.loads(response.text)\n            if data[\"status\"] == 0:",
-        "detail": "Crawler.RdCon_NewBing",
+        "importPath": "Crawler.transCoordinateSystem",
+        "description": "Crawler.transCoordinateSystem",
+        "peekOfCode": "x_pi = 3.14159265358979324 * 3000.0 / 180.0\npi = 3.1415926535897932384626  # π\na = 6378245.0  # 长半轴\nee = 0.00669342162296594323  # 偏心率平方\nclass Geocoding:\n    def __init__(self, api_key):\n        self.api_key = api_key\n    def geocode(self, address):\n        \"\"\"\n        利用高德geocoding服务解析地址获取位置坐标",
+        "detail": "Crawler.transCoordinateSystem",
+        "documentation": {}
+    },
+    {
+        "label": "pi",
+        "kind": 5,
+        "importPath": "Crawler.transCoordinateSystem",
+        "description": "Crawler.transCoordinateSystem",
+        "peekOfCode": "pi = 3.1415926535897932384626  # π\na = 6378245.0  # 长半轴\nee = 0.00669342162296594323  # 偏心率平方\nclass Geocoding:\n    def __init__(self, api_key):\n        self.api_key = api_key\n    def geocode(self, address):\n        \"\"\"\n        利用高德geocoding服务解析地址获取位置坐标\n        :param address:需要解析的地址",
+        "detail": "Crawler.transCoordinateSystem",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "Crawler.transCoordinateSystem",
+        "description": "Crawler.transCoordinateSystem",
+        "peekOfCode": "a = 6378245.0  # 长半轴\nee = 0.00669342162296594323  # 偏心率平方\nclass Geocoding:\n    def __init__(self, api_key):\n        self.api_key = api_key\n    def geocode(self, address):\n        \"\"\"\n        利用高德geocoding服务解析地址获取位置坐标\n        :param address:需要解析的地址\n        :return:",
+        "detail": "Crawler.transCoordinateSystem",
+        "documentation": {}
+    },
+    {
+        "label": "ee",
+        "kind": 5,
+        "importPath": "Crawler.transCoordinateSystem",
+        "description": "Crawler.transCoordinateSystem",
+        "peekOfCode": "ee = 0.00669342162296594323  # 偏心率平方\nclass Geocoding:\n    def __init__(self, api_key):\n        self.api_key = api_key\n    def geocode(self, address):\n        \"\"\"\n        利用高德geocoding服务解析地址获取位置坐标\n        :param address:需要解析的地址\n        :return:\n        \"\"\"",
+        "detail": "Crawler.transCoordinateSystem",
         "documentation": {}
     },
     {
@@ -4556,19 +4627,163 @@
     {
         "label": "handle_data",
         "kind": 2,
-        "importPath": "Web.BackEnd",
-        "description": "Web.BackEnd",
-        "peekOfCode": "def handle_data():\n    # 获取 JSON 格式的请求数据\n    data = request.get_json()\n    # 获取下拉菜单的选中值和鼠标点击的经纬度\n    selectedOption = data['option']\n    lnglat = data['lnglat']\n    # 在这里处理数据...\n    print(selectedOption, lnglat)\n    result = 'your result'\n    # 将处理结果作为 JSON 格式的响应返回给前端页面",
-        "detail": "Web.BackEnd",
+        "importPath": "WebGUI.BackEnd",
+        "description": "WebGUI.BackEnd",
+        "peekOfCode": "def handle_data():\n    # 获取 JSON 格式的请求数据\n    data = request.get_json()\n    # 获取下拉菜单的选中值和鼠标点击的经纬度\n    type = data['type']\n    POI = data['POI']\n    lnglat = data['lnglat']\n    bottom_left,top_right = BL.ractangle(lnglat)\n    province,city,citycode = BL.get_city_name(lnglat['lng'], lnglat['lat'])\n    temperature = BL.get_weather(citycode, type)",
+        "detail": "WebGUI.BackEnd",
         "documentation": {}
     },
     {
         "label": "app",
         "kind": 5,
-        "importPath": "Web.BackEnd",
-        "description": "Web.BackEnd",
-        "peekOfCode": "app = Flask(__name__)\nCORS(app) # enable CORS for all routes\n@app.route('/process', methods=['POST'])\n@cross_origin() # enable CORS for this route\ndef handle_data():\n    # 获取 JSON 格式的请求数据\n    data = request.get_json()\n    # 获取下拉菜单的选中值和鼠标点击的经纬度\n    selectedOption = data['option']\n    lnglat = data['lnglat']",
-        "detail": "Web.BackEnd",
+        "importPath": "WebGUI.BackEnd",
+        "description": "WebGUI.BackEnd",
+        "peekOfCode": "app = Flask(__name__)\nCORS(app) # enable CORS for all routes\n@app.route('/process', methods=['POST'])\n@cross_origin() # enable CORS for this route\ndef handle_data():\n    # 获取 JSON 格式的请求数据\n    data = request.get_json()\n    # 获取下拉菜单的选中值和鼠标点击的经纬度\n    type = data['type']\n    POI = data['POI']",
+        "detail": "WebGUI.BackEnd",
+        "documentation": {}
+    },
+    {
+        "label": "ractangle",
+        "kind": 2,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "peekOfCode": "def ractangle(center):\n    # 给定中心点的经纬度\n    # 计算对角线的一半长度\n    half_diagonal = DIAGONAL / 2\n    # 计算对角线的方位角（正北为0度，顺时针增加）\n    bearing = ANGLE + 90\n    # 计算对角线的终点的经纬度\n    end_lat = math.asin(math.sin(center['lat'] * DEG_TO_RAD) * math.cos(half_diagonal / EARTH_RADIUS) + math.cos(center['lat'] * DEG_TO_RAD) * math.sin(half_diagonal / EARTH_RADIUS) * math.cos(bearing * DEG_TO_RAD)) * RAD_TO_DEG\n    end_lng = center['lng'] + math.atan2(math.sin(bearing * DEG_TO_RAD) * math.sin(half_diagonal / EARTH_RADIUS) * math.cos(center['lat'] * DEG_TO_RAD), math.cos(half_diagonal / EARTH_RADIUS) - math.sin(center['lat'] * DEG_TO_RAD) * math.sin(end_lat * DEG_TO_RAD)) * RAD_TO_DEG\n    # 计算对角线的起点的经纬度（与终点相反）",
+        "detail": "WebGUI.BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "get_city_name",
+        "kind": 2,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "peekOfCode": "def get_city_name(lng, lat):\n    url = 'https://restapi.amap.com/v3/geocode/regeo?output=json&location=' + str(lng) + ',' + str(lat) + '&key=' + amap_web_key\n    result = requests.get(url)\n    result = json.loads(result.text)\n    #返回省份、城市名称和城市代码\n    return result['regeocode']['addressComponent']['province'], result['regeocode']['addressComponent']['city'], result['regeocode']['addressComponent']['adcode']\n# 调用高德开发平台API，获取所在城市的天气信息\ndef get_weather(citycode,type):\n    #如果type是\"Real-time\"，将它的值改为\"base\"，否则改为\"all\"\n    type = 'base' if type == 'Real-time' else 'all'",
+        "detail": "WebGUI.BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "get_weather",
+        "kind": 2,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "peekOfCode": "def get_weather(citycode,type):\n    #如果type是\"Real-time\"，将它的值改为\"base\"，否则改为\"all\"\n    type = 'base' if type == 'Real-time' else 'all'\n    url = 'https://restapi.amap.com/v3/weather/weatherInfo?key=' + amap_web_key + '&city=' + citycode + '&extensions=' + type\n    result = requests.get(url)\n    result = json.loads(result.text)\n    #因为type类型不同，返回的数据格式也不同，所以需要分别处理\n    if type == 'base':\n        return result[\"lives\"][0][\"temperature\"]\n    else:",
+        "detail": "WebGUI.BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "get_traffic",
+        "kind": 2,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "peekOfCode": "def get_traffic(top_right, bottom_left,citycode):\n    bounds = str(bottom_left['lat']) + ',' + str(bottom_left['lng']) + ';' + str(top_right['lat']) + ',' + str(top_right['lng'])\n    url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={baidu_web_key}&bounds={bounds}&coord_type_input=gcj02&coord_type_output=gcj02\"\n    response = requests.get(url) #返回的原数据\n    if response.status_code == 200:\n        data = json.loads(response.text)\n        if data[\"status\"] == 0:\n            for road in data[\"road_traffic\"]:\n                if(road[\"road_name\"]!=\"UNKNOW\"):\n                    if len(road)>=2:         ",
+        "detail": "WebGUI.BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "fers",
+        "kind": 2,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "peekOfCode": "def fers(road_name,citycode): \n    city = citycode      \n    ak = 'pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG'        \n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)  \n    re=requests.get(url) #returning data\n    decodejson=json.loads(re.text)\n    road_traffic_s=decodejson['road_traffic'][0]      #get traffic status                       \n    v=road_traffic_s['congestion_sections']\n    ty=pd.DataFrame(v)\n    ty['name']=pd.DataFrame([road_traffic_s['road_name']]*len(v))      ",
+        "detail": "WebGUI.BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "es",
+        "kind": 2,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "peekOfCode": "def es(road_name,citycode):\n    city = citycode\n    ak = 'pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG'\n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)\n    re=requests.get(url) \n    res=re.json() \n    decodejson = json.loads(re.text)\n    evaluation=decodejson['evaluation']     #overall status\n    road_traffic=decodejson['road_traffic'][0]\n    road_data=pd.DataFrame([evaluation])",
+        "detail": "WebGUI.BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "get_page",
+        "kind": 2,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "peekOfCode": "def get_page(road_name,citycode):\n    s=fers(road_name,citycode)\n    if not os.path.exists('TempData/tempJam.csv'):\n           s.to_csv('TempData/tempJam.csv',encoding='gbk',mode='w',index=False,index_label=False)\n    else:\n            s.to_csv('TempData/tempJam.csv', encoding='gbk', mode='a', index=False, index_label=False,header=False)\n#获取平均拥堵程度\ndef get_average():\n    dataset1 = 'TempData/temp.csv'\n    dataset2 = 'TempData/tempJam.csv'",
+        "detail": "WebGUI.BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "get_average",
+        "kind": 2,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "peekOfCode": "def get_average():\n    dataset1 = 'TempData/temp.csv'\n    dataset2 = 'TempData/tempJam.csv'\n    data1 = pd.read_csv(dataset1, encoding='gbk',usecols=['status'])\n    data = data1\n    #如果dataset2存在，则读取\n    if os.path.exists(dataset2):\n        data2 = pd.read_csv(dataset2, encoding='gbk', usecols=['status'])\n        data = pd.concat([data1, data2])\n    # 计算每个地点每个时间点的平均交通状况",
+        "detail": "WebGUI.BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "kind": 2,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "peekOfCode": "def predict(data):\n    #载入模型\n    model = tf.keras.models.load_model('AutoAdjustedModels\\DNN\\DNNSimple.h5')\n    #进行预测\n    result = model.predict(data)\n    #返回预测结果\n    return result",
+        "detail": "WebGUI.BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "amap_web_key",
+        "kind": 5,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "peekOfCode": "amap_web_key = 'd7620288fea4be1bf89de3d32c0bf3b4'\nbaidu_web_key = 'pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG'\n# 定义一些常量\nEARTH_RADIUS = 6371 # 地球半径，单位为公里\nDEG_TO_RAD = math.pi / 180 # 角度转弧度的因子\nRAD_TO_DEG = 180 / math.pi # 弧度转角度的因子\nDIAGONAL = 1 # 对角线长度，单位为公里\nANGLE = 45 # 对角线与经线的夹角，单位为度\n# 计算经纬度矩形的四个顶点的经纬度\ndef ractangle(center):",
+        "detail": "WebGUI.BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "baidu_web_key",
+        "kind": 5,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "peekOfCode": "baidu_web_key = 'pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG'\n# 定义一些常量\nEARTH_RADIUS = 6371 # 地球半径，单位为公里\nDEG_TO_RAD = math.pi / 180 # 角度转弧度的因子\nRAD_TO_DEG = 180 / math.pi # 弧度转角度的因子\nDIAGONAL = 1 # 对角线长度，单位为公里\nANGLE = 45 # 对角线与经线的夹角，单位为度\n# 计算经纬度矩形的四个顶点的经纬度\ndef ractangle(center):\n    # 给定中心点的经纬度",
+        "detail": "WebGUI.BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "EARTH_RADIUS",
+        "kind": 5,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "peekOfCode": "EARTH_RADIUS = 6371 # 地球半径，单位为公里\nDEG_TO_RAD = math.pi / 180 # 角度转弧度的因子\nRAD_TO_DEG = 180 / math.pi # 弧度转角度的因子\nDIAGONAL = 1 # 对角线长度，单位为公里\nANGLE = 45 # 对角线与经线的夹角，单位为度\n# 计算经纬度矩形的四个顶点的经纬度\ndef ractangle(center):\n    # 给定中心点的经纬度\n    # 计算对角线的一半长度\n    half_diagonal = DIAGONAL / 2",
+        "detail": "WebGUI.BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "DEG_TO_RAD",
+        "kind": 5,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "peekOfCode": "DEG_TO_RAD = math.pi / 180 # 角度转弧度的因子\nRAD_TO_DEG = 180 / math.pi # 弧度转角度的因子\nDIAGONAL = 1 # 对角线长度，单位为公里\nANGLE = 45 # 对角线与经线的夹角，单位为度\n# 计算经纬度矩形的四个顶点的经纬度\ndef ractangle(center):\n    # 给定中心点的经纬度\n    # 计算对角线的一半长度\n    half_diagonal = DIAGONAL / 2\n    # 计算对角线的方位角（正北为0度，顺时针增加）",
+        "detail": "WebGUI.BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "RAD_TO_DEG",
+        "kind": 5,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "peekOfCode": "RAD_TO_DEG = 180 / math.pi # 弧度转角度的因子\nDIAGONAL = 1 # 对角线长度，单位为公里\nANGLE = 45 # 对角线与经线的夹角，单位为度\n# 计算经纬度矩形的四个顶点的经纬度\ndef ractangle(center):\n    # 给定中心点的经纬度\n    # 计算对角线的一半长度\n    half_diagonal = DIAGONAL / 2\n    # 计算对角线的方位角（正北为0度，顺时针增加）\n    bearing = ANGLE + 90",
+        "detail": "WebGUI.BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "DIAGONAL",
+        "kind": 5,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "peekOfCode": "DIAGONAL = 1 # 对角线长度，单位为公里\nANGLE = 45 # 对角线与经线的夹角，单位为度\n# 计算经纬度矩形的四个顶点的经纬度\ndef ractangle(center):\n    # 给定中心点的经纬度\n    # 计算对角线的一半长度\n    half_diagonal = DIAGONAL / 2\n    # 计算对角线的方位角（正北为0度，顺时针增加）\n    bearing = ANGLE + 90\n    # 计算对角线的终点的经纬度",
+        "detail": "WebGUI.BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "ANGLE",
+        "kind": 5,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "peekOfCode": "ANGLE = 45 # 对角线与经线的夹角，单位为度\n# 计算经纬度矩形的四个顶点的经纬度\ndef ractangle(center):\n    # 给定中心点的经纬度\n    # 计算对角线的一半长度\n    half_diagonal = DIAGONAL / 2\n    # 计算对角线的方位角（正北为0度，顺时针增加）\n    bearing = ANGLE + 90\n    # 计算对角线的终点的经纬度\n    end_lat = math.asin(math.sin(center['lat'] * DEG_TO_RAD) * math.cos(half_diagonal / EARTH_RADIUS) + math.cos(center['lat'] * DEG_TO_RAD) * math.sin(half_diagonal / EARTH_RADIUS) * math.cos(bearing * DEG_TO_RAD)) * RAD_TO_DEG",
+        "detail": "WebGUI.BusinessLogic",
         "documentation": {}
     }
 ]

@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
-    <title>本地可视化地图程序</title>
+    <title>Prediction on Map</title>
     <style>
         #container {
             width: 100vw;
@@ -17,8 +17,17 @@
             background-color: rgba(255, 255, 255, 0.8);
             display: block;
         }
-        #options {
+        #options1 {
             margin-top: 80px;
+            margin-right: auto;
+            margin-left: auto;
+            width: 60%;
+            height: 50px;
+            display: block;
+            text-align: center;
+        }
+        #options2 {
+            margin-top: 40px;
             margin-right: auto;
             margin-left: auto;
             width: 60%;
@@ -34,13 +43,16 @@
             height: 50px;
             display: block;
         }
-        #result {
-            margin-top: 80px;
+        #result { 
+            margin-top: 60px;
             margin-right: auto;
             margin-left: auto;
-            width: 66.67%;
-            height: 50%;
-            border: solid 1px black;
+            height: 250px; 
+            width: 80%;
+            overflow-y: auto; 
+            border: solid 1px black; 
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.89);
         }
         #h1 {
           height: 80px;
@@ -68,7 +80,11 @@
     <div id="sidebar" class="card">
         <h1 id="h1" class="card-header">The prediction program</h1>
         <!--添加一个下拉菜单-->
-        <select id="options" class="form-control custom-select">
+        <select id="options1" class="form-control custom-select">
+            <option value="option1">Real-time</option>
+            <option value="option2">forecast</option>
+        </select>
+        <select id="options2" class="form-control custom-select">
             <option value="option1">Eating POIs</option>
             <option value="option2">Sports POIs</option>
             <option value="option3">Entertaining POIs</option>
@@ -106,35 +122,62 @@
 
             //在点击位置打开信息窗口
             infoWindow.open(map, lnglat);
+            // 将按钮设置为可点击状态
+            sendBtn.disabled = false;
+            sendBtn.style.backgroundColor = '';
+
+            infoWindow.on('close', function() {
+                // 将按钮恢复为不可点击态
+                sendBtn.disabled = true;
+                sendBtn.style.backgroundColor = 'gray';
+            });
         });
 
         //获取下拉菜单和按钮元素
-        var options = document.getElementById('options');
+        var options1 = document.getElementById('options1');
+        var options2 = document.getElementById('options2');
         var sendBtn = document.getElementById('sendBtn');
         var result = document.getElementById('result');
         
         //监听按钮的点击事件
         sendBtn.addEventListener('click', function() {
+            if (currentLnglat === null) {
+                alert('You need to click on map to get a longitude & latitude first');
+                sendBtn.disabled = true;
+                sendBtn.style.backgroundColor = 'gray';
+                return;
+            }
             //获取下拉菜单的选中值
-            var selectedOption = options.value;
-            //获取鼠标点击的经纬度（这里假设你已经获取到了）
+            var selectedOption1 = options1.options[options1.selectedIndex].text;
+            var selectedOption2 = options2.options[options2.selectedIndex].text;
+            //获取鼠标点击的经纬度
             var lnglat = {lng: currentLnglat.lng, lat: currentLnglat.lat};
-            //使用 AJAX 将数据发送到后端 Python 程序（这里只是演示，具体实现需要根据你的需求来编写）
+            //使用 AJAX 将数据发送到后端 Python 程序
             var xhr = new XMLHttpRequest();
             xhr.open('POST', 'http://localhost:5000/process');
             xhr.setRequestHeader('Content-Type', 'application/json');
             xhr.send(JSON.stringify({
-                option: selectedOption,
+                type: selectedOption1,
+                POI: selectedOption2,
                 lnglat: lnglat
             }));
             xhr.onload = function() {
                 if (xhr.status === 200) {
                     // 获取响应数据
                     var data = JSON.parse(xhr.responseText);
-                    // 获取处理结果
-                    var result = data.result;
-                    // 在结果显示框中展示处理结果
-                    result.innerHTML = result;
+                    // 获取各个字段的值
+                    var temp = data.result;
+                    var address = JSON.stringify(temp.address);
+                    var temperature = JSON.stringify(temp.temperature);
+                    var time = JSON.stringify(temp.time);
+                    var predict = JSON.stringify(temp.predict);
+                    var real = JSON.stringify(temp.real);
+                    // 在结果显示框中展示各个字段的值，每个字段占一行
+                    document.getElementById('result').innerHTML = 'Address: ' + address + '<br>' +
+                                                                'Temperature: ' + temperature + '<br>' +
+                                                                'Time: ' + time + '<br>' +
+                                                                'Predict: ' + predict + '<br>' +
+                                                                'Real: ' + real;
                 }
             };
         });
