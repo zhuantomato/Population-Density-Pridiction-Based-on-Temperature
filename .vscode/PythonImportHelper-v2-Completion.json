@@ -762,6 +762,14 @@
         "documentation": {}
     },
     {
+        "label": "Axes3D",
+        "importPath": "mpl_toolkits.mplot3d",
+        "description": "mpl_toolkits.mplot3d",
+        "isExtraImport": true,
+        "detail": "mpl_toolkits.mplot3d",
+        "documentation": {}
+    },
+    {
         "label": "StandardScaler",
         "importPath": "sklearn.discriminant_analysis",
         "description": "sklearn.discriminant_analysis",
@@ -4424,6 +4432,42 @@
         "description": "Visualising.Analysis.Analysis",
         "peekOfCode": "fixhourData = pd.concat([result_fixhour, fixhour], axis=1)\nfixtempData.to_csv(\"Visualising/Visulising/fixtempData.csv\", header=['status','temperature','latitude','longitude', 'is_weekend', 'hour'], index=False)\nfixhourData.to_csv(\"Visualising/Visulising/fixhourData.csv\", header=['status','temperature','latitude','longitude', 'is_weekend', 'hour'], index=False)",
         "detail": "Visualising.Analysis.Analysis",
+        "documentation": {}
+    },
+    {
+        "label": "data_path",
+        "kind": 5,
+        "importPath": "Visualising.Visulising.Visulising",
+        "description": "Visualising.Visulising.Visulising",
+        "peekOfCode": "data_path = ('HumanModelling\\DataPreprocess\\MergedData\\data.csv')\ndf = pd.read_csv(data_path)\nplt.scatter(df['hour'], df['status'])\nplt.xlabel('Hour')\nplt.ylabel('Status')\nplt.show()\nplt.scatter(df['temperature'], df['status'])\nplt.xlabel('Temperature')\nplt.ylabel('Status')\nplt.show()",
+        "detail": "Visualising.Visulising.Visulising",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Visualising.Visulising.Visulising",
+        "description": "Visualising.Visulising.Visulising",
+        "peekOfCode": "df = pd.read_csv(data_path)\nplt.scatter(df['hour'], df['status'])\nplt.xlabel('Hour')\nplt.ylabel('Status')\nplt.show()\nplt.scatter(df['temperature'], df['status'])\nplt.xlabel('Temperature')\nplt.ylabel('Status')\nplt.show()\nfig = plt.figure()",
+        "detail": "Visualising.Visulising.Visulising",
+        "documentation": {}
+    },
+    {
+        "label": "fig",
+        "kind": 5,
+        "importPath": "Visualising.Visulising.Visulising",
+        "description": "Visualising.Visulising.Visulising",
+        "peekOfCode": "fig = plt.figure()\nax = fig.add_subplot(111, projection='3d')\nax.scatter(df['hour'], df['temperature'], df['status'])\nax.set_xlabel('Hour')\nax.set_ylabel('Temperature')\nax.set_zlabel('Status')\nplt.show()",
+        "detail": "Visualising.Visulising.Visulising",
+        "documentation": {}
+    },
+    {
+        "label": "ax",
+        "kind": 5,
+        "importPath": "Visualising.Visulising.Visulising",
+        "description": "Visualising.Visulising.Visulising",
+        "peekOfCode": "ax = fig.add_subplot(111, projection='3d')\nax.scatter(df['hour'], df['temperature'], df['status'])\nax.set_xlabel('Hour')\nax.set_ylabel('Temperature')\nax.set_zlabel('Status')\nplt.show()",
+        "detail": "Visualising.Visulising.Visulising",
         "documentation": {}
     },
     {
