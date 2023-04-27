@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-data_path = ('D:\git\Final Project\Population-Density-Pridiction-Based-on-Temperature\Modelling\DataPreprocess\MergedData\data.csv')
+data_path = ('Visualising/Visulising/fixhourData.csv')
 df = pd.read_csv(data_path)
 plt.scatter(df['hour'], df['status'])
 plt.xlabel('Hour')

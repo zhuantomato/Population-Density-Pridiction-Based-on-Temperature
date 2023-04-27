@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Prediction on Map</title>
@@ -94,7 +94,7 @@
         <button class="btn btn-primary" id="sendBtn">Send Data</button>
 
         <!--添加一个结果显示框-->
-        <div class="card-body"> <!-- 添加这个属性 -->
+        <div class="card-body">
             <div id="result"></div>
         </div>
     </div>
@@ -115,7 +115,7 @@
             //创建一个信息窗口
             var infoWindow = new AMap.InfoWindow({
                 //设置信息窗口的内容为经纬度
-                content: '经度：' + lnglat.lng + '<br>纬度：' + lnglat.lat,
+                content: 'longitude：' + lnglat.lng + '<br>latitude：' + lnglat.lat,
                 //设置信息窗口的偏移量
                 offset: new AMap.Pixel(0, -20)
             });
@@ -171,13 +171,11 @@
                     var temperature = JSON.stringify(temp.temperature);
                     var time = JSON.stringify(temp.time);
                     var predict = JSON.stringify(temp.predict);
-                    var real = JSON.stringify(temp.real);
                     // 在结果显示框中展示各个字段的值，每个字段占一行
                     document.getElementById('result').innerHTML = 'Address: ' + address + '<br>' +
                                                                 'Temperature: ' + temperature + '<br>' +
                                                                 'Time: ' + time + '<br>' +
-                                                                'Predict: ' + predict + '<br>' +
-                                                                'Real: ' + real;
+                                                                'Predict: ' + predict + '<br>';
                 }
             };
         });

@@ -31,9 +31,6 @@ def handle_data():
     scaler = pickle.load(open('WebGUI\scaler.pkl', 'rb'))
     data = scaler.transform(data)
     # 调用模型进行预测
-    result = BL.predict(data)
-    predict = round(result.item(),6)
-    data = data.tolist()
     if isinstance(city, str):
         address = province + city
     else:
@@ -41,13 +38,14 @@ def handle_data():
     if type == 'Real-time':
         curr_time=datetime.datetime.now()
         time_str = datetime.datetime.strftime(curr_time,'%Y-%m-%d %H:%M')
-        traffic = BL.get_traffic(top_right, bottom_left,citycode)
+        result = BL.predict(data)
+        predict = round(result.item(),6)
     else:
         today = datetime.date.today()
         time_str = str(today + datetime.timedelta(days=1))
-        traffic = 'no data'
+        predict = BL.get_traffic(top_right, bottom_left,citycode)
     # 将城市名称、温度、当前时间、处理结果装入result中
-    result = {'address': address,'temperature':temperature,'time':time_str,'predict':predict,'real':traffic}
+    result = {'address': address,'temperature':temperature,'time':time_str,'predict':predict}
     # 将处理结果作为 JSON 格式的响应返回给前端页面
     return jsonify(result = result)
 

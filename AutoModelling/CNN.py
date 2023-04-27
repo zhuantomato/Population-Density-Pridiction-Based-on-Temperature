@@ -92,17 +92,17 @@ y_test = y_test.tolist()
 y_pred = [item for sublist in y_pred for item in sublist]
 accuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]
 # 绘制图像
-plt.hist(accuracy, bins=200, density=True)
+plt.hist(accuracy, bins=20, density=False)
 # 计算频率密度和区间中点
-density, bins = np.histogram(accuracy, bins=200, density=True)
+density, bins = np.histogram(accuracy, bins=20, density=False)
 x = (bins[1:] + bins[:-1]) / 2 # 区间中点
 
 # 绘制密度曲线
 plt.plot(x, density)
 
 # 添加横轴和纵轴标签
-plt.xlabel("Accuracy")
-plt.ylabel("Frequency Density")
+plt.xlabel("Prediction error")
+plt.ylabel("Frequency")
 fig2 = plt.gcf()
 plt.show()
 fig2.savefig('AutoModelling\Results\CNNAccuracyScatter.png')

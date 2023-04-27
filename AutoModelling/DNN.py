@@ -39,11 +39,11 @@ X_test = scaler.transform(X_test)
 # 定义DNN模型架构
 def build_model(hp):
     model = tf.keras.Sequential([
-        tf.keras.layers.Dense(hp.Int('input_units',min_value=4,max_value=128,step=4),
+        tf.keras.layers.Dense(hp.Int('input_units',min_value=4,max_value=128,step=8),
                               activation='relu', input_shape=(5,)),
-        tf.keras.layers.Dense(hp.Int('hidden_layers_1',min_value=4,max_value=256,step=4),
+        tf.keras.layers.Dense(hp.Int('hidden_layers_1',min_value=32,max_value=256,step=32),
                               activation='relu'),
-        tf.keras.layers.Dense(hp.Int('hidden_layers_2',min_value=4,max_value=128,step=4),
+        tf.keras.layers.Dense(hp.Int('hidden_layers_2',min_value=4,max_value=128,step=16),
                               activation='relu'),
         tf.keras.layers.Dense(1)
     ])
@@ -91,17 +91,17 @@ y_test = y_test.tolist()
 y_pred = [item for sublist in y_pred for item in sublist]
 accuracy = [y_pred[i] - y_test[i] for i in range(len(y_pred))]
 # 绘制图像
-plt.hist(accuracy, bins=200, density=True)
+plt.hist(accuracy, bins=20, density=False)
 # 计算频率密度和区间中点
-density, bins = np.histogram(accuracy, bins=200, density=True)
+density, bins = np.histogram(accuracy, bins=20, density=False)
 x = (bins[1:] + bins[:-1]) / 2 # 区间中点
 
 # 绘制密度曲线
 plt.plot(x, density)
 
 # 添加横轴和纵轴标签
-plt.xlabel("Accuracy")
-plt.ylabel("Frequency Density")
+plt.xlabel("Prediction error")
+plt.ylabel("Frequency")
 fig2 = plt.gcf()
 plt.show()
 fig2.savefig('AutoModelling\Results\DNNAccuracyScatter.png')
