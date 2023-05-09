@@ -786,12 +786,44 @@
         "documentation": {}
     },
     {
+        "label": "StandardScaler",
+        "importPath": "sklearn.discriminant_analysis",
+        "description": "sklearn.discriminant_analysis",
+        "isExtraImport": true,
+        "detail": "sklearn.discriminant_analysis",
+        "documentation": {}
+    },
+    {
         "label": "BusinessLogic",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "BusinessLogic",
         "description": "BusinessLogic",
         "detail": "BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
         "documentation": {}
     },
     {
@@ -832,6 +864,31 @@
         "description": "flask_cors",
         "isExtraImport": true,
         "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "CORS",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "cross_origin",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "WebGUI.BusinessLogic",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "WebGUI.BusinessLogic",
+        "description": "WebGUI.BusinessLogic",
+        "detail": "WebGUI.BusinessLogic",
         "documentation": {}
     },
     {
@@ -4630,6 +4687,24 @@
         "description": "WebGUI.BusinessLogic",
         "peekOfCode": "ANGLE = 45 # 对角线与经线的夹角，单位为度\n# 计算经纬度矩形的四个顶点的经纬度\ndef ractangle(center):\n    # 给定中心点的经纬度\n    # 计算对角线的一半长度\n    half_diagonal = DIAGONAL / 2\n    # 计算对角线的方位角（正北为0度，顺时针增加）\n    bearing = ANGLE + 90\n    # 计算对角线的终点的经纬度\n    end_lat = math.asin(math.sin(center['lat'] * DEG_TO_RAD) * math.cos(half_diagonal / EARTH_RADIUS) + math.cos(center['lat'] * DEG_TO_RAD) * math.sin(half_diagonal / EARTH_RADIUS) * math.cos(bearing * DEG_TO_RAD)) * RAD_TO_DEG",
         "detail": "WebGUI.BusinessLogic",
+        "documentation": {}
+    },
+    {
+        "label": "handle_data",
+        "kind": 2,
+        "importPath": "BackEnd",
+        "description": "BackEnd",
+        "peekOfCode": "def handle_data():\n    # 获取 JSON 格式的请求数据\n    data = request.get_json()\n    # 获取下拉菜单的选中值和鼠标点击的经纬度\n    type = data['type']\n    POI = data['POI']\n    lnglat = data['lnglat']\n    bottom_left,top_right = BL.ractangle(lnglat)\n    province,city,citycode = BL.get_city_name(lnglat['lng'], lnglat['lat'])\n    temperature = BL.get_weather(citycode, type)",
+        "detail": "BackEnd",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "BackEnd",
+        "description": "BackEnd",
+        "peekOfCode": "app = Flask(__name__)\nCORS(app) # enable CORS for all routes\n@app.route('/process', methods=['POST'])\n@cross_origin() # enable CORS for this route\ndef handle_data():\n    # 获取 JSON 格式的请求数据\n    data = request.get_json()\n    # 获取下拉菜单的选中值和鼠标点击的经纬度\n    type = data['type']\n    POI = data['POI']",
+        "detail": "BackEnd",
         "documentation": {}
     }
 ]

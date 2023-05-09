@@ -3,7 +3,7 @@ import pickle
 
 import numpy as np
 from sklearn.discriminant_analysis import StandardScaler
-import BusinessLogic as BL
+import WebGUI.BusinessLogic as BL
 from flask import Flask, request, jsonify
 from flask_cors import CORS, cross_origin
 app = Flask(__name__)
@@ -23,11 +23,11 @@ def handle_data():
     temperature = BL.get_weather(citycode, type)
     newtemp = temperature
     if POI == 'Eating POIs':
-        temperature = float(temperature)
+        Model = pickle.load(open('AutoModelling\LR_Eating.pkl', 'rb'))
     elif POI == 'Sports POIs':
-        temperature = float(temperature) + 1
+        Model = pickle.load(open('AutoModelling\LR_Sports.pkl', 'rb'))
     else:
-        temperature = float(temperature) + 2
+        Model = pickle.load(open('AutoModelling\LR_Entertainment.pkl', 'rb'))
     #获取当前时间，并只保留小时
     hour = datetime.datetime.now().hour
     #判断当前日期是否是周末
