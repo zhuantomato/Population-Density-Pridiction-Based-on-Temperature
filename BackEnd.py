@@ -38,6 +38,7 @@ def handle_data():
     scaler = pickle.load(open('WebGUI\scaler.pkl', 'rb'))
     data = scaler.transform(data)
     temperature = newtemp
+    Model = Model.predict(data)
     # 调用模型进行预测
     if isinstance(city, str):
         address = province + city
