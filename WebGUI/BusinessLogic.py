@@ -8,8 +8,8 @@ import requests
 from sklearn.discriminant_analysis import StandardScaler
 import tensorflow as tf
 import pandas as pd
-amap_web_key = 'd7620288fea4be1bf89de3d32c0bf3b4'
-baidu_web_key = 'pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG'
+amap_web_key = ' '
+baidu_web_key = ' '
 
 # 定义一些常量
 EARTH_RADIUS = 6371 # 地球半径，单位为公里
@@ -90,7 +90,7 @@ sys.stdout=io.TextIOWrapper(sys.stdout.buffer,encoding='utf8')
 #Construct the data functions about the road
 def fers(road_name,citycode): 
     city = citycode      
-    ak = 'pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG'        
+    ak = baidu_web_key        
     url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)  
     re=requests.get(url) #returning data
     decodejson=json.loads(re.text)
@@ -103,7 +103,7 @@ def fers(road_name,citycode):
 #Construct descriptive functions
 def es(road_name,citycode):
     city = citycode
-    ak = 'pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG'
+    ak = baidu_web_key
     url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)
     re=requests.get(url) 
     res=re.json() 

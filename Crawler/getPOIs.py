@@ -10,7 +10,7 @@ import sys
 
 #改变标准输出的默认编码
 sys.stdout=io.TextIOWrapper(sys.stdout.buffer,encoding='utf8')
-amap_web_key = 'd7620288fea4be1bf89de3d32c0bf3b4'
+amap_web_key = ' '
 
 poi_search_url = "http://restapi.amap.com/v3/place/text"
 poi_boundary_url = "https://ditu.amap.com/detail/get/detail"

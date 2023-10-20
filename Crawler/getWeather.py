@@ -5,7 +5,7 @@ import csv
 import time
 
 # 定义AK
-ak = "d7620288fea4be1bf89de3d32c0bf3b4"
+ak = " "
 
 # 定义城市编码的列表
 cities = ["110000", "520100", "230100", "460100"] # 北京市、贵阳市、哈尔滨市、海口市

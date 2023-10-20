@@ -22,7 +22,7 @@ sys.stdout=io.TextIOWrapper(sys.stdout.buffer,encoding='utf8')
 #Construct the data functions about the road
 def fers(road_name): 
     city = '海口市'      
-    ak = 'pYXwBQyGeD9LSApqsDnYTPPBz3RGo3Yx'        
+    ak = ' '        
     url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)          #爬过数据的人应该都知道这是什么东西吧，哈哈
     #url = f"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}"
     re=requests.get(url) #returning data
@@ -39,7 +39,7 @@ def fers(road_name):
 #Construct descriptive functions
 def es(road_name,i):
     city = '海口市'
-    ak = 'pYXwBQyGeD9LSApqsDnYTPPBz3RGo3Yx'
+    ak = ' '
     url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)
     #url = f"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}"
     re=requests.get(url) 
@@ -75,7 +75,7 @@ while True:
         # road_name = ['西单北大街','宣武门内大街','复兴门内大街','西长安街'] 
         # for i in road_name:
         #         city = '北京市'
-        #         ak = 'pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG'
+        #         ak = ' '
         #         url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(i),city,ak)
         #         re=requests.get(url) 
         #         decodejson = json.loads(re.text) 
@@ -85,7 +85,7 @@ while True:
         #             es(i)                        
         #         else:
         #             es(i)     #store overall traffic data for clear traffic.
-        ak = 'pYXwBQyGeD9LSApqsDnYTPPBz3RGo3Yx'
+        ak = ' '
         #bounds = "39.905,116.371;39.909,116.377"
         # 定义5个bounds
         bounds1 = "20.030734,110.317357;20.040734,110.327357"

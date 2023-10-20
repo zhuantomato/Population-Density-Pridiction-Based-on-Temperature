@@ -1964,7 +1964,7 @@
         "kind": 5,
         "importPath": "Crawler.getPOIs",
         "description": "Crawler.getPOIs",
-        "peekOfCode": "amap_web_key = 'd7620288fea4be1bf89de3d32c0bf3b4'\npoi_search_url = \"http://restapi.amap.com/v3/place/text\"\npoi_boundary_url = \"https://ditu.amap.com/detail/get/detail\"\n# cityname is the city name of the POI to be crawled, \n# city_areas is the administrative area under the city,\n# classes is the set of multiple POI categories.\ncityname = '贵阳市'\ncity_areas = ['花溪区']\nclasses = ['050000']\n# Get poi data based on city name and category keywords",
+        "peekOfCode": "amap_web_key = ' '\npoi_search_url = \"http://restapi.amap.com/v3/place/text\"\npoi_boundary_url = \"https://ditu.amap.com/detail/get/detail\"\n# cityname is the city name of the POI to be crawled, \n# city_areas is the administrative area under the city,\n# classes is the set of multiple POI categories.\ncityname = '贵阳市'\ncity_areas = ['花溪区']\nclasses = ['050000']\n# Get poi data based on city name and category keywords",
         "detail": "Crawler.getPOIs",
         "documentation": {}
     },
@@ -2018,7 +2018,7 @@
         "kind": 2,
         "importPath": "Crawler.getRoadCon",
         "description": "Crawler.getRoadCon",
-        "peekOfCode": "def fers(road_name): \n    city = '北京市'      \n    ak = 'pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG'        \n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)          #爬过数据的人应该都知道这是什么东西吧，哈哈\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) #returning data\n    decodejson=json.loads(re.text)\n    road_traffic_s=decodejson['road_traffic'][0]      #get traffic status                       \n    v=road_traffic_s['congestion_sections']\n    curr_time=datetime.datetime.now()",
+        "peekOfCode": "def fers(road_name): \n    city = '北京市'      \n    ak = ' '        \n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)          #爬过数据的人应该都知道这是什么东西吧，哈哈\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) #returning data\n    decodejson=json.loads(re.text)\n    road_traffic_s=decodejson['road_traffic'][0]      #get traffic status                       \n    v=road_traffic_s['congestion_sections']\n    curr_time=datetime.datetime.now()",
         "detail": "Crawler.getRoadCon",
         "documentation": {}
     },
@@ -2027,7 +2027,7 @@
         "kind": 2,
         "importPath": "Crawler.getRoadCon",
         "description": "Crawler.getRoadCon",
-        "peekOfCode": "def es(road_name,i):\n    city = '北京市'\n    ak = 'pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG'\n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) \n    res=re.json() \n    decodejson = json.loads(re.text)\n    description=decodejson['description']         #overall description\n    evaluation=decodejson['evaluation']     #overall status",
+        "peekOfCode": "def es(road_name,i):\n    city = '北京市'\n    ak = ' '\n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) \n    res=re.json() \n    decodejson = json.loads(re.text)\n    description=decodejson['description']         #overall description\n    evaluation=decodejson['evaluation']     #overall status",
         "detail": "Crawler.getRoadCon",
         "documentation": {}
     },
@@ -2045,7 +2045,7 @@
         "kind": 2,
         "importPath": "Crawler.getRoadCon_GY",
         "description": "Crawler.getRoadCon_GY",
-        "peekOfCode": "def fers(road_name): \n    city = '贵阳市'\n    ak = 'OtL3SspkTlxA5jYCZ2DxbSxEL91mlHVP'      \n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)          #爬过数据的人应该都知道这是什么东西吧，哈哈\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) #returning data\n    decodejson=json.loads(re.text)\n    road_traffic_s=decodejson['road_traffic'][0]      #get traffic status                       \n    v=road_traffic_s['congestion_sections']\n    curr_time=datetime.datetime.now()",
+        "peekOfCode": "def fers(road_name): \n    city = '贵阳市'\n    ak = ' '      \n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)          #爬过数据的人应该都知道这是什么东西吧，哈哈\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) #returning data\n    decodejson=json.loads(re.text)\n    road_traffic_s=decodejson['road_traffic'][0]      #get traffic status                       \n    v=road_traffic_s['congestion_sections']\n    curr_time=datetime.datetime.now()",
         "detail": "Crawler.getRoadCon_GY",
         "documentation": {}
     },
@@ -2054,7 +2054,7 @@
         "kind": 2,
         "importPath": "Crawler.getRoadCon_GY",
         "description": "Crawler.getRoadCon_GY",
-        "peekOfCode": "def es(road_name,i):\n    city = '贵阳市'\n    ak = 'OtL3SspkTlxA5jYCZ2DxbSxEL91mlHVP'\n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) \n    res=re.json() \n    decodejson = json.loads(re.text)\n    description=decodejson['description']         #overall description\n    evaluation=decodejson['evaluation']     #overall status",
+        "peekOfCode": "def es(road_name,i):\n    city = '贵阳市'\n    ak = ' '\n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) \n    res=re.json() \n    decodejson = json.loads(re.text)\n    description=decodejson['description']         #overall description\n    evaluation=decodejson['evaluation']     #overall status",
         "detail": "Crawler.getRoadCon_GY",
         "documentation": {}
     },
@@ -2072,7 +2072,7 @@
         "kind": 2,
         "importPath": "Crawler.getRoadCon_HEB",
         "description": "Crawler.getRoadCon_HEB",
-        "peekOfCode": "def fers(road_name): \n    city = '哈尔滨市'\n    ak = '44yUvacNwA5kkSvGG7sTwnaKBDPGHynN'      \n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)          #爬过数据的人应该都知道这是什么东西吧，哈哈\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) #returning data\n    decodejson=json.loads(re.text)\n    road_traffic_s=decodejson['road_traffic'][0]      #get traffic status                       \n    v=road_traffic_s['congestion_sections']\n    curr_time=datetime.datetime.now()",
+        "peekOfCode": "def fers(road_name): \n    city = '哈尔滨市'\n    ak = ' '      \n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)          #爬过数据的人应该都知道这是什么东西吧，哈哈\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) #returning data\n    decodejson=json.loads(re.text)\n    road_traffic_s=decodejson['road_traffic'][0]      #get traffic status                       \n    v=road_traffic_s['congestion_sections']\n    curr_time=datetime.datetime.now()",
         "detail": "Crawler.getRoadCon_HEB",
         "documentation": {}
     },
@@ -2081,7 +2081,7 @@
         "kind": 2,
         "importPath": "Crawler.getRoadCon_HEB",
         "description": "Crawler.getRoadCon_HEB",
-        "peekOfCode": "def es(road_name,i):\n    city = '哈尔滨市'\n    ak = '44yUvacNwA5kkSvGG7sTwnaKBDPGHynN'\n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) \n    res=re.json() \n    decodejson = json.loads(re.text)\n    description=decodejson['description']         #overall description\n    evaluation=decodejson['evaluation']     #overall status",
+        "peekOfCode": "def es(road_name,i):\n    city = '哈尔滨市'\n    ak = ' '\n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) \n    res=re.json() \n    decodejson = json.loads(re.text)\n    description=decodejson['description']         #overall description\n    evaluation=decodejson['evaluation']     #overall status",
         "detail": "Crawler.getRoadCon_HEB",
         "documentation": {}
     },
@@ -2099,7 +2099,7 @@
         "kind": 2,
         "importPath": "Crawler.getRoadCon_HK",
         "description": "Crawler.getRoadCon_HK",
-        "peekOfCode": "def fers(road_name): \n    city = '海口市'      \n    ak = 'pYXwBQyGeD9LSApqsDnYTPPBz3RGo3Yx'        \n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)          #爬过数据的人应该都知道这是什么东西吧，哈哈\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) #returning data\n    decodejson=json.loads(re.text)\n    road_traffic_s=decodejson['road_traffic'][0]      #get traffic status                       \n    v=road_traffic_s['congestion_sections']\n    curr_time=datetime.datetime.now()",
+        "peekOfCode": "def fers(road_name): \n    city = '海口市'      \n    ak = ' '        \n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)          #爬过数据的人应该都知道这是什么东西吧，哈哈\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) #returning data\n    decodejson=json.loads(re.text)\n    road_traffic_s=decodejson['road_traffic'][0]      #get traffic status                       \n    v=road_traffic_s['congestion_sections']\n    curr_time=datetime.datetime.now()",
         "detail": "Crawler.getRoadCon_HK",
         "documentation": {}
     },
@@ -2108,7 +2108,7 @@
         "kind": 2,
         "importPath": "Crawler.getRoadCon_HK",
         "description": "Crawler.getRoadCon_HK",
-        "peekOfCode": "def es(road_name,i):\n    city = '海口市'\n    ak = 'pYXwBQyGeD9LSApqsDnYTPPBz3RGo3Yx'\n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) \n    res=re.json() \n    decodejson = json.loads(re.text)\n    description=decodejson['description']         #overall description\n    evaluation=decodejson['evaluation']     #overall status",
+        "peekOfCode": "def es(road_name,i):\n    city = '海口市'\n    ak = ' '\n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)\n    #url = f\"http://api.map.baidu.com/traffic/v1/bound?ak={ak}&bounds={bounds}\"\n    re=requests.get(url) \n    res=re.json() \n    decodejson = json.loads(re.text)\n    description=decodejson['description']         #overall description\n    evaluation=decodejson['evaluation']     #overall status",
         "detail": "Crawler.getRoadCon_HK",
         "documentation": {}
     },
@@ -2126,7 +2126,7 @@
         "kind": 5,
         "importPath": "Crawler.getWeather",
         "description": "Crawler.getWeather",
-        "peekOfCode": "ak = \"d7620288fea4be1bf89de3d32c0bf3b4\"\n# 定义城市编码的列表\ncities = [\"110000\", \"520100\", \"230100\", \"460100\"] # 北京市、贵阳市、哈尔滨市、海口市\n# 定义查询间隔为10分钟（600秒）\ninterval = 1200\n# 使用while循环来重复执行查询和写入操作\nwhile True:\n    # 使用for循环来遍历每个城市编码\n    for city in cities:\n        # 构造请求URL",
+        "peekOfCode": "ak = \" \"\n# 定义城市编码的列表\ncities = [\"110000\", \"520100\", \"230100\", \"460100\"] # 北京市、贵阳市、哈尔滨市、海口市\n# 定义查询间隔为10分钟（600秒）\ninterval = 1200\n# 使用while循环来重复执行查询和写入操作\nwhile True:\n    # 使用for循环来遍历每个城市编码\n    for city in cities:\n        # 构造请求URL",
         "detail": "Crawler.getWeather",
         "documentation": {}
     },
@@ -3647,7 +3647,7 @@
         "kind": 2,
         "importPath": "WebGUI.BusinessLogic",
         "description": "WebGUI.BusinessLogic",
-        "peekOfCode": "def fers(road_name,citycode): \n    city = citycode      \n    ak = 'pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG'        \n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)  \n    re=requests.get(url) #returning data\n    decodejson=json.loads(re.text)\n    road_traffic_s=decodejson['road_traffic'][0]      #get traffic status                       \n    v=road_traffic_s['congestion_sections']\n    ty=pd.DataFrame(v)\n    ty['name']=pd.DataFrame([road_traffic_s['road_name']]*len(v))      ",
+        "peekOfCode": "def fers(road_name,citycode): \n    city = citycode      \n    ak = baidu_web_key        \n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)  \n    re=requests.get(url) #returning data\n    decodejson=json.loads(re.text)\n    road_traffic_s=decodejson['road_traffic'][0]      #get traffic status                       \n    v=road_traffic_s['congestion_sections']\n    ty=pd.DataFrame(v)\n    ty['name']=pd.DataFrame([road_traffic_s['road_name']]*len(v))      ",
         "detail": "WebGUI.BusinessLogic",
         "documentation": {}
     },
@@ -3656,7 +3656,7 @@
         "kind": 2,
         "importPath": "WebGUI.BusinessLogic",
         "description": "WebGUI.BusinessLogic",
-        "peekOfCode": "def es(road_name,citycode):\n    city = citycode\n    ak = 'pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG'\n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)\n    re=requests.get(url) \n    res=re.json() \n    decodejson = json.loads(re.text)\n    evaluation=decodejson['evaluation']     #overall status\n    road_traffic=decodejson['road_traffic'][0]\n    road_data=pd.DataFrame([evaluation])",
+        "peekOfCode": "def es(road_name,citycode):\n    city = citycode\n    ak = baidu_web_key\n    url = 'http://api.map.baidu.com/traffic/v1/road?road_name={}&city={}&ak={}'.format(str(road_name),city,ak)\n    re=requests.get(url) \n    res=re.json() \n    decodejson = json.loads(re.text)\n    evaluation=decodejson['evaluation']     #overall status\n    road_traffic=decodejson['road_traffic'][0]\n    road_data=pd.DataFrame([evaluation])",
         "detail": "WebGUI.BusinessLogic",
         "documentation": {}
     },
@@ -3692,7 +3692,7 @@
         "kind": 5,
         "importPath": "WebGUI.BusinessLogic",
         "description": "WebGUI.BusinessLogic",
-        "peekOfCode": "amap_web_key = 'd7620288fea4be1bf89de3d32c0bf3b4'\nbaidu_web_key = 'pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG'\n# 定义一些常量\nEARTH_RADIUS = 6371 # 地球半径，单位为公里\nDEG_TO_RAD = math.pi / 180 # 角度转弧度的因子\nRAD_TO_DEG = 180 / math.pi # 弧度转角度的因子\nDIAGONAL = 1 # 对角线长度，单位为公里\nANGLE = 45 # 对角线与经线的夹角，单位为度\n# 计算经纬度矩形的四个顶点的经纬度\ndef ractangle(center):",
+        "peekOfCode": "amap_web_key = ' '\nbaidu_web_key = ' '\n# 定义一些常量\nEARTH_RADIUS = 6371 # 地球半径，单位为公里\nDEG_TO_RAD = math.pi / 180 # 角度转弧度的因子\nRAD_TO_DEG = 180 / math.pi # 弧度转角度的因子\nDIAGONAL = 1 # 对角线长度，单位为公里\nANGLE = 45 # 对角线与经线的夹角，单位为度\n# 计算经纬度矩形的四个顶点的经纬度\ndef ractangle(center):",
         "detail": "WebGUI.BusinessLogic",
         "documentation": {}
     },
@@ -3701,7 +3701,7 @@
         "kind": 5,
         "importPath": "WebGUI.BusinessLogic",
         "description": "WebGUI.BusinessLogic",
-        "peekOfCode": "baidu_web_key = 'pfARyIAcUfrGjnhtf2E4qKZOG4lXOUpG'\n# 定义一些常量\nEARTH_RADIUS = 6371 # 地球半径，单位为公里\nDEG_TO_RAD = math.pi / 180 # 角度转弧度的因子\nRAD_TO_DEG = 180 / math.pi # 弧度转角度的因子\nDIAGONAL = 1 # 对角线长度，单位为公里\nANGLE = 45 # 对角线与经线的夹角，单位为度\n# 计算经纬度矩形的四个顶点的经纬度\ndef ractangle(center):\n    # 给定中心点的经纬度",
+        "peekOfCode": "baidu_web_key = ' '\n# 定义一些常量\nEARTH_RADIUS = 6371 # 地球半径，单位为公里\nDEG_TO_RAD = math.pi / 180 # 角度转弧度的因子\nRAD_TO_DEG = 180 / math.pi # 弧度转角度的因子\nDIAGONAL = 1 # 对角线长度，单位为公里\nANGLE = 45 # 对角线与经线的夹角，单位为度\n# 计算经纬度矩形的四个顶点的经纬度\ndef ractangle(center):\n    # 给定中心点的经纬度",
         "detail": "WebGUI.BusinessLogic",
         "documentation": {}
     },
